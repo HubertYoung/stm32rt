@@ -1,0 +1,1981 @@
+[2022-01-25 22:35:17]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.HCD\stm32f4xx_ll_usb.c: 0 warnings, 14 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Flash\stm32f4xx_hal_flash_ex.c: 0 warnings, 14 errors
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\run_STM32CubeMX.c", line 9: Error:  #35: #error directive: "Run STM32CubeMX and generate device configuration files described by FrameworkCubeMX.gpdsc"
+  #error "Run STM32CubeMX and generate device configuration files described by FrameworkCubeMX.gpdsc"
+   ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\run_STM32CubeMX.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim.c: 0 warnings, 14 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.IWDG\stm32f4xx_hal_iwdg.c: 0 warnings, 14 errors
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 94: Error:  #20: identifier "__IO" is undefined
+  __IO uint32_t uwTick;
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 94: Error:  #65: expected a ";"
+  __IO uint32_t uwTick;
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 95: Error:  #757: variable "uint32_t" is not a type name
+  uint32_t uwTickPrio   = (1UL << __NVIC_PRIO_BITS); /* Invalid PRIO */
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 95: Error:  #20: identifier "__NVIC_PRIO_BITS" is undefined
+  uint32_t uwTickPrio   = (1UL << __NVIC_PRIO_BITS); /* Invalid PRIO */
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 157: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void)
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 161: Warning:  #223-D: function "__HAL_FLASH_INSTRUCTION_CACHE_ENABLE" declared implicitly
+    __HAL_FLASH_INSTRUCTION_CACHE_ENABLE();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 165: Warning:  #223-D: function "__HAL_FLASH_DATA_CACHE_ENABLE" declared implicitly
+    __HAL_FLASH_DATA_CACHE_ENABLE();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 173: Warning:  #223-D: function "HAL_NVIC_SetPriorityGrouping" declared implicitly
+    HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 173: Error:  #20: identifier "NVIC_PRIORITYGROUP_4" is undefined
+    HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+                                 ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 182: Error:  #20: identifier "HAL_OK" is undefined
+    return HAL_OK;
+           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 190: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void)
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 193: Warning:  #223-D: function "__HAL_RCC_APB1_FORCE_RESET" declared implicitly
+    __HAL_RCC_APB1_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 194: Warning:  #223-D: function "__HAL_RCC_APB1_RELEASE_RESET" declared implicitly
+    __HAL_RCC_APB1_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 196: Warning:  #223-D: function "__HAL_RCC_APB2_FORCE_RESET" declared implicitly
+    __HAL_RCC_APB2_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 197: Warning:  #223-D: function "__HAL_RCC_APB2_RELEASE_RESET" declared implicitly
+    __HAL_RCC_APB2_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 199: Warning:  #223-D: function "__HAL_RCC_AHB1_FORCE_RESET" declared implicitly
+    __HAL_RCC_AHB1_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 200: Warning:  #223-D: function "__HAL_RCC_AHB1_RELEASE_RESET" declared implicitly
+    __HAL_RCC_AHB1_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 202: Warning:  #223-D: function "__HAL_RCC_AHB2_FORCE_RESET" declared implicitly
+    __HAL_RCC_AHB2_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 203: Warning:  #223-D: function "__HAL_RCC_AHB2_RELEASE_RESET" declared implicitly
+    __HAL_RCC_AHB2_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 205: Warning:  #223-D: function "__HAL_RCC_AHB3_FORCE_RESET" declared implicitly
+    __HAL_RCC_AHB3_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 206: Warning:  #223-D: function "__HAL_RCC_AHB3_RELEASE_RESET" declared implicitly
+    __HAL_RCC_AHB3_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 212: Error:  #20: identifier "HAL_OK" is undefined
+    return HAL_OK;
+           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 253: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
+         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 253: Error:  #757: variable "uint32_t" is not a type name
+  __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
+                                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 256: Warning:  #223-D: function "HAL_SYSTICK_Config" declared implicitly
+    if (HAL_SYSTICK_Config(SystemCoreClock / (1000U / uwTickFreq)) > 0U)
+        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 256: Error:  #20: identifier "SystemCoreClock" is undefined
+    if (HAL_SYSTICK_Config(SystemCoreClock / (1000U / uwTickFreq)) > 0U)
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 258: Error:  #20: identifier "HAL_ERROR" is undefined
+      return HAL_ERROR;
+             ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 264: Warning:  #223-D: function "HAL_NVIC_SetPriority" declared implicitly
+      HAL_NVIC_SetPriority(SysTick_IRQn, TickPriority, 0U);
+      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 264: Error:  #20: identifier "SysTick_IRQn" is undefined
+      HAL_NVIC_SetPriority(SysTick_IRQn, TickPriority, 0U);
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 269: Error:  #20: identifier "HAL_ERROR" is undefined
+      return HAL_ERROR;
+             ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 273: Error:  #20: identifier "HAL_OK" is undefined
+    return HAL_OK;
+           ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c: 15 warnings, 30 errors
+
+[2022-01-25 22:36:23]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\run_STM32CubeMX.c", line 9: Error:  #35: #error directive: "Run STM32CubeMX and generate device configuration files described by FrameworkCubeMX.gpdsc"
+  #error "Run STM32CubeMX and generate device configuration files described by FrameworkCubeMX.gpdsc"
+   ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\run_STM32CubeMX.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.HCD\stm32f4xx_ll_usb.c: 0 warnings, 14 errors
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 94: Error:  #20: identifier "__IO" is undefined
+  __IO uint32_t uwTick;
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 94: Error:  #65: expected a ";"
+  __IO uint32_t uwTick;
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 95: Error:  #757: variable "uint32_t" is not a type name
+  uint32_t uwTickPrio   = (1UL << __NVIC_PRIO_BITS); /* Invalid PRIO */
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 95: Error:  #20: identifier "__NVIC_PRIO_BITS" is undefined
+  uint32_t uwTickPrio   = (1UL << __NVIC_PRIO_BITS); /* Invalid PRIO */
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 157: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void)
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 161: Warning:  #223-D: function "__HAL_FLASH_INSTRUCTION_CACHE_ENABLE" declared implicitly
+    __HAL_FLASH_INSTRUCTION_CACHE_ENABLE();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 165: Warning:  #223-D: function "__HAL_FLASH_DATA_CACHE_ENABLE" declared implicitly
+    __HAL_FLASH_DATA_CACHE_ENABLE();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 173: Warning:  #223-D: function "HAL_NVIC_SetPriorityGrouping" declared implicitly
+    HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 173: Error:  #20: identifier "NVIC_PRIORITYGROUP_4" is undefined
+    HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+                                 ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 182: Error:  #20: identifier "HAL_OK" is undefined
+    return HAL_OK;
+           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 190: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void)
+  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 193: Warning:  #223-D: function "__HAL_RCC_APB1_FORCE_RESET" declared implicitly
+    __HAL_RCC_APB1_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 194: Warning:  #223-D: function "__HAL_RCC_APB1_RELEASE_RESET" declared implicitly
+    __HAL_RCC_APB1_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 196: Warning:  #223-D: function "__HAL_RCC_APB2_FORCE_RESET" declared implicitly
+    __HAL_RCC_APB2_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 197: Warning:  #223-D: function "__HAL_RCC_APB2_RELEASE_RESET" declared implicitly
+    __HAL_RCC_APB2_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 199: Warning:  #223-D: function "__HAL_RCC_AHB1_FORCE_RESET" declared implicitly
+    __HAL_RCC_AHB1_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 200: Warning:  #223-D: function "__HAL_RCC_AHB1_RELEASE_RESET" declared implicitly
+    __HAL_RCC_AHB1_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 202: Warning:  #223-D: function "__HAL_RCC_AHB2_FORCE_RESET" declared implicitly
+    __HAL_RCC_AHB2_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 203: Warning:  #223-D: function "__HAL_RCC_AHB2_RELEASE_RESET" declared implicitly
+    __HAL_RCC_AHB2_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 205: Warning:  #223-D: function "__HAL_RCC_AHB3_FORCE_RESET" declared implicitly
+    __HAL_RCC_AHB3_FORCE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 206: Warning:  #223-D: function "__HAL_RCC_AHB3_RELEASE_RESET" declared implicitly
+    __HAL_RCC_AHB3_RELEASE_RESET();
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 212: Error:  #20: identifier "HAL_OK" is undefined
+    return HAL_OK;
+           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 253: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
+         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 253: Error:  #757: variable "uint32_t" is not a type name
+  __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
+                                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 256: Warning:  #223-D: function "HAL_SYSTICK_Config" declared implicitly
+    if (HAL_SYSTICK_Config(SystemCoreClock / (1000U / uwTickFreq)) > 0U)
+        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 256: Error:  #20: identifier "SystemCoreClock" is undefined
+    if (HAL_SYSTICK_Config(SystemCoreClock / (1000U / uwTickFreq)) > 0U)
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 258: Error:  #20: identifier "HAL_ERROR" is undefined
+      return HAL_ERROR;
+             ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 264: Warning:  #223-D: function "HAL_NVIC_SetPriority" declared implicitly
+      HAL_NVIC_SetPriority(SysTick_IRQn, TickPriority, 0U);
+      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 264: Error:  #20: identifier "SysTick_IRQn" is undefined
+      HAL_NVIC_SetPriority(SysTick_IRQn, TickPriority, 0U);
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 269: Error:  #20: identifier "HAL_ERROR" is undefined
+      return HAL_ERROR;
+             ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c", line 273: Error:  #20: identifier "HAL_OK" is undefined
+    return HAL_OK;
+           ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c: 15 warnings, 30 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Flash\stm32f4xx_hal_flash_ex.c: 0 warnings, 14 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.IWDG\stm32f4xx_hal_iwdg.c: 0 warnings, 14 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 208: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_Init(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 209: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_DeInit(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 212: Error:  #20: identifier "uint32_t" is undefined
+  HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority);
+                                  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 222: Error:  #20: identifier "uint32_t" is undefined
+  void HAL_Delay(uint32_t Delay);
+                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 223: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTick(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 224: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetTickPrio(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 225: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+  HAL_StatusTypeDef HAL_SetTickFreq(HAL_TickFreqTypeDef Freq);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 229: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetHalVersion(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 230: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetREVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 231: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetDEVID(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 240: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw0(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 241: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw1(void);
+  ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h", line 242: Error:  #20: identifier "uint32_t" is undefined
+  uint32_t HAL_GetUIDw2(void);
+  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim.c: 0 warnings, 14 errors
+
+[2022-01-25 22:36:38]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\run_STM32CubeMX.c", line 9: Error:  #35: #error directive: "Run STM32CubeMX and generate device configuration files described by FrameworkCubeMX.gpdsc"
+  #error "Run STM32CubeMX and generate device configuration files described by FrameworkCubeMX.gpdsc"
+   ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\run_STM32CubeMX.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Common\stm32f4xx_hal.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Flash\stm32f4xx_hal_flash_ex.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.HCD\stm32f4xx_ll_usb.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.IWDG\stm32f4xx_hal_iwdg.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim.c: 0 warnings, 1 error
+
+[2022-01-25 22:40:25]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.GPIO\stm32f4xx_hal_gpio.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Cortex\stm32f4xx_hal_cortex.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c: 0 warnings, 1 error
+
+[2022-01-25 22:43:53]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.GPIO\stm32f4xx_hal_gpio.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Cortex\stm32f4xx_hal_cortex.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c: 0 warnings, 1 error
+
+[2022-01-25 22:44:53]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\DSP_Lib_TestSuite\Common\src\filtering_tests\correlate_tests.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_init_f32.c", line 29: Error:  #5: cannot open source input file "arm_math.h": No such file or directory
+  #include "arm_math.h"
+                       ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\FilteringFunctions\arm_biquad_cascade_df1_init_f32.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\BasicMathFunctions\arm_scale_q7.c", line 29: Error:  #5: cannot open source input file "arm_math.h": No such file or directory
+  #include "arm_math.h"
+                       ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\BasicMathFunctions\arm_scale_q7.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Examples\ARM\arm_class_marks_example\arm_class_marks_example_f32.c", line 84: Error:  #5: cannot open source input file "arm_math.h": No such file or directory
+  #include "arm_math.h"
+                       ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Examples\ARM\arm_class_marks_example\arm_class_marks_example_f32.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\SupportFunctions\arm_copy_q7.c", line 29: Error:  #5: cannot open source input file "arm_math.h": No such file or directory
+  #include "arm_math.h"
+                       ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\SupportFunctions\arm_copy_q7.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\MatrixFunctions\arm_mat_cmplx_mult_q15.c", line 29: Error:  #5: cannot open source input file "arm_math.h": No such file or directory
+  #include "arm_math.h"
+                       ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\MatrixFunctions\arm_mat_cmplx_mult_q15.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\FilteringFunctions\arm_fir_init_f32.c", line 29: Error:  #5: cannot open source input file "arm_math.h": No such file or directory
+  #include "arm_math.h"
+                       ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\Source\FilteringFunctions\arm_fir_init_f32.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Template\cmsis_os.h", line 157: Error:  #5: cannot open source input file "cmsis_os2.h": No such file or directory
+  #include "cmsis_os2.h"
+                        ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Template\cmsis_os1.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\ref_functions.h", line 22: Error:  #5: cannot open source input file "arm_math.h": No such file or directory
+  #include "arm_math.h"
+                       ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\arm_convolve_HWC_q15_ref.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\Core\Template\ARMv8-M\main_s.c", line 26: Error:  #5: cannot open source input file "arm_cmse.h": No such file or directory
+  #include <arm_cmse.h>
+                       ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\Core\Template\ARMv8-M\main_s.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\DSP_Lib_TestSuite\RefLibs\src\BasicMathFunctions\shift.c", line 1: Error:  #5: cannot open source input file "ref.h": No such file or directory
+  #include "ref.h"
+                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\DSP_Lib_TestSuite\RefLibs\src\BasicMathFunctions\shift.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\DSP_Lib_TestSuite\Common\src\filtering_tests\correlate_tests.c", line 1: Error:  #5: cannot open source input file "jtest.h": No such file or directory
+  #include "jtest.h"
+                    ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\DSP\DSP_Lib_TestSuite\Common\src\filtering_tests\correlate_tests.c: 0 warnings, 1 error
+
+[2022-01-25 22:46:32]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c", line 25: Error:  #5: cannot open source input file "os_tick.h": No such file or directory
+  #include "os_tick.h"
+                      ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Cortex\stm32f4xx_hal_cortex.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.GPIO\stm32f4xx_hal_gpio.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c: 0 warnings, 1 error
+
+[2022-01-25 22:47:10]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Cortex\stm32f4xx_hal_cortex.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.GPIO\stm32f4xx_hal_gpio.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c: 0 warnings, 1 error
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c", line 25: Error:  #5: cannot open source input file "os_tick.h": No such file or directory
+  #include "os_tick.h"
+                      ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Cortex\stm32f4xx_hal_cortex.c: 0 warnings, 1 error
+
+[2022-01-25 22:48:27]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c", line 25: Error:  #5: cannot open source input file "os_tick.h": No such file or directory
+  #include "os_tick.h"
+                      ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.GPIO\stm32f4xx_hal_gpio.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Cortex\stm32f4xx_hal_cortex.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c: 0 warnings, 1 error
+
+[2022-01-25 22:49:19]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c", line 25: Error:  #5: cannot open source input file "os_tick.h": No such file or directory
+  #include "os_tick.h"
+                      ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.GPIO\stm32f4xx_hal_gpio.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Cortex\stm32f4xx_hal_cortex.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h", line 156: Error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"             /* Cortex-M4 processor and core peripherals */
+                                                                                  ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c: 0 warnings, 1 error
+
+[2022-01-25 22:50:21]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c", line 29: Error:  #13: expected a file name
+  #include CMSIS_device_header
+           ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeFramework.STM32CubeMX\CMSIS\RTOS2\Source\os_systick.c: 0 warnings, 1 error
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Cortex\stm32f4xx_hal_cortex.c: 0 warnings, 13 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c: 0 warnings, 13 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 271: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAConvCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 272: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAError(DMA_HandleTypeDef *hdma);
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 273: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAHalfConvCplt(DMA_HandleTypeDef *hdma);
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1432: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      HAL_DMA_Start_IT(hadc->DMA_Handle, (uint32_t)&hadc->Instance->DR, (uint32_t)pData, Length);
+      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1495: Warning:  #223-D: function "HAL_DMA_Abort" declared implicitly
+      tmp_hal_status = HAL_DMA_Abort(hadc->DMA_Handle);
+                       ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1495: Warning:  #188-D: enumerated type mixed with another type
+      tmp_hal_status = HAL_DMA_Abort(hadc->DMA_Handle);
+                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAConvCplt(DMA_HandleTypeDef *hdma)   
+                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1948: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1948: Error:  #29: expected an expression
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1948: Error:  #18: expected a ")"
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                          ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2014: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAHalfConvCplt(DMA_HandleTypeDef *hdma)   
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2016: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2016: Error:  #29: expected an expression
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2016: Error:  #18: expected a ")"
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                          ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2031: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAError(DMA_HandleTypeDef *hdma)   
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2033: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2033: Error:  #29: expected an expression
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2033: Error:  #18: expected a ")"
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                          ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c: 3 warnings, 28 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.GPIO\stm32f4xx_hal_gpio.c: 0 warnings, 13 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 344: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAXferCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 345: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAError(DMA_HandleTypeDef *hdma);
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 346: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAAbort(DMA_HandleTypeDef *hdma);
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 1994: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 1994: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2135: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2135: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2255: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2255: Warning:  #188-D: enumerated type mixed with another type
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2352: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2352: Warning:  #188-D: enumerated type mixed with another type
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3030: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3030: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3175: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3175: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3569: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3569: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3878: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3878: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4066: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+            if (HAL_DMA_Abort_IT(hi2c->hdmarx) != HAL_OK)
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4088: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+            if (HAL_DMA_Abort_IT(hi2c->hdmatx) != HAL_OK)
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4132: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4132: Warning:  #188-D: enumerated type mixed with another type
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4289: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+            if (HAL_DMA_Abort_IT(hi2c->hdmarx) != HAL_OK)
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4311: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+            if (HAL_DMA_Abort_IT(hi2c->hdmatx) != HAL_OK)
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4355: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4355: Warning:  #188-D: enumerated type mixed with another type
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5848: Warning:  #223-D: function "__HAL_DMA_GET_COUNTER" declared implicitly
+        hi2c->XferCount = (uint16_t)(__HAL_DMA_GET_COUNTER(hi2c->hdmarx));
+                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5860: Warning:  #223-D: function "HAL_DMA_GetState" declared implicitly
+        if (HAL_DMA_GetState(hi2c->hdmarx) != HAL_DMA_STATE_READY)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5860: Error:  #20: identifier "HAL_DMA_STATE_READY" is undefined
+        if (HAL_DMA_GetState(hi2c->hdmarx) != HAL_DMA_STATE_READY)
+                                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5867: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+          if (HAL_DMA_Abort_IT(hi2c->hdmarx) != HAL_OK)
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5876: Warning:  #223-D: function "__HAL_DMA_GET_COUNTER" declared implicitly
+        hi2c->XferCount = (uint16_t)(__HAL_DMA_GET_COUNTER(hi2c->hdmatx));
+                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5888: Warning:  #223-D: function "HAL_DMA_GetState" declared implicitly
+        if (HAL_DMA_GetState(hi2c->hdmatx) != HAL_DMA_STATE_READY)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5888: Error:  #20: identifier "HAL_DMA_STATE_READY" is undefined
+        if (HAL_DMA_GetState(hi2c->hdmatx) != HAL_DMA_STATE_READY)
+                                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5895: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+          if (HAL_DMA_Abort_IT(hi2c->hdmatx) != HAL_OK)
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6098: Error:  #20: identifier "HAL_DMA_STATE_READY" is undefined
+      if (hi2c->hdmatx->State != HAL_DMA_STATE_READY)
+                                 ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6104: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        if (HAL_DMA_Abort_IT(hi2c->hdmatx) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6121: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        if (HAL_DMA_Abort_IT(hi2c->hdmarx) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6554: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAXferCplt(DMA_HandleTypeDef *hdma)
+                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6556: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6556: Error:  #29: expected an expression
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6556: Error:  #18: expected a ")"
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6686: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAError(DMA_HandleTypeDef *hdma)
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6688: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6688: Error:  #29: expected an expression
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6688: Error:  #18: expected a ")"
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6695: Warning:  #223-D: function "HAL_DMA_GetError" declared implicitly
+    if (HAL_DMA_GetError(hdma) != HAL_DMA_ERROR_FE)
+        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6695: Error:  #20: identifier "HAL_DMA_ERROR_FE" is undefined
+    if (HAL_DMA_GetError(hdma) != HAL_DMA_ERROR_FE)
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6721: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAAbort(DMA_HandleTypeDef *hdma)
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6723: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                     ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c: 33 warnings, 30 errors
+
+[2022-01-25 22:51:48]	compilation failed at : "c:\Users\13443\source\stm32rt\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.RCC\stm32f4xx_hal_rcc.c: 0 warnings, 13 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 429: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+    if (HAL_DMA_Start_IT(htim->hdma[TIM_DMA_ID_CC1], (uint32_t)&htim->Instance->CCR1, (uint32_t)pData, Length) != HAL_OK)
+        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 465: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+    (void)HAL_DMA_Abort_IT(htim->hdma[TIM_DMA_ID_CC1]);
+          ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 743: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        if (HAL_DMA_Start_IT(htim->hdma[TIM_DMA_ID_CC1], (uint32_t)pData, (uint32_t)&htim->Instance->CCR1, Length) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 762: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        if (HAL_DMA_Start_IT(htim->hdma[TIM_DMA_ID_CC2], (uint32_t)pData, (uint32_t)&htim->Instance->CCR2, Length) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 781: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        if (HAL_DMA_Start_IT(htim->hdma[TIM_DMA_ID_CC3], (uint32_t)pData, (uint32_t)&htim->Instance->CCR3, Length) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 833: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        (void)HAL_DMA_Abort_IT(htim->hdma[TIM_DMA_ID_CC1]);
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 841: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        (void)HAL_DMA_Abort_IT(htim->hdma[TIM_DMA_ID_CC2]);
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 849: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        (void)HAL_DMA_Abort_IT(htim->hdma[TIM_DMA_ID_CC3]);
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1150: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        if (HAL_DMA_Start_IT(htim->hdma[TIM_DMA_ID_CC1], (uint32_t)pData, (uint32_t)&htim->Instance->CCR1, Length) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1169: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        if (HAL_DMA_Start_IT(htim->hdma[TIM_DMA_ID_CC2], (uint32_t)pData, (uint32_t)&htim->Instance->CCR2, Length) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1188: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        if (HAL_DMA_Start_IT(htim->hdma[TIM_DMA_ID_CC3], (uint32_t)pData, (uint32_t)&htim->Instance->CCR3, Length) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1240: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        (void)HAL_DMA_Abort_IT(htim->hdma[TIM_DMA_ID_CC1]);
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1248: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        (void)HAL_DMA_Abort_IT(htim->hdma[TIM_DMA_ID_CC2]);
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1256: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        (void)HAL_DMA_Abort_IT(htim->hdma[TIM_DMA_ID_CC3]);
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1898: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma)
+                                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1900: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    TIM_HandleTypeDef *htim = (TIM_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent;
+                                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1900: Error:  #29: expected an expression
+    TIM_HandleTypeDef *htim = (TIM_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent;
+                                                                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1900: Error:  #18: expected a ")"
+    TIM_HandleTypeDef *htim = (TIM_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent;
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1917: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma)
+                                    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1919: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    TIM_HandleTypeDef *htim = (TIM_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent;
+                                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1919: Error:  #29: expected an expression
+    TIM_HandleTypeDef *htim = (TIM_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent;
+                                                                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c", line 1919: Error:  #18: expected a ")"
+    TIM_HandleTypeDef *htim = (TIM_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent;
+                                                                         ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.TIM\stm32f4xx_hal_tim_ex.c: 14 warnings, 21 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 271: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAConvCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 272: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAError(DMA_HandleTypeDef *hdma);
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 273: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAHalfConvCplt(DMA_HandleTypeDef *hdma);
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1432: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      HAL_DMA_Start_IT(hadc->DMA_Handle, (uint32_t)&hadc->Instance->DR, (uint32_t)pData, Length);
+      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1495: Warning:  #223-D: function "HAL_DMA_Abort" declared implicitly
+      tmp_hal_status = HAL_DMA_Abort(hadc->DMA_Handle);
+                       ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1495: Warning:  #188-D: enumerated type mixed with another type
+      tmp_hal_status = HAL_DMA_Abort(hadc->DMA_Handle);
+                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAConvCplt(DMA_HandleTypeDef *hdma)   
+                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1948: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1948: Error:  #29: expected an expression
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 1948: Error:  #18: expected a ")"
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                          ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2014: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAHalfConvCplt(DMA_HandleTypeDef *hdma)   
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2016: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2016: Error:  #29: expected an expression
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2016: Error:  #18: expected a ")"
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                          ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2031: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void ADC_DMAError(DMA_HandleTypeDef *hdma)   
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2033: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2033: Error:  #29: expected an expression
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c", line 2033: Error:  #18: expected a ")"
+    ADC_HandleTypeDef* hadc = ( ADC_HandleTypeDef* )((DMA_HandleTypeDef* )hdma)->Parent;
+                                                                          ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.ADC\stm32f4xx_hal_adc.c: 3 warnings, 28 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.GPIO\stm32f4xx_hal_gpio.c: 0 warnings, 13 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.Cortex\stm32f4xx_hal_cortex.c: 0 warnings, 13 errors
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h", line 202: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *DMA_Handle;                 /*!< Pointer DMA Handler */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 201: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmatx;        /*!< I2C Tx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h", line 203: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef          *hdmarx;        /*!< I2C Rx DMA handle parameters             */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 316: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef           *hdma[7];      /*!< DMA Handlers array
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 329: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma);
+                                ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h", line 330: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIMEx_DMACommutationHalfCplt(DMA_HandleTypeDef *hdma);
+                                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1941: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseCplt(DMA_HandleTypeDef *hdma);
+                             ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1942: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMADelayPulseHalfCplt(DMA_HandleTypeDef *hdma);
+                                 ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1943: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMAError(DMA_HandleTypeDef *hdma);
+                    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1944: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureCplt(DMA_HandleTypeDef *hdma);
+                          ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h", line 1945: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  void TIM_DMACaptureHalfCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 159: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmatx;          /*!< UART Tx DMA Handle parameters      */
+    ^
+".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h", line 161: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    DMA_HandleTypeDef             *hdmarx;          /*!< UART Rx DMA Handle parameters      */
+    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 344: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAXferCplt(DMA_HandleTypeDef *hdma);
+                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 345: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAError(DMA_HandleTypeDef *hdma);
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 346: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAAbort(DMA_HandleTypeDef *hdma);
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 1994: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 1994: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2135: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2135: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2255: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2255: Warning:  #188-D: enumerated type mixed with another type
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2352: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 2352: Warning:  #188-D: enumerated type mixed with another type
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3030: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3030: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3175: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3175: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3569: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3569: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3878: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 3878: Warning:  #188-D: enumerated type mixed with another type
+        dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4066: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+            if (HAL_DMA_Abort_IT(hi2c->hdmarx) != HAL_OK)
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4088: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+            if (HAL_DMA_Abort_IT(hi2c->hdmatx) != HAL_OK)
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4132: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4132: Warning:  #188-D: enumerated type mixed with another type
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmatx, (uint32_t)hi2c->pBuffPtr, (uint32_t)&hi2c->Instance->DR, hi2c->XferSize);
+                    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4289: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+            if (HAL_DMA_Abort_IT(hi2c->hdmarx) != HAL_OK)
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4311: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+            if (HAL_DMA_Abort_IT(hi2c->hdmatx) != HAL_OK)
+                ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4355: Warning:  #223-D: function "HAL_DMA_Start_IT" declared implicitly
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                      ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 4355: Warning:  #188-D: enumerated type mixed with another type
+      dmaxferstatus = HAL_DMA_Start_IT(hi2c->hdmarx, (uint32_t)&hi2c->Instance->DR, (uint32_t)hi2c->pBuffPtr, hi2c->XferSize);
+                    ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5848: Warning:  #223-D: function "__HAL_DMA_GET_COUNTER" declared implicitly
+        hi2c->XferCount = (uint16_t)(__HAL_DMA_GET_COUNTER(hi2c->hdmarx));
+                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5860: Warning:  #223-D: function "HAL_DMA_GetState" declared implicitly
+        if (HAL_DMA_GetState(hi2c->hdmarx) != HAL_DMA_STATE_READY)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5860: Error:  #20: identifier "HAL_DMA_STATE_READY" is undefined
+        if (HAL_DMA_GetState(hi2c->hdmarx) != HAL_DMA_STATE_READY)
+                                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5867: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+          if (HAL_DMA_Abort_IT(hi2c->hdmarx) != HAL_OK)
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5876: Warning:  #223-D: function "__HAL_DMA_GET_COUNTER" declared implicitly
+        hi2c->XferCount = (uint16_t)(__HAL_DMA_GET_COUNTER(hi2c->hdmatx));
+                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5888: Warning:  #223-D: function "HAL_DMA_GetState" declared implicitly
+        if (HAL_DMA_GetState(hi2c->hdmatx) != HAL_DMA_STATE_READY)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5888: Error:  #20: identifier "HAL_DMA_STATE_READY" is undefined
+        if (HAL_DMA_GetState(hi2c->hdmatx) != HAL_DMA_STATE_READY)
+                                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 5895: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+          if (HAL_DMA_Abort_IT(hi2c->hdmatx) != HAL_OK)
+              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6098: Error:  #20: identifier "HAL_DMA_STATE_READY" is undefined
+      if (hi2c->hdmatx->State != HAL_DMA_STATE_READY)
+                                 ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6104: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        if (HAL_DMA_Abort_IT(hi2c->hdmatx) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6121: Warning:  #223-D: function "HAL_DMA_Abort_IT" declared implicitly
+        if (HAL_DMA_Abort_IT(hi2c->hdmarx) != HAL_OK)
+            ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6554: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAXferCplt(DMA_HandleTypeDef *hdma)
+                              ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6556: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6556: Error:  #29: expected an expression
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6556: Error:  #18: expected a ")"
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6686: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAError(DMA_HandleTypeDef *hdma)
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6688: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                     ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6688: Error:  #29: expected an expression
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                                        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6688: Error:  #18: expected a ")"
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                                         ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6695: Warning:  #223-D: function "HAL_DMA_GetError" declared implicitly
+    if (HAL_DMA_GetError(hdma) != HAL_DMA_ERROR_FE)
+        ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6695: Error:  #20: identifier "HAL_DMA_ERROR_FE" is undefined
+    if (HAL_DMA_GetError(hdma) != HAL_DMA_ERROR_FE)
+                                  ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6721: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+  static void I2C_DMAAbort(DMA_HandleTypeDef *hdma)
+                           ^
+".\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c", line 6723: Error:  #20: identifier "DMA_HandleTypeDef" is undefined
+    I2C_HandleTypeDef *hi2c = (I2C_HandleTypeDef *)((DMA_HandleTypeDef *)hdma)->Parent; /* Derogation MISRAC2012-Rule-11.5 */
+                                                     ^
+.\.eide\deps\STM32F4xx_DFP\STM32CubeHAL.I2C\stm32f4xx_hal_i2c.c: 33 warnings, 30 errors
+
+[2022-01-25 22:52:12]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol main (referred from entry9a.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-25 22:54:44]	compilation failed at : "c:\Users\13443\source\stm32rt\src\freertos.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\freertos.c", line 21: Error:  #5: cannot open source input file "FreeRTOS.h": No such file or directory
+  #include "FreeRTOS.h"
+                       ^
+.\src\freertos.c: 0 warnings, 1 error
+
+[2022-01-25 22:56:49]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 199: Warning:  #223-D: function "__HAL_PWR_VOLTAGESCALING_CONFIG" declared implicitly
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+    ^
+".\src\main.c", line 199: Error:  #20: identifier "PWR_REGULATOR_VOLTAGE_SCALE2" is undefined
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+                                    ^
+.\src\main.c: 1 warning, 1 error
+".\Libraries\FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c", line 37: Error:  #35: #error directive: This port can only be used when the project options are configured to enable hardware floating point support.
+  	#error This port can only be used when the project options are configured to enable hardware floating point support.
+  	 ^
+.\Libraries\FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c: 0 warnings, 1 error
+
+[2022-01-25 23:01:23]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol SystemCoreClock multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol AHBPrescTable multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol APBPrescTable multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol __asm___18_system_stm32f4xx_c_5d646a67____REV16 multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol __asm___18_system_stm32f4xx_c_5d646a67____REVSH multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol __asm___18_system_stm32f4xx_c_5d646a67____RRX multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol SystemCoreClockUpdate multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol SystemInit multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 8 error messages.
+
+
+[2022-01-25 23:02:05]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol SystemCoreClock multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol AHBPrescTable multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol APBPrescTable multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol __asm___18_system_stm32f4xx_c_5d646a67____REV16 multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol __asm___18_system_stm32f4xx_c_5d646a67____REVSH multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol __asm___18_system_stm32f4xx_c_5d646a67____RRX multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol SystemCoreClockUpdate multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Error: L6200E: Symbol SystemInit multiply defined (by system_stm32f4xx.o and system_stm32f4xx.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 8 error messages.
+
+
+[2022-01-25 23:03:56]	[done]
+	build successfully !
+
+[2022-01-25 23:04:23]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 199: Warning:  #223-D: function "__HAL_PWR_VOLTAGESCALING_CONFIG" declared implicitly
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+    ^
+".\src\main.c", line 199: Error:  #20: identifier "PWR_REGULATOR_VOLTAGE_SCALE2" is undefined
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+                                    ^
+.\src\main.c: 1 warning, 1 error
+
+[2022-01-25 23:09:44]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol __HAL_PWR_VOLTAGESCALING_CONFIG (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-25 23:15:17]	[done]
+	build successfully !
+
+[2022-01-25 23:17:11]	[done]
+	build successfully !
+
+[2022-01-25 23:19:09]	[done]
+	build successfully !
+
+[2022-01-25 23:21:02]	[done]
+	build successfully !
+
+[2022-01-25 23:21:12]	[done]
+	build successfully !
+
+[2022-01-25 23:31:09]	[done]
+	build successfully !
+
+[2022-01-25 23:33:25]	[done]
+	build successfully !
+
+[2022-01-25 23:36:15]	[done]
+	build successfully !
+
+[2022-01-25 23:39:46]	[done]
+	build successfully !
+
+[2022-01-25 23:42:58]	[done]
+	build successfully !
+
+[2022-01-26 00:52:57]	[done]
+	build successfully !
+
+[2022-01-26 01:14:26]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 199: Warning:  #223-D: function "__HAL_PWR_VOLTAGESCALING_CONFIG" declared implicitly
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+    ^
+".\src\main.c", line 199: Error:  #20: identifier "PWR_REGULATOR_VOLTAGE_SCALE2" is undefined
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+                                    ^
+.\src\main.c: 1 warning, 1 error
+
+[2022-01-26 01:16:30]	[done]
+	build successfully !
+
+[2022-01-26 01:23:45]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 199: Warning:  #223-D: function "__HAL_PWR_VOLTAGESCALING_CONFIG" declared implicitly
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+    ^
+".\src\main.c", line 199: Error:  #20: identifier "PWR_REGULATOR_VOLTAGE_SCALE1" is undefined
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+                                    ^
+.\src\main.c: 1 warning, 1 error
+
+[2022-01-26 01:24:12]	[done]
+	build successfully !
+
+[2022-01-26 01:26:11]	[done]
+	build successfully !
+
+[2022-01-26 01:40:59]	[done]
+	build successfully !
+
+[2022-01-26 01:42:22]	[done]
+	build successfully !
+
+[2022-01-26 01:45:53]	[done]
+	build successfully !
+
+[2022-01-26 21:19:24]	[done]
+	build successfully !
+
+[2022-01-26 21:20:12]	[done]
+	build successfully !
+
