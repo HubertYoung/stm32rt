@@ -1979,3 +1979,1681 @@ Finished: 1 information, 0 warning and 1 error messages.
 [2022-01-26 21:20:12]	[done]
 	build successfully !
 
+[2022-01-26 21:38:22]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_config.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.h", line 3: Error:  #5: cannot open source input file "stm32f10x.h": No such file or directory
+  #include "stm32f10x.h"
+                        ^
+.\Libraries\OLED\oled_config.c: 0 warnings, 1 error
+
+[2022-01-26 21:38:33]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 107: Error:  #20: identifier "SPI_InitTypeDef" is undefined
+  	SPI_InitTypeDef  SPI_InitStructure;
+  	^
+".\Libraries\OLED\oled_driver.c", line 108: Error:  #20: identifier "GPIO_InitTypeDef" is undefined
+  	GPIO_InitTypeDef GPIO_InitStructure;
+  	^
+".\Libraries\OLED\oled_driver.c", line 110: Warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+  		RCC_APB1PeriphClockCmd(SPI_RCC_APB1Periph_SPIX, ENABLE);
+  		^
+".\Libraries\OLED\oled_driver.c", line 110: Error:  #20: identifier "RCC_APB1Periph_SPI2" is undefined
+  		RCC_APB1PeriphClockCmd(SPI_RCC_APB1Periph_SPIX, ENABLE);
+  		                       ^
+".\Libraries\OLED\oled_driver.c", line 114: Warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+  	RCC_APB2PeriphClockCmd(SPI_RCC_APB2Periph_GPIOX|RCC_APB2Periph_AFIO,ENABLE);
+  	^
+".\Libraries\OLED\oled_driver.c", line 114: Error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+  	RCC_APB2PeriphClockCmd(SPI_RCC_APB2Periph_GPIOX|RCC_APB2Periph_AFIO,ENABLE);
+  	                       ^
+".\Libraries\OLED\oled_driver.c", line 114: Error:  #20: identifier "RCC_APB2Periph_AFIO" is undefined
+  	RCC_APB2PeriphClockCmd(SPI_RCC_APB2Periph_GPIOX|RCC_APB2Periph_AFIO,ENABLE);
+  	                                                ^
+".\Libraries\OLED\oled_driver.c", line 116: Error:  #20: identifier "GPIO_Pin_12" is undefined
+  	GPIO_InitStructure.GPIO_Pin = SPI_CS_Pin_X;
+  	                              ^
+".\Libraries\OLED\oled_driver.c", line 117: Error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  	                                ^
+".\Libraries\OLED\oled_driver.c", line 118: Error:  #20: identifier "GPIO_Mode_Out_PP" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+  	                               ^
+".\Libraries\OLED\oled_driver.c", line 119: Warning:  #223-D: function "GPIO_Init" declared implicitly
+  	GPIO_Init(SPI_CS_GPIOX, &GPIO_InitStructure);  
+  	^
+".\Libraries\OLED\oled_driver.c", line 120: Warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	OLED_CS_HIGH();
+  	^
+".\Libraries\OLED\oled_driver.c", line 122: Error:  #20: identifier "GPIO_Pin_13" is undefined
+  	GPIO_InitStructure.GPIO_Pin = SPI_HW_ALL_PINS;
+  	                              ^
+".\Libraries\OLED\oled_driver.c", line 122: Error:  #20: identifier "GPIO_Pin_14" is undefined
+  	GPIO_InitStructure.GPIO_Pin = SPI_HW_ALL_PINS;
+  	                              ^
+".\Libraries\OLED\oled_driver.c", line 122: Error:  #20: identifier "GPIO_Pin_15" is undefined
+  	GPIO_InitStructure.GPIO_Pin = SPI_HW_ALL_PINS;
+  	                              ^
+".\Libraries\OLED\oled_driver.c", line 124: Error:  #20: identifier "GPIO_Mode_AF_PP" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+  	                               ^
+".\Libraries\OLED\oled_driver.c", line 128: Error:  #20: identifier "SPI_Direction_2Lines_FullDuplex" is undefined
+  	SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;//SPI_Direction_1Line_Tx; 
+  	                                  ^
+".\Libraries\OLED\oled_driver.c", line 129: Error:  #20: identifier "SPI_Mode_Master" is undefined
+  	SPI_InitStructure.SPI_Mode = SPI_Mode_Master;	 			
+  	                             ^
+".\Libraries\OLED\oled_driver.c", line 130: Error:  #20: identifier "SPI_DataSize_8b" is undefined
+  	SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;	 	
+  	                                 ^
+".\Libraries\OLED\oled_driver.c", line 131: Error:  #20: identifier "SPI_CPOL_Low" is undefined
+  	SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;		 	
+  	                             ^
+".\Libraries\OLED\oled_driver.c", line 132: Error:  #20: identifier "SPI_CPHA_1Edge" is undefined
+  	SPI_InitStructure.SPI_CPHA = SPI_CPHA_1Edge;		
+  	                             ^
+".\Libraries\OLED\oled_driver.c", line 133: Error:  #20: identifier "SPI_NSS_Soft" is undefined
+  	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;		  
+  	                            ^
+".\Libraries\OLED\oled_driver.c", line 134: Error:  #20: identifier "SPI_BaudRatePrescaler_2" is undefined
+  	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_2;
+  	                                          ^
+".\Libraries\OLED\oled_driver.c", line 135: Error:  #20: identifier "SPI_FirstBit_MSB" is undefined
+  	SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;  			
+  	                                 ^
+".\Libraries\OLED\oled_driver.c", line 138: Warning:  #223-D: function "SPI_Init" declared implicitly
+  	SPI_Init(SPIX, &SPI_InitStructure);  
+  	^
+".\Libraries\OLED\oled_driver.c", line 139: Warning:  #223-D: function "SPI_Cmd" declared implicitly
+  	SPI_Cmd(SPIX, ENABLE);
+  	^
+".\Libraries\OLED\oled_driver.c", line 141: Error:  #20: identifier "GPIO_Pin_10" is undefined
+  	GPIO_InitStructure.GPIO_Pin = SPI_RES_PIN;
+  	                              ^
+".\Libraries\OLED\oled_driver.c", line 145: Error:  #20: identifier "GPIO_Pin_11" is undefined
+  	GPIO_InitStructure.GPIO_Pin = SPI_DC_PIN;
+  	                              ^
+".\Libraries\OLED\oled_driver.c", line 153: Warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  	OLED_RESET_LOW();
+  	^
+".\Libraries\OLED\oled_driver.c", line 161: Warning:  #223-D: function "SPI_I2S_GetFlagStatus" declared implicitly
+  	while (SPI_I2S_GetFlagStatus(SPIX, SPI_I2S_FLAG_TXE) == RESET ){}; //妫鏌ユ寚瀹氱殑SPI鏍囧織浣嶈?缃?笌鍚?鍙戦佺紦瀛樼┖鏍囧織浣?  
+  	       ^
+".\Libraries\OLED\oled_driver.c", line 161: Error:  #20: identifier "SPI_I2S_FLAG_TXE" is undefined
+  	while (SPI_I2S_GetFlagStatus(SPIX, SPI_I2S_FLAG_TXE) == RESET ){}; //妫鏌ユ寚瀹氱殑SPI鏍囧織浣嶈?缃?笌鍚?鍙戦佺紦瀛樼┖鏍囧織浣?  
+  	                                   ^
+".\Libraries\OLED\oled_driver.c", line 162: Warning:  #223-D: function "SPI_I2S_SendData" declared implicitly
+  		SPI_I2S_SendData(SPIX, dat); //閫氳繃澶栬?SPIx鍙戦佷竴涓?暟鎹?  		^
+".\Libraries\OLED\oled_driver.c", line 163: Warning:  #223-D: function "SPI_I2S_GetFlagStatus" declared implicitly
+  	while (SPI_I2S_GetFlagStatus(SPIX, SPI_I2S_FLAG_RXNE) == RESET){};//妫鏌ユ寚瀹氱殑SPI鏍囧織浣嶈?缃?笌鍚?鎺ュ彈缂撳瓨闈炵┖鏍囧織浣? 						    
+  	       ^
+".\Libraries\OLED\oled_driver.c", line 163: Error:  #20: identifier "SPI_I2S_FLAG_RXNE" is undefined
+  	while (SPI_I2S_GetFlagStatus(SPIX, SPI_I2S_FLAG_RXNE) == RESET){};//妫鏌ユ寚瀹氱殑SPI鏍囧織浣嶈?缃?笌鍚?鎺ュ彈缂撳瓨闈炵┖鏍囧織浣? 						    
+  	                                   ^
+".\Libraries\OLED\oled_driver.c", line 164: Warning:  #223-D: function "SPI_I2S_ReceiveData" declared implicitly
+  	  SPI_I2S_ReceiveData(SPIX); //杩斿洖閫氳繃SPIx鏈杩戞帴鏀剁殑鏁版嵁	
+  	  ^
+".\Libraries\OLED\oled_driver.c", line 170: Warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  	OLED_CMD_MODE();
+  	^
+".\Libraries\OLED\oled_driver.c", line 170: Error:  #20: identifier "GPIO_Pin_11" is undefined
+  	OLED_CMD_MODE();
+  	^
+".\Libraries\OLED\oled_driver.c", line 171: Error:  #20: identifier "GPIO_Pin_12" is undefined
+  	OLED_CS_LOW();
+  	^
+".\Libraries\OLED\oled_driver.c", line 173: Warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	OLED_CS_HIGH();
+  	^
+".\Libraries\OLED\oled_driver.c", line 179: Warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	OLED_DATA_MODE();
+  	^
+".\Libraries\OLED\oled_driver.c", line 179: Error:  #20: identifier "GPIO_Pin_11" is undefined
+  	OLED_DATA_MODE();
+  	^
+".\Libraries\OLED\oled_driver.c", line 180: Warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  	OLED_CS_LOW();
+  	^
+".\Libraries\OLED\oled_driver.c", line 180: Error:  #20: identifier "GPIO_Pin_12" is undefined
+  	OLED_CS_LOW();
+  	^
+".\Libraries\OLED\oled_driver.c", line 188: Error:  #20: identifier "u8" is undefined
+  	u8 i,j;
+  	^
+.\Libraries\OLED\oled_driver.c: 15 warnings, 29 errors
+
+[2022-01-26 21:39:07]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 7: Error:  #20: identifier "I2C_InitTypeDef" is undefined
+  	I2C_InitTypeDef  I2C_InitStructure;
+  	^
+".\Libraries\OLED\oled_driver.c", line 8: Error:  #20: identifier "GPIO_InitTypeDef" is undefined
+  	GPIO_InitTypeDef  GPIO_InitStructure; 
+  	^
+".\Libraries\OLED\oled_driver.c", line 10: Warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+  	RCC_APB1PeriphClockCmd(IIC_RCC_APB1Periph_I2CX,ENABLE);
+  	^
+".\Libraries\OLED\oled_driver.c", line 10: Error:  #20: identifier "RCC_APB1Periph_I2C1" is undefined
+  	RCC_APB1PeriphClockCmd(IIC_RCC_APB1Periph_I2CX,ENABLE);
+  	                       ^
+".\Libraries\OLED\oled_driver.c", line 11: Warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+  	RCC_APB2PeriphClockCmd(IIC_RCC_APB2Periph_GPIOX,ENABLE);
+  	^
+".\Libraries\OLED\oled_driver.c", line 11: Error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+  	RCC_APB2PeriphClockCmd(IIC_RCC_APB2Periph_GPIOX,ENABLE);
+  	                       ^
+".\Libraries\OLED\oled_driver.c", line 13: Error:  #20: identifier "GPIO_Pin_6" is undefined
+  	GPIO_InitStructure.GPIO_Pin =  IIC_SCL_Pin_X | IIC_SDA_Pin_X;
+  	                               ^
+".\Libraries\OLED\oled_driver.c", line 13: Error:  #20: identifier "GPIO_Pin_7" is undefined
+  	GPIO_InitStructure.GPIO_Pin =  IIC_SCL_Pin_X | IIC_SDA_Pin_X;
+  	                                               ^
+".\Libraries\OLED\oled_driver.c", line 14: Error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  	                                ^
+".\Libraries\OLED\oled_driver.c", line 15: Error:  #20: identifier "GPIO_Mode_AF_OD" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;//I2C蹇呴』寮婕忚緭鍑?  	                               ^
+".\Libraries\OLED\oled_driver.c", line 16: Warning:  #223-D: function "GPIO_Init" declared implicitly
+  	GPIO_Init(IIC_GPIOX, &GPIO_InitStructure);
+  	^
+".\Libraries\OLED\oled_driver.c", line 18: Warning:  #223-D: function "I2C_DeInit" declared implicitly
+  	I2C_DeInit(I2CX);
+  	^
+".\Libraries\OLED\oled_driver.c", line 19: Error:  #20: identifier "I2C_Mode_I2C" is undefined
+  	I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;
+  	                             ^
+".\Libraries\OLED\oled_driver.c", line 20: Error:  #20: identifier "I2C_DutyCycle_2" is undefined
+  	I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;
+  	                                  ^
+".\Libraries\OLED\oled_driver.c", line 22: Error:  #20: identifier "I2C_Ack_Enable" is undefined
+  	I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;
+  	                            ^
+".\Libraries\OLED\oled_driver.c", line 23: Error:  #20: identifier "I2C_AcknowledgedAddress_7bit" is undefined
+  	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+  	                                            ^
+".\Libraries\OLED\oled_driver.c", line 26: Warning:  #223-D: function "I2C_Cmd" declared implicitly
+  	I2C_Cmd(I2CX, ENABLE);
+  	^
+".\Libraries\OLED\oled_driver.c", line 27: Warning:  #223-D: function "I2C_Init" declared implicitly
+  	I2C_Init(I2CX, &I2C_InitStructure);
+  	^
+".\Libraries\OLED\oled_driver.c", line 39: Warning:  #223-D: function "I2C_GetFlagStatus" declared implicitly
+    while(I2C_GetFlagStatus(I2CX, I2C_FLAG_BUSY));
+          ^
+".\Libraries\OLED\oled_driver.c", line 39: Error:  #20: identifier "I2C_FLAG_BUSY" is undefined
+    while(I2C_GetFlagStatus(I2CX, I2C_FLAG_BUSY));
+                                  ^
+".\Libraries\OLED\oled_driver.c", line 41: Warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
+  	I2C_GenerateSTART(I2CX, ENABLE);//寮鍚疘2C1
+  	^
+".\Libraries\OLED\oled_driver.c", line 42: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT));/*EV5,涓绘ā寮?/
+  	       ^
+".\Libraries\OLED\oled_driver.c", line 42: Error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
+  	while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT));/*EV5,涓绘ā寮?/
+  	                            ^
+".\Libraries\OLED\oled_driver.c", line 44: Warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
+  	I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter);//鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  	^
+".\Libraries\OLED\oled_driver.c", line 44: Error:  #20: identifier "I2C_Direction_Transmitter" is undefined
+  	I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter);//鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  	                                        ^
+".\Libraries\OLED\oled_driver.c", line 45: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
+  	       ^
+".\Libraries\OLED\oled_driver.c", line 45: Error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
+  	while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
+  	                            ^
+".\Libraries\OLED\oled_driver.c", line 47: Warning:  #223-D: function "I2C_SendData" declared implicitly
+  	I2C_SendData(I2CX, addr);//瀵勫瓨鍣ㄥ湴鍧
+  	^
+".\Libraries\OLED\oled_driver.c", line 48: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  	        ^
+".\Libraries\OLED\oled_driver.c", line 48: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  	                             ^
+".\Libraries\OLED\oled_driver.c", line 51: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  	        ^
+".\Libraries\OLED\oled_driver.c", line 51: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  	                             ^
+".\Libraries\OLED\oled_driver.c", line 53: Warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
+  	I2C_GenerateSTOP(I2CX, ENABLE);//鍏抽棴I2C1鎬荤嚎
+  	^
+".\Libraries\OLED\oled_driver.c", line 74: Warning:  #223-D: function "I2C_GetFlagStatus" declared implicitly
+  		while(I2C_GetFlagStatus(I2CX, I2C_FLAG_BUSY));	
+  		      ^
+".\Libraries\OLED\oled_driver.c", line 74: Error:  #20: identifier "I2C_FLAG_BUSY" is undefined
+  		while(I2C_GetFlagStatus(I2CX, I2C_FLAG_BUSY));	
+  		                              ^
+".\Libraries\OLED\oled_driver.c", line 75: Warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
+  		I2C_GenerateSTART(I2C1, ENABLE);//寮鍚疘2C1
+  		^
+".\Libraries\OLED\oled_driver.c", line 76: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  		while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT));/*EV5,涓绘ā寮?/
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 76: Error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
+  		while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT));/*EV5,涓绘ā寮?/
+  		                            ^
+".\Libraries\OLED\oled_driver.c", line 77: Warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
+  		I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter);//鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  		^
+".\Libraries\OLED\oled_driver.c", line 77: Error:  #20: identifier "I2C_Direction_Transmitter" is undefined
+  		I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter);//鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  		                                        ^
+".\Libraries\OLED\oled_driver.c", line 78: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  		while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 78: Error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
+  		while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
+  		                            ^
+".\Libraries\OLED\oled_driver.c", line 79: Warning:  #223-D: function "I2C_SendData" declared implicitly
+  		I2C_SendData(I2CX, 0x40);//瀵勫瓨鍣ㄥ湴鍧
+  		^
+".\Libraries\OLED\oled_driver.c", line 80: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  		while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));	
+  		        ^
+".\Libraries\OLED\oled_driver.c", line 80: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  		while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));	
+  		                             ^
+".\Libraries\OLED\oled_driver.c", line 84: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  			while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  			        ^
+".\Libraries\OLED\oled_driver.c", line 84: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  			while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  			                             ^
+".\Libraries\OLED\oled_driver.c", line 86: Warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
+  		I2C_GenerateSTOP(I2CX, ENABLE);//鍏抽棴I2C1鎬荤嚎
+  		^
+.\Libraries\OLED\oled_driver.c: 24 warnings, 24 errors
+
+[2022-01-26 21:40:09]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 10: Warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+  	RCC_APB1PeriphClockCmd(IIC_RCC_APB1Periph_I2CX,ENABLE);
+  	^
+".\Libraries\OLED\oled_driver.c", line 10: Error:  #20: identifier "RCC_APB1Periph_I2C1" is undefined
+  	RCC_APB1PeriphClockCmd(IIC_RCC_APB1Periph_I2CX,ENABLE);
+  	                       ^
+".\Libraries\OLED\oled_driver.c", line 11: Warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+  	RCC_APB2PeriphClockCmd(IIC_RCC_APB2Periph_GPIOX,ENABLE);
+  	^
+".\Libraries\OLED\oled_driver.c", line 11: Error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+  	RCC_APB2PeriphClockCmd(IIC_RCC_APB2Periph_GPIOX,ENABLE);
+  	                       ^
+".\Libraries\OLED\oled_driver.c", line 13: Error:  #136: struct "<unnamed>" has no field "GPIO_Pin"
+  	GPIO_InitStructure.GPIO_Pin =  IIC_SCL_Pin_X | IIC_SDA_Pin_X;
+  	                   ^
+".\Libraries\OLED\oled_driver.c", line 13: Error:  #20: identifier "GPIO_Pin_6" is undefined
+  	GPIO_InitStructure.GPIO_Pin =  IIC_SCL_Pin_X | IIC_SDA_Pin_X;
+  	                               ^
+".\Libraries\OLED\oled_driver.c", line 13: Error:  #20: identifier "GPIO_Pin_7" is undefined
+  	GPIO_InitStructure.GPIO_Pin =  IIC_SCL_Pin_X | IIC_SDA_Pin_X;
+  	                                               ^
+".\Libraries\OLED\oled_driver.c", line 14: Error:  #136: struct "<unnamed>" has no field "GPIO_Speed"
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  	                   ^
+".\Libraries\OLED\oled_driver.c", line 14: Error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  	                                ^
+".\Libraries\OLED\oled_driver.c", line 15: Error:  #136: struct "<unnamed>" has no field "GPIO_Mode"
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;//I2C蹇呴』寮婕忚緭鍑?  	                   ^
+".\Libraries\OLED\oled_driver.c", line 15: Error:  #20: identifier "GPIO_Mode_AF_OD" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;//I2C蹇呴』寮婕忚緭鍑?  	                               ^
+".\Libraries\OLED\oled_driver.c", line 16: Warning:  #223-D: function "GPIO_Init" declared implicitly
+  	GPIO_Init(IIC_GPIOX, &GPIO_InitStructure);
+  	^
+".\Libraries\OLED\oled_driver.c", line 18: Warning:  #223-D: function "I2C_DeInit" declared implicitly
+  	I2C_DeInit(I2CX);
+  	^
+".\Libraries\OLED\oled_driver.c", line 19: Error:  #136: struct "<unnamed>" has no field "I2C_Mode"
+  	I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;
+  	                  ^
+".\Libraries\OLED\oled_driver.c", line 19: Error:  #20: identifier "I2C_Mode_I2C" is undefined
+  	I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;
+  	                             ^
+".\Libraries\OLED\oled_driver.c", line 20: Error:  #136: struct "<unnamed>" has no field "I2C_DutyCycle"
+  	I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;
+  	                  ^
+".\Libraries\OLED\oled_driver.c", line 20: Error:  #20: identifier "I2C_DutyCycle_2" is undefined
+  	I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;
+  	                                  ^
+".\Libraries\OLED\oled_driver.c", line 21: Error:  #136: struct "<unnamed>" has no field "I2C_OwnAddress1"
+  	I2C_InitStructure.I2C_OwnAddress1 = 0x30;//涓绘満鐨処2C鍦板潃,闅忎究鍐?  	                  ^
+".\Libraries\OLED\oled_driver.c", line 22: Error:  #136: struct "<unnamed>" has no field "I2C_Ack"
+  	I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;
+  	                  ^
+".\Libraries\OLED\oled_driver.c", line 22: Error:  #20: identifier "I2C_Ack_Enable" is undefined
+  	I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;
+  	                            ^
+".\Libraries\OLED\oled_driver.c", line 23: Error:  #136: struct "<unnamed>" has no field "I2C_AcknowledgedAddress"
+  	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+  	                  ^
+".\Libraries\OLED\oled_driver.c", line 23: Error:  #20: identifier "I2C_AcknowledgedAddress_7bit" is undefined
+  	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+  	                                            ^
+".\Libraries\OLED\oled_driver.c", line 24: Error:  #136: struct "<unnamed>" has no field "I2C_ClockSpeed"
+  	I2C_InitStructure.I2C_ClockSpeed = 1320000;
+  	                  ^
+".\Libraries\OLED\oled_driver.c", line 26: Warning:  #223-D: function "I2C_Cmd" declared implicitly
+  	I2C_Cmd(I2CX, ENABLE);
+  	^
+".\Libraries\OLED\oled_driver.c", line 27: Warning:  #223-D: function "I2C_Init" declared implicitly
+  	I2C_Init(I2CX, &I2C_InitStructure);
+  	^
+".\Libraries\OLED\oled_driver.c", line 39: Warning:  #223-D: function "I2C_GetFlagStatus" declared implicitly
+    while(I2C_GetFlagStatus(I2CX, I2C_FLAG_BUSY));
+          ^
+".\Libraries\OLED\oled_driver.c", line 41: Warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
+  	I2C_GenerateSTART(I2CX, ENABLE);//寮鍚疘2C1
+  	^
+".\Libraries\OLED\oled_driver.c", line 42: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT));/*EV5,涓绘ā寮?/
+  	       ^
+".\Libraries\OLED\oled_driver.c", line 42: Error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
+  	while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT));/*EV5,涓绘ā寮?/
+  	                            ^
+".\Libraries\OLED\oled_driver.c", line 44: Warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
+  	I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter);//鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  	^
+".\Libraries\OLED\oled_driver.c", line 44: Error:  #20: identifier "I2C_Direction_Transmitter" is undefined
+  	I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter);//鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  	                                        ^
+".\Libraries\OLED\oled_driver.c", line 45: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
+  	       ^
+".\Libraries\OLED\oled_driver.c", line 45: Error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
+  	while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
+  	                            ^
+".\Libraries\OLED\oled_driver.c", line 47: Warning:  #223-D: function "I2C_SendData" declared implicitly
+  	I2C_SendData(I2CX, addr);//瀵勫瓨鍣ㄥ湴鍧
+  	^
+".\Libraries\OLED\oled_driver.c", line 48: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  	        ^
+".\Libraries\OLED\oled_driver.c", line 48: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  	                             ^
+".\Libraries\OLED\oled_driver.c", line 51: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  	        ^
+".\Libraries\OLED\oled_driver.c", line 51: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  	                             ^
+".\Libraries\OLED\oled_driver.c", line 53: Warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
+  	I2C_GenerateSTOP(I2CX, ENABLE);//鍏抽棴I2C1鎬荤嚎
+  	^
+".\Libraries\OLED\oled_driver.c", line 74: Warning:  #223-D: function "I2C_GetFlagStatus" declared implicitly
+  		while(I2C_GetFlagStatus(I2CX, I2C_FLAG_BUSY));	
+  		      ^
+".\Libraries\OLED\oled_driver.c", line 75: Warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
+  		I2C_GenerateSTART(I2C1, ENABLE);//寮鍚疘2C1
+  		^
+".\Libraries\OLED\oled_driver.c", line 76: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  		while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT));/*EV5,涓绘ā寮?/
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 76: Error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
+  		while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT));/*EV5,涓绘ā寮?/
+  		                            ^
+".\Libraries\OLED\oled_driver.c", line 77: Warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
+  		I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter);//鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  		^
+".\Libraries\OLED\oled_driver.c", line 77: Error:  #20: identifier "I2C_Direction_Transmitter" is undefined
+  		I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter);//鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  		                                        ^
+".\Libraries\OLED\oled_driver.c", line 78: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  		while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 78: Error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
+  		while(!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
+  		                            ^
+".\Libraries\OLED\oled_driver.c", line 79: Warning:  #223-D: function "I2C_SendData" declared implicitly
+  		I2C_SendData(I2CX, 0x40);//瀵勫瓨鍣ㄥ湴鍧
+  		^
+".\Libraries\OLED\oled_driver.c", line 80: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  		while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));	
+  		        ^
+".\Libraries\OLED\oled_driver.c", line 80: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  		while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));	
+  		                             ^
+".\Libraries\OLED\oled_driver.c", line 84: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  			while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  			        ^
+".\Libraries\OLED\oled_driver.c", line 84: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  			while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED));
+  			                             ^
+".\Libraries\OLED\oled_driver.c", line 86: Warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
+  		I2C_GenerateSTOP(I2CX, ENABLE);//鍏抽棴I2C1鎬荤嚎
+  		^
+.\Libraries\OLED\oled_driver.c: 24 warnings, 29 errors
+
+[2022-01-26 21:58:58]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 287: Error:  #65: expected a ";"
+  }
+  ^
+.\src\main.c: 0 warnings, 1 error
+".\Libraries\OLED\oled_driver.c", line 28: Warning:  #223-D: function "Error_Handler" declared implicitly
+  		Error_Handler();
+  		^
+".\Libraries\OLED\oled_driver.c", line 50: Error:  #20: identifier "size" is undefined
+  	HAL_I2C_Mem_Write(&hi2c1, OLED_ADDRESS, addr, 1, data, size, 100);
+  	                                                       ^
+".\Libraries\OLED\oled_driver.c", line 50: Error:  #167: argument of type "uint8_t" is incompatible with parameter of type "uint8_t *"
+  	HAL_I2C_Mem_Write(&hi2c1, OLED_ADDRESS, addr, 1, data, size, 100);
+  	                                                 ^
+".\Libraries\OLED\oled_driver.c", line 66: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 67: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 3 warnings, 2 errors
+
+[2022-01-26 21:59:13]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 28: Warning:  #223-D: function "Error_Handler" declared implicitly
+  		Error_Handler();
+  		^
+".\Libraries\OLED\oled_driver.c", line 50: Error:  #20: identifier "size" is undefined
+  	HAL_I2C_Mem_Write(&hi2c1, OLED_ADDRESS, addr, 1, data, size, 100);
+  	                                                       ^
+".\Libraries\OLED\oled_driver.c", line 50: Error:  #167: argument of type "uint8_t" is incompatible with parameter of type "uint8_t *"
+  	HAL_I2C_Mem_Write(&hi2c1, OLED_ADDRESS, addr, 1, data, size, 100);
+  	                                                 ^
+".\Libraries\OLED\oled_driver.c", line 66: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 67: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 3 warnings, 2 errors
+
+[2022-01-26 22:01:46]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 28: Warning:  #223-D: function "Error_Handler" declared implicitly
+  		Error_Handler();
+  		^
+".\Libraries\OLED\oled_driver.c", line 43: Error:  #147-D: declaration is incompatible with "void I2C_WriteByte(uint8_t, uint8_t)" (declared at line 65 of ".\Libraries\OLED\oled_driver.h")
+  void I2C_WriteByte(uint8_t addr, uint8_t* data)
+       ^
+".\Libraries\OLED\oled_driver.c", line 56: Error:  #167: argument of type "unsigned char" is incompatible with parameter of type "uint8_t *"
+  	I2C_WriteByte(0x00, cmd);
+  	                    ^
+".\Libraries\OLED\oled_driver.c", line 61: Error:  #167: argument of type "unsigned char" is incompatible with parameter of type "uint8_t *"
+  	I2C_WriteByte(0x40, dat);
+  	                    ^
+".\Libraries\OLED\oled_driver.c", line 66: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 67: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 3 warnings, 3 errors
+
+[2022-01-26 22:13:58]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 70: Error:  #167: argument of type "unsigned char" is incompatible with parameter of type "uint8_t *"
+  	HAL_I2C_Mem_Write(&hi2c1, OLED_ADDRESS, 0x40, 1, dat, sizeof(dat), 100);
+  	                                                 ^
+".\Libraries\OLED\oled_driver.c", line 76: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 77: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 2 warnings, 1 error
+
+[2022-01-26 22:14:49]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 64: Error:  #147-D: declaration is incompatible with "void WriteDat(unsigned char)" (declared at line 69 of ".\Libraries\OLED\oled_driver.h")
+  void WriteDat(uint8_t *dat) //鍐欐暟鎹?       ^
+".\Libraries\OLED\oled_driver.c", line 76: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 77: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 2 warnings, 1 error
+
+[2022-01-26 22:15:12]	compilation failed at : "c:\Users\13443\source\stm32rt\src\example\test.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\example\test.c", line 3: Error:  #5: cannot open source input file "delay.h": No such file or directory
+  #include "delay.h"
+                    ^
+.\src\example\test.c: 0 warnings, 1 error
+
+[2022-01-26 22:48:39]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 121: Warning:  #223-D: function "LED_Init" declared implicitly
+    LED_Init();						//鍒濆?鍖朙ED	
+    ^
+".\src\main.c", line 130: Warning:  #223-D: function "MX_USART1_UART_Init" declared implicitly
+    MX_USART1_UART_Init();
+    ^
+".\src\main.c", line 434: Error:  #20: identifier "KEY_LEFT_Pin" is undefined
+    GPIO_InitStruct.Pin = KEY_LEFT_Pin|KEY_UP_Pin|KEY_RIGHT_Pin|KEY_DOWN_Pin;
+                          ^
+".\src\main.c", line 434: Error:  #20: identifier "KEY_UP_Pin" is undefined
+    GPIO_InitStruct.Pin = KEY_LEFT_Pin|KEY_UP_Pin|KEY_RIGHT_Pin|KEY_DOWN_Pin;
+                                       ^
+".\src\main.c", line 434: Error:  #20: identifier "KEY_RIGHT_Pin" is undefined
+    GPIO_InitStruct.Pin = KEY_LEFT_Pin|KEY_UP_Pin|KEY_RIGHT_Pin|KEY_DOWN_Pin;
+                                                  ^
+".\src\main.c", line 434: Error:  #20: identifier "KEY_DOWN_Pin" is undefined
+    GPIO_InitStruct.Pin = KEY_LEFT_Pin|KEY_UP_Pin|KEY_RIGHT_Pin|KEY_DOWN_Pin;
+                                                                ^
+".\src\main.c", line 477: Error:  #20: identifier "SYS_LED_GPIO_Port" is undefined
+      HAL_GPIO_TogglePin(SYS_LED_GPIO_Port, SYS_LED_Pin);
+                         ^
+".\src\main.c", line 477: Error:  #20: identifier "SYS_LED_Pin" is undefined
+      HAL_GPIO_TogglePin(SYS_LED_GPIO_Port, SYS_LED_Pin);
+                                            ^
+.\src\main.c: 2 warnings, 6 errors
+
+[2022-01-26 22:50:22]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 121: Warning:  #223-D: function "LED_Init" declared implicitly
+    LED_Init();						//鍒濆?鍖朙ED	
+    ^
+".\src\main.c", line 126: Warning:  #223-D: function "MX_GPIO_Init" declared implicitly
+    MX_GPIO_Init();
+    ^
+".\src\main.c", line 131: Warning:  #223-D: function "MX_USART1_UART_Init" declared implicitly
+    MX_USART1_UART_Init();
+    ^
+".\src\main.c", line 456: Error:  #20: identifier "SYS_LED_GPIO_Port" is undefined
+      HAL_GPIO_TogglePin(SYS_LED_GPIO_Port, SYS_LED_Pin);
+                         ^
+".\src\main.c", line 456: Error:  #20: identifier "SYS_LED_Pin" is undefined
+      HAL_GPIO_TogglePin(SYS_LED_GPIO_Port, SYS_LED_Pin);
+                                            ^
+.\src\main.c: 3 warnings, 2 errors
+
+[2022-01-26 22:52:31]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol HAL_TIM_Base_MspInit multiply defined (by stm32f4xx_hal_msp.o and timer.o).
+Error: L6200E: Symbol HAL_TIM_PeriodElapsedCallback multiply defined (by main.o and timer.o).
+Error: L6200E: Symbol HAL_UART_MspInit multiply defined (by stm32f4xx_hal_msp.o and usart.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 3 error messages.
+
+
+[2022-01-26 22:53:14]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol HAL_UART_MspInit multiply defined (by stm32f4xx_hal_msp.o and usart.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-01-26 22:55:01]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol HAL_UART_MspInit multiply defined (by stm32f4xx_hal_msp.o and usart.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-01-26 22:56:46]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol MX_GPIO_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-26 22:57:01]	[done]
+	build successfully !
+
+[2022-01-26 22:57:46]	[done]
+	build successfully !
+
+[2022-01-26 23:00:10]	[done]
+	build successfully !
+
+[2022-01-26 23:00:26]	[done]
+	build successfully !
+
+[2022-01-26 23:06:41]	[done]
+	build successfully !
+
+[2022-01-26 23:07:42]	[done]
+	build successfully !
+
+[2022-01-26 23:13:38]	[done]
+	build successfully !
+
+[2022-01-26 23:14:01]	[done]
+	build successfully !
+
+[2022-01-26 23:14:23]	[done]
+	build successfully !
+
+[2022-01-26 23:15:43]	[done]
+	build successfully !
+
+[2022-01-26 23:18:21]	[done]
+	build successfully !
+
+[2022-01-26 23:24:48]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 473: Warning:  #870-D: invalid multibyte character sequence
+  			printf("\r\n鎮ㄥ彂閫佺殑娑堟伅涓?\r\n");
+  			                      ^
+".\src\main.c", line 489: Warning:  #870-D: invalid multibyte character sequence
+  				printf("璇疯緭鍏ユ暟鎹?浠ュ洖杞﹂敭缁撴潫\r\n");
+  				               ^
+".\src\main.c", line 491: Error:  #20: identifier "LED0" is undefined
+  				LED0 = !LED0; //闂?儊LED,鎻愮ず绯荤粺姝ｅ湪杩愯?.
+  				^
+.\src\main.c: 2 warnings, 1 error
+
+[2022-01-26 23:25:46]	[done]
+	build successfully !
+
+[2022-01-26 23:34:48]	[done]
+	build successfully !
+
+[2022-01-26 23:36:40]	[done]
+	build successfully !
+
+[2022-01-26 23:43:18]	[done]
+	build successfully !
+
+[2022-01-26 23:57:44]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 10: Error:  #20: identifier "SSD1306_I2C_ADDR" is undefined
+  	if (HAL_I2C_IsDeviceReady(&SSD1306_I2C_PORT, SSD1306_I2C_ADDR, 5, 1000) != HAL_OK)
+  	                                             ^
+".\Libraries\OLED\oled_driver.c", line 12: Error:  #20: identifier "SSD1306" is undefined
+  		SSD1306.Initialized = 0;
+  		^
+".\Libraries\OLED\oled_driver.c", line 14: Error:  #118: a void function may not return a value
+  		return 0;
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 47: Error:  #20: identifier "hi2c1" is undefined
+  	HAL_I2C_Mem_Write(&hi2c1, OLED_ADDRESS, 0x00, 1, &cmd, 1, 10);
+  	                   ^
+".\Libraries\OLED\oled_driver.c", line 57: Error:  #20: identifier "hi2c1" is undefined
+  	HAL_I2C_Mem_Write(&hi2c1, OLED_ADDRESS, 0x40, 1, dat, sizeof(dat), 100);
+  	                   ^
+".\Libraries\OLED\oled_driver.c", line 63: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 64: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 2 warnings, 5 errors
+
+[2022-01-26 23:57:52]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 10: Error:  #20: identifier "SSD1306_I2C_ADDR" is undefined
+  	if (HAL_I2C_IsDeviceReady(&SSD1306_I2C_PORT, SSD1306_I2C_ADDR, 5, 1000) != HAL_OK)
+  	                                             ^
+".\Libraries\OLED\oled_driver.c", line 12: Error:  #20: identifier "SSD1306" is undefined
+  		SSD1306.Initialized = 0;
+  		^
+".\Libraries\OLED\oled_driver.c", line 14: Error:  #118: a void function may not return a value
+  		return 0;
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 63: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 64: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 2 warnings, 3 errors
+
+[2022-01-26 23:58:25]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 10: Error:  #20: identifier "SSD1306_I2C_ADDR" is undefined
+  	if (HAL_I2C_IsDeviceReady(&SSD1306_I2C_PORT, SSD1306_I2C_ADDR, 5, 1000) != HAL_OK)
+  	                                             ^
+".\Libraries\OLED\oled_driver.c", line 12: Error:  #20: identifier "SSD1306" is undefined
+  		SSD1306.Initialized = 0;
+  		^
+".\Libraries\OLED\oled_driver.c", line 14: Error:  #118: a void function may not return a value
+  		return 0;
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 63: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 64: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 2 warnings, 3 errors
+
+[2022-01-26 23:59:06]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 10: Error:  #20: identifier "SSD1306_I2C_ADDR" is undefined
+  	if (HAL_I2C_IsDeviceReady(&SSD1306_I2C_PORT, SSD1306_I2C_ADDR, 5, 1000) != HAL_OK)
+  	                                             ^
+".\Libraries\OLED\oled_driver.c", line 12: Error:  #20: identifier "SSD1306" is undefined
+  		SSD1306.Initialized = 0;
+  		^
+".\Libraries\OLED\oled_driver.c", line 14: Error:  #118: a void function may not return a value
+  		return 0;
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 63: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 64: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 2 warnings, 3 errors
+
+[2022-01-26 23:59:56]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 10: Error:  #20: identifier "SSD1306_I2C_ADDR" is undefined
+  	if (HAL_I2C_IsDeviceReady(&SSD1306_I2C_PORT, SSD1306_I2C_ADDR, 5, 1000) != HAL_OK)
+  	                                             ^
+".\Libraries\OLED\oled_driver.c", line 12: Error:  #20: identifier "SSD1306" is undefined
+  		SSD1306.Initialized = 0;
+  		^
+".\Libraries\OLED\oled_driver.c", line 14: Error:  #118: a void function may not return a value
+  		return 0;
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 63: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 64: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 2 warnings, 3 errors
+
+[2022-01-27 00:02:13]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_driver.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_driver.c", line 10: Error:  #20: identifier "SSD1306_I2C_ADDR" is undefined
+  	if (HAL_I2C_IsDeviceReady(&SSD1306_I2C_PORT, SSD1306_I2C_ADDR, 5, 1000) != HAL_OK)
+  	                                             ^
+".\Libraries\OLED\oled_driver.c", line 12: Error:  #20: identifier "SSD1306" is undefined
+  		SSD1306.Initialized = 0;
+  		^
+".\Libraries\OLED\oled_driver.c", line 14: Error:  #118: a void function may not return a value
+  		return 0;
+  		       ^
+".\Libraries\OLED\oled_driver.c", line 63: Warning:  #177-D: variable "n" was declared but never referenced
+  	unsigned int n;
+  	             ^
+".\Libraries\OLED\oled_driver.c", line 64: Warning:  #550-D: variable "p" was set but never used
+  	unsigned char *p;
+  	               ^
+.\Libraries\OLED\oled_driver.c: 2 warnings, 3 errors
+
+[2022-01-27 00:18:02]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\OLED\oled_config.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\OLED\oled_config.c", line 13: Error:  #165: too few arguments in function call
+  	I2C_Configuration();
+  	                  ^
+.\Libraries\OLED\oled_config.c: 0 warnings, 1 error
+
+[2022-01-27 00:18:24]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 84: Error:  #114: function "MX_I2C_Init" was referenced but not defined
+  static void MX_I2C_Init(void);
+              ^
+.\src\main.c: 0 warnings, 1 error
+
+[2022-01-27 00:18:35]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol hi2c1 multiply defined (by oled_driver.o and oled_config.o).
+Error: L6200E: Symbol hi2c1 multiply defined (by oled_draw_ex_example.o and oled_config.o).
+Error: L6200E: Symbol hi2c1 multiply defined (by test.o and oled_config.o).
+Error: L6200E: Symbol hi2c1 multiply defined (by main.o and oled_config.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 4 error messages.
+
+
+[2022-01-27 00:19:36]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol hi2c1 multiply defined (by oled_driver.o and oled_config.o).
+Error: L6200E: Symbol hi2c1 multiply defined (by oled_draw_ex_example.o and oled_config.o).
+Error: L6200E: Symbol hi2c1 multiply defined (by test.o and oled_config.o).
+Error: L6200E: Symbol hi2c1 multiply defined (by main.o and oled_config.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 4 error messages.
+
+
+[2022-01-27 00:21:21]	[done]
+	build successfully !
+
+[2022-01-27 00:23:50]	[done]
+	build successfully !
+
+[2022-01-27 00:25:13]	[done]
+	build successfully !
+
+[2022-01-27 00:46:40]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 32: Warning:  #815-D: type qualifier on return type is meaningless
+  static const uint16_t width(void)	{ return SSD1306_WIDTH; };
+         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 33: Warning:  #815-D: type qualifier on return type is meaningless
+  static const uint16_t height(void)  { return SSD1306_HEIGHT; };
+         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 579: Error:  #18: expected a ")"
+  	ssd1306_DrawCircleQuads(xRadius, yRadius, radius, 0b00000110);
+  	                                                   ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 582: Error:  #18: expected a ")"
+  	ssd1306_DrawCircleQuads(x + width - radius, yRadius, radius, 0b00001001);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 664: Warning:  #188-D: enumerated type mixed with another type
+  				SSD1306.Color = !SSD1306.Color;
+  				              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 666: Warning:  #188-D: enumerated type mixed with another type
+  				SSD1306.Color = !SSD1306.Color;
+  				              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 4 warnings, 2 errors
+
+[2022-01-27 00:47:30]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol MX_I2C_Init (referred from main.o).
+Error: L6218E: Undefined symbol demo (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-27 00:50:42]	[done]
+	build successfully !
+
+[2022-01-27 00:51:26]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 273: Error:  #140: too many arguments in function call
+    if (ssd1306_Init(&hi2c1) != 0) {
+                     ^
+.\src\main.c: 0 warnings, 1 error
+
+[2022-01-27 00:51:33]	[done]
+	build successfully !
+
+[2022-01-27 00:52:07]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 522: Error:  #140: too many arguments in function call
+    ssd1306_UpdateScreen(&hi2c1);
+                         ^
+".\src\main.c", line 528: Error:  #140: too many arguments in function call
+    ssd1306_WriteString("ssd1306", Font_11x18, White);
+                                               ^
+".\src\main.c", line 531: Error:  #140: too many arguments in function call
+    ssd1306_WriteString("4ilo", Font_11x18, White);
+                                            ^
+".\src\main.c", line 536: Error:  #140: too many arguments in function call
+            ssd1306_DrawPixel(100+i, 0+j, White);
+                                          ^
+.\src\main.c: 0 warnings, 4 errors
+
+[2022-01-27 00:52:28]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 522: Error:  #140: too many arguments in function call
+    ssd1306_UpdateScreen(&hi2c1);
+                         ^
+.\src\main.c: 0 warnings, 1 error
+
+[2022-01-27 00:52:37]	[done]
+	build successfully !
+
+[2022-01-27 00:53:40]	[done]
+	build successfully !
+
+[2022-01-27 00:55:45]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 32: Warning:  #815-D: type qualifier on return type is meaningless
+  static const uint16_t width(void)	{ return SSD1306_WIDTH; };
+         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 33: Warning:  #815-D: type qualifier on return type is meaningless
+  static const uint16_t height(void)  { return SSD1306_HEIGHT; };
+         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 70: Warning:  #223-D: function "delay_ms" declared implicitly
+  	delay_ms(200)
+  	^
+".\HARDWARE\OLED\Src\ssd1306.c", line 72: Error:  #65: expected a ";"
+  	ssd1306_WriteCommand(DISPLAYOFF);
+  	^
+".\HARDWARE\OLED\Src\ssd1306.c", line 664: Warning:  #188-D: enumerated type mixed with another type
+  				SSD1306.Color = !SSD1306.Color;
+  				              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 666: Warning:  #188-D: enumerated type mixed with another type
+  				SSD1306.Color = !SSD1306.Color;
+  				              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 5 warnings, 1 error
+
+[2022-01-27 00:55:54]	[done]
+	build successfully !
+
+[2022-01-27 00:56:07]	[done]
+	build successfully !
+
+[2022-01-27 00:56:58]	[done]
+	build successfully !
+
+[2022-01-27 01:01:28]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Inc\ssd1306.h", line 8: Error:  #5: cannot open source input file "stm32f1xx_hal.h": No such file or directory
+  #include "stm32f1xx_hal.h"
+                            ^
+.\HARDWARE\OLED\Src\ssd1306.c: 0 warnings, 1 error
+
+[2022-01-27 01:01:39]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 449: Error:  #147-D: declaration is incompatible with "void LCD_Rect_Round(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, SSD1306_COLOR_t)" (declared at line 92 of ".\HARDWARE\OLED\Inc\ssd1306.h")
+  void LCD_Rect_Round(uint16_t x, uint16_t y, uint16_t length, uint16_t width, uint16_t r, uint8_t size, uint32_t color24)
+       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 456: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + (r + 2), (r + 2), 1, size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 457: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + (r + 2), (r + 2), 2, size, color24);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 458: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + width - (r + 2) - 1, (r + 2), 4, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 459: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + width - (r + 2) - 1, (r + 2), 8, size, color24);
+  	                                                                          ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 11 warnings, 5 errors
+
+[2022-01-27 01:02:18]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 449: Error:  #147-D: declaration is incompatible with "void LCD_Rect_Round(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, SSD1306_COLOR_t)" (declared at line 92 of ".\HARDWARE\OLED\Inc\ssd1306.h")
+  void LCD_Rect_Round(uint16_t x, uint16_t y, uint16_t length, uint16_t width, uint16_t r, uint8_t size, uint32_t color24)
+       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 456: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + (r + 2), (r + 2), 1, size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 457: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + (r + 2), (r + 2), 2, size, color24);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 458: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + width - (r + 2) - 1, (r + 2), 4, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 459: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + width - (r + 2) - 1, (r + 2), 8, size, color24);
+  	                                                                          ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 11 warnings, 5 errors
+
+[2022-01-27 01:02:42]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 522: Warning:  #223-D: function "ssd1306_Fill" declared implicitly
+      ssd1306_Fill(Black);
+      ^
+".\src\main.c", line 522: Error:  #20: identifier "Black" is undefined
+      ssd1306_Fill(Black);
+                   ^
+".\src\main.c", line 523: Warning:  #223-D: function "ssd1306_UpdateScreen" declared implicitly
+      ssd1306_UpdateScreen();
+      ^
+".\src\main.c", line 528: Warning:  #223-D: function "ssd1306_SetCursor" declared implicitly
+      ssd1306_SetCursor(0, 0);
+      ^
+".\src\main.c", line 529: Warning:  #223-D: function "ssd1306_WriteString" declared implicitly
+      ssd1306_WriteString("ssd1306", Font_11x18);
+      ^
+".\src\main.c", line 529: Error:  #20: identifier "Font_11x18" is undefined
+      ssd1306_WriteString("ssd1306", Font_11x18);
+                                     ^
+".\src\main.c", line 539: Warning:  #223-D: function "ssd1306_DrawPixel" declared implicitly
+          ssd1306_DrawPixel(100 + i, 0 + j);
+          ^
+.\src\main.c: 5 warnings, 2 errors
+".\HARDWARE\OLED\Src\ssd1306.c", line 449: Error:  #147-D: declaration is incompatible with "void LCD_Rect_Round(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, SSD1306_COLOR_t)" (declared at line 92 of ".\HARDWARE\OLED\Inc\ssd1306.h")
+  void LCD_Rect_Round(uint16_t x, uint16_t y, uint16_t length, uint16_t width, uint16_t r, uint8_t size, uint32_t color24)
+       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 456: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + (r + 2), (r + 2), 1, size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 457: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + (r + 2), (r + 2), 2, size, color24);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 458: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + width - (r + 2) - 1, (r + 2), 4, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 459: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + width - (r + 2) - 1, (r + 2), 8, size, color24);
+  	                                                                          ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 11 warnings, 5 errors
+
+[2022-01-27 01:03:46]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 449: Error:  #147-D: declaration is incompatible with "void LCD_Rect_Round(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, SSD1306_COLOR_t)" (declared at line 92 of ".\HARDWARE\OLED\Inc\ssd1306.h")
+  void LCD_Rect_Round(uint16_t x, uint16_t y, uint16_t length, uint16_t width, uint16_t r, uint8_t size, uint32_t color24)
+       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 456: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + (r + 2), (r + 2), 1, size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 457: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + (r + 2), (r + 2), 2, size, color24);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 458: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + width - (r + 2) - 1, (r + 2), 4, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 459: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + width - (r + 2) - 1, (r + 2), 8, size, color24);
+  	                                                                          ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 11 warnings, 5 errors
+
+[2022-01-27 01:05:46]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 449: Error:  #147-D: declaration is incompatible with "void LCD_Rect_Round(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, SSD1306_COLOR_t)" (declared at line 92 of ".\HARDWARE\OLED\Inc\ssd1306.h")
+  void LCD_Rect_Round(uint16_t x, uint16_t y, uint16_t length, uint16_t width, uint16_t r, uint8_t size, uint32_t color24)
+       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 456: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + (r + 2), (r + 2), 1, size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 457: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + (r + 2), (r + 2), 2, size, color24);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 458: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + length - (r + 2) - 1, y + width - (r + 2) - 1, (r + 2), 4, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 459: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Helper(x + (r + 2), y + width - (r + 2) - 1, (r + 2), 8, size, color24);
+  	                                                                          ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 11 warnings, 5 errors
+
+[2022-01-27 01:07:40]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 449: Error:  #147-D: declaration is incompatible with "void LCD_Rect_Round(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, SSD1306_COLOR_t)" (declared at line 92 of ".\HARDWARE\OLED\Inc\ssd1306.h")
+  void LCD_Rect_Round(uint16_t x, uint16_t y, uint16_t length, uint16_t width, uint16_t r, uint8_t size, SSD1306_COLOR_t color24)
+       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 7 warnings, 5 errors
+
+[2022-01-27 01:08:35]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 449: Error:  #147-D: declaration is incompatible with "void LCD_Rect_Round(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, SSD1306_COLOR_t)" (declared at line 92 of ".\HARDWARE\OLED\Inc\ssd1306.h")
+  void LCD_Rect_Round(uint16_t x, uint16_t y, uint16_t length, uint16_t width, uint16_t r, uint8_t size, SSD1306_COLOR_t color24)
+       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 7 warnings, 5 errors
+
+[2022-01-27 01:09:12]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 449: Error:  #147-D: declaration is incompatible with "void LCD_Rect_Round(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, SSD1306_COLOR_t)" (declared at line 89 of ".\HARDWARE\OLED\Inc\ssd1306.h")
+  void LCD_Rect_Round(uint16_t x, uint16_t y, uint16_t length, uint16_t width, uint16_t r, uint8_t size, SSD1306_COLOR_t color24)
+       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 7 warnings, 5 errors
+".\src\main.c", line 522: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Ellipse(100, 47, 15, 10, 0, 1);
+  	                                ^
+".\src\main.c", line 526: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Font(5, 25, "OLED Test", &Font_9_Mono, 1, 1);
+  	                                              ^
+".\src\main.c", line 527: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Font(5, 45, "DISPLAY",  &Font_12_Mono, 1, 1);
+  	                                              ^
+".\src\main.c", line 528: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Font(10, 60, "0123 Font",  &Font_9_Mono, 1, 1);
+  	                                                ^
+".\src\main.c", line 542: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		out++; t = t + 0.1;
+  		           ^
+".\src\main.c", line 543: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if (t > 9.9) { t = 0.1; }
+  		    ^
+".\src\main.c", line 551: Warning:  #223-D: function "ssd1306_DrawPixel" declared implicitly
+          ssd1306_DrawPixel(100 + i, 0 + j);
+          ^
+".\src\main.c", line 556: Warning:  #223-D: function "ssd1306_UpdateScreen" declared implicitly
+      ssd1306_UpdateScreen();
+      ^
+".\src\main.c", line 560: Error:  #20: identifier "len" is undefined
+        len = USART_RX_STA & 0x3fff; //寰楀埌姝ゆ?鎺ユ敹鍒扮殑鏁版嵁闀垮害
+        ^
+".\src\main.c", line 570: Error:  #20: identifier "times" is undefined
+        times++;
+        ^
+".\src\main.c", line 517: Warning:  #177-D: variable "buff" was declared but never referenced
+  char buff[40];
+       ^
+.\src\main.c: 9 warnings, 2 errors
+
+[2022-01-27 01:10:17]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 449: Error:  #147-D: declaration is incompatible with "void LCD_Rect_Round(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, SSD1306_COLOR_t)" (declared at line 89 of ".\HARDWARE\OLED\Inc\ssd1306.h")
+  void LCD_Rect_Round(uint16_t x, uint16_t y, uint16_t length, uint16_t width, uint16_t r, uint8_t size, SSD1306_COLOR_t color24)
+       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 7 warnings, 5 errors
+
+[2022-01-27 01:11:11]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\ssd1306.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                         ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 451: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y, x + length + size - (r + 2), y, size, color24);
+  	                                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                 ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 452: Error:  #140: too many arguments in function call
+  	LCD_Line(x + (r + 2), y + width - 1, x + length + size - (r + 2), y + width - 1, size, color24);
+  	                                                                                       ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 453: Error:  #140: too many arguments in function call
+  	LCD_Line(x, y + (r + 2), x, y + width - size - (r + 2), size, color24);
+  	                                                              ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                  ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 454: Error:  #140: too many arguments in function call
+  	LCD_Line(x + length - 1, y + (r + 2), x + length - 1, y + width - size - (r + 2), size, color24);
+  	                                                                                        ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 493: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Rect_Fill(x + r, y, length - 2 * r, width, color);
+  	                                               ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 494: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + length - r - 1, y + r, r, 1, width - 2 * r - 1, color);
+  	                                                                           ^
+".\HARDWARE\OLED\Src\ssd1306.c", line 495: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Circle_Fill_Helper(x + r, y + r, r, 2, width - 2 * r - 1, color);
+  	                                                              ^
+.\HARDWARE\OLED\Src\ssd1306.c: 7 warnings, 4 errors
+
+[2022-01-27 01:12:50]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 522: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Ellipse(100, 47, 15, 10, 0, 1);
+  	                                ^
+".\src\main.c", line 526: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Font(5, 25, "OLED Test", &Font_9_Mono, 1, 1);
+  	                                              ^
+".\src\main.c", line 527: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Font(5, 45, "DISPLAY",  &Font_12_Mono, 1, 1);
+  	                                              ^
+".\src\main.c", line 528: Warning:  #188-D: enumerated type mixed with another type
+  	LCD_Font(10, 60, "0123 Font",  &Font_9_Mono, 1, 1);
+  	                                                ^
+".\src\main.c", line 542: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		out++; t = t + 0.1;
+  		           ^
+".\src\main.c", line 543: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if (t > 9.9) { t = 0.1; }
+  		    ^
+".\src\main.c", line 551: Warning:  #223-D: function "ssd1306_DrawPixel" declared implicitly
+          ssd1306_DrawPixel(100 + i, 0 + j);
+          ^
+".\src\main.c", line 556: Warning:  #223-D: function "ssd1306_UpdateScreen" declared implicitly
+      ssd1306_UpdateScreen();
+      ^
+".\src\main.c", line 560: Error:  #20: identifier "len" is undefined
+        len = USART_RX_STA & 0x3fff; //寰楀埌姝ゆ?鎺ユ敹鍒扮殑鏁版嵁闀垮害
+        ^
+".\src\main.c", line 570: Error:  #20: identifier "times" is undefined
+        times++;
+        ^
+".\src\main.c", line 517: Warning:  #177-D: variable "buff" was declared but never referenced
+  char buff[40];
+       ^
+.\src\main.c: 9 warnings, 2 errors
+
+[2022-01-27 01:13:12]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306_DrawPixel (referred from main.o).
+Error: L6218E: Undefined symbol ssd1306_UpdateScreen (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-27 01:13:57]	[done]
+	build successfully !
+
+[2022-01-27 01:16:19]	[done]
+	build successfully !
+
+[2022-01-27 01:16:38]	[done]
+	build successfully !
+
+[2022-01-27 01:17:25]	[done]
+	build successfully !
+
+[2022-01-27 01:18:51]	[done]
+	build successfully !
+
+[2022-01-27 01:23:26]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\oled.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\oled.c", line 295: Error:  #20: identifier "GPIOG_BASE" is undefined
+  	OLED_RST=1; 
+  	^
+.\HARDWARE\OLED\oled.c: 0 warnings, 1 error
+
+[2022-01-27 01:23:40]	[done]
+	build successfully !
+
+[2022-01-27 01:32:57]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\GFX_BW.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\GFX_BW.c", line 12: Error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+                            ^
+.\HARDWARE\OLED\Src\GFX_BW.c: 0 warnings, 1 error
+
+[2022-01-27 01:33:15]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\GFX_BW.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Inc\OLED_SSD1306.h", line 126: Error:  #20: identifier "SPI_HandleTypeDef" is undefined
+  void SSD1306_SpiInit(SPI_HandleTypeDef *spi);
+                       ^
+.\HARDWARE\OLED\Src\GFX_BW.c: 0 warnings, 1 error
+
+[2022-01-27 01:33:36]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\GFX_BW.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Inc\OLED_SSD1306.h", line 126: Error:  #20: identifier "SPI_HandleTypeDef" is undefined
+  void SSD1306_SpiInit(SPI_HandleTypeDef *spi);
+                       ^
+.\HARDWARE\OLED\Src\GFX_BW.c: 0 warnings, 1 error
+
+[2022-01-27 01:34:47]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\OLED_SSD1306.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\OLED_SSD1306.c", line 12: Error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+                            ^
+.\HARDWARE\OLED\Src\OLED_SSD1306.c: 0 warnings, 1 error
+
+[2022-01-27 01:35:34]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\Src\OLED_SSD1306.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\Src\OLED_SSD1306.c", line 14: Error:  #5: cannot open source input file "gpio.h": No such file or directory
+  #include "gpio.h"
+                   ^
+.\HARDWARE\OLED\Src\OLED_SSD1306.c: 0 warnings, 1 error
+
+[2022-01-27 01:35:51]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 27: Error:  #5: cannot open source input file "oled.h": No such file or directory
+  #include "oled.h"
+                   ^
+.\src\main.c: 0 warnings, 1 error
+
+[2022-01-27 01:36:17]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol OLED_Init (referred from main.o).
+Error: L6218E: Undefined symbol OLED_Refresh_Gram (referred from main.o).
+Error: L6218E: Undefined symbol OLED_ShowString (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 3 error messages.
+
+
+[2022-01-27 01:39:23]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 592: Error:  #169: expected a declaration
+  }
+  ^
+".\src\main.c", line 646: Warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+.\src\main.c: 1 warning, 1 error
+
+[2022-01-27 01:41:23]	[done]
+	build successfully !
+
+[2022-01-27 01:42:07]	[done]
+	build successfully !
+
+[2022-01-27 01:43:18]	[done]
+	build successfully !
+
+[2022-01-27 01:49:48]	[done]
+	build successfully !
+
