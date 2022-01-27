@@ -5285,3 +5285,103 @@ Finished: 1 information, 0 warning and 2 error messages.
 [2022-01-28 02:01:43]	[done]
 	build successfully !
 
+[2022-01-28 02:16:29]	[done]
+	build successfully !
+
+[2022-01-28 02:19:34]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\delay\delay.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\delay\delay.c", line 36: Warning:  #223-D: function "xTaskGetSchedulerState" declared implicitly
+      if(xTaskGetSchedulerState()!=taskSCHEDULER_NOT_STARTED)//绯荤粺宸茬粡杩愯?
+         ^
+".\SYSTEM\delay\delay.c", line 36: Error:  #20: identifier "taskSCHEDULER_NOT_STARTED" is undefined
+      if(xTaskGetSchedulerState()!=taskSCHEDULER_NOT_STARTED)//绯荤粺宸茬粡杩愯?
+                                   ^
+".\SYSTEM\delay\delay.c", line 54: Error:  #20: identifier "configTICK_RATE_HZ" is undefined
+  	reload*=1000000/configTICK_RATE_HZ;		//鏍规嵁configTICK_RATE_HZ璁惧畾婧㈠嚭鏃堕棿
+  	                ^
+".\SYSTEM\delay\delay.c", line 56: Error:  #20: identifier "fac_ms" is undefined
+  	fac_ms=1000/configTICK_RATE_HZ;			//浠ｈ〃OS鍙?互寤舵椂鐨勬渶灏戝崟浣?	
+  	^
+".\SYSTEM\delay\delay.c", line 90: Warning:  #223-D: function "xTaskGetSchedulerState" declared implicitly
+  	if(xTaskGetSchedulerState()!=taskSCHEDULER_NOT_STARTED)//绯荤粺宸茬粡杩愯?
+  	   ^
+".\SYSTEM\delay\delay.c", line 90: Error:  #20: identifier "taskSCHEDULER_NOT_STARTED" is undefined
+  	if(xTaskGetSchedulerState()!=taskSCHEDULER_NOT_STARTED)//绯荤粺宸茬粡杩愯?
+  	                             ^
+".\SYSTEM\delay\delay.c", line 92: Error:  #20: identifier "fac_ms" is undefined
+  		if(nms>=fac_ms)						//寤舵椂鐨勬椂闂村ぇ浜嶰S鐨勬渶灏戞椂闂村懆鏈?
+  		        ^
+".\SYSTEM\delay\delay.c", line 94: Warning:  #223-D: function "vTaskDelay" declared implicitly
+     			vTaskDelay(nms/fac_ms);	 		//FreeRTOS寤舵椂
+     			^
+".\SYSTEM\delay\delay.c", line 96: Error:  #20: identifier "fac_ms" is undefined
+  		nms%=fac_ms;						//OS宸茬粡鏃犳硶鎻愪緵杩欎箞灏忕殑寤舵椂浜?閲囩敤鏅?氭柟寮忓欢鏃?   
+  		     ^
+.\SYSTEM\delay\delay.c: 3 warnings, 6 errors
+
+[2022-01-28 02:25:16]	[done]
+	build successfully !
+
+[2022-01-28 02:27:47]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\delay\delay.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\delay\delay.c", line 35: Warning:  #223-D: function "xTaskGetSchedulerState" declared implicitly
+  	if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED) //绯荤粺宸茬粡杩愯?
+  	    ^
+".\SYSTEM\delay\delay.c", line 35: Error:  #20: identifier "taskSCHEDULER_NOT_STARTED" is undefined
+  	if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED) //绯荤粺宸茬粡杩愯?
+  	                                ^
+".\SYSTEM\delay\delay.c", line 146: Error:  #147-D: declaration is incompatible with "void delay_ms(u32)" (declared at line 22 of ".\SYSTEM\delay\delay.h")
+  void delay_ms(u16 nms)
+       ^
+.\SYSTEM\delay\delay.c: 1 warning, 2 errors
+
+[2022-01-28 02:28:09]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\delay\delay.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\delay\delay.c", line 35: Warning:  #223-D: function "xTaskGetSchedulerState" declared implicitly
+  	if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED) //绯荤粺宸茬粡杩愯?
+  	    ^
+".\SYSTEM\delay\delay.c", line 35: Error:  #20: identifier "taskSCHEDULER_NOT_STARTED" is undefined
+  	if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED) //绯荤粺宸茬粡杩愯?
+  	                                ^
+".\SYSTEM\delay\delay.c", line 146: Error:  #147-D: declaration is incompatible with "void delay_ms(u32)" (declared at line 22 of ".\SYSTEM\delay\delay.h")
+  void delay_ms(u16 nms)
+       ^
+.\SYSTEM\delay\delay.c: 1 warning, 2 errors
+
+[2022-01-28 02:29:03]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\delay\delay.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\delay\delay.c", line 148: Error:  #147-D: declaration is incompatible with "void delay_ms(u32)" (declared at line 22 of ".\SYSTEM\delay\delay.h")
+  void delay_ms(u16 nms)
+       ^
+.\SYSTEM\delay\delay.c: 0 warnings, 1 error
+
+[2022-01-28 02:29:19]	[done]
+	build successfully !
+
+[2022-01-28 02:29:38]	[done]
+	build successfully !
+
+[2022-01-28 02:31:21]	[done]
+	build successfully !
+
+[2022-01-28 03:12:25]	[done]
+	build successfully !
+
+[2022-01-28 03:17:32]	[done]
+	build successfully !
+
+[2022-01-28 03:23:44]	[done]
+	build successfully !
+
+[2022-01-28 03:24:26]	[done]
+	build successfully !
+
+[2022-01-28 03:25:02]	[done]
+	build successfully !
+
