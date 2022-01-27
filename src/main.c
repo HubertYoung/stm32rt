@@ -1,20 +1,20 @@
 ﻿/* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2022 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2022 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -24,7 +24,8 @@
 #include "usart.h"
 #include "key.h"
 #include "led.h"
-#include "ssd1306.h"
+#include "shell.h"
+#include "test.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -99,9 +100,9 @@ void StartGuiRefresh(void *argument);
 /* USER CODE END 0 */
 
 /**
-  * @brief  The application entry point.
-  * @retval int
-  */
+ * @brief  The application entry point.
+ * @retval int
+ */
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -118,13 +119,18 @@ int main(void)
   /* USER CODE END Init */
   Stm32_Clock_Init(168, 25, 2, 4);
   /* USER CODE BEGIN SysInit */
-  delay_init(84);    //初始化延时函数
-  uart_init(115200); //初始化USART
-  LED_Init();        //初始化LED
-  KEY_Init();        //初始化按键
+  delay_init(84);     //初始化延时函数
+  uart1_init(115200); //初始化USART
+
+  shell_init();
+  shell_register("ssd1306", ssd1306);
+  uart1_print("ssd1306: welcome to libdriver ssd1306.\n");
+
+  LED_Init(); //初始化LED
+  KEY_Init(); //初始化按键
 
   MX_I2C1_Init();
-  ssd1306_Init();
+  // ssd1306_Init();
 
   /* USER CODE END SysInit */
 
@@ -198,21 +204,21 @@ int main(void)
 }
 
 /**
-  * @brief System Clock Configuration
-  * @retval None
-  */
+ * @brief System Clock Configuration
+ * @retval None
+ */
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
   /** Configure the main internal regulator output voltage
-  */
+   */
   __HAL_RCC_PWR_CLK_ENABLE();
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
   /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
+   * in the RCC_OscInitTypeDef structure.
+   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
@@ -226,7 +232,7 @@ void SystemClock_Config(void)
     Error_Handler();
   }
   /** Initializes the CPU, AHB and APB buses clocks
-  */
+   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
@@ -240,10 +246,10 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief I2C1 Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief I2C1 Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_I2C1_Init(void)
 {
 
@@ -272,10 +278,10 @@ static void MX_I2C1_Init(void)
   /* USER CODE END I2C1_Init 2 */
 }
 /**
-  * @brief ADC1 Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief ADC1 Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_ADC1_Init(void)
 {
 
@@ -289,7 +295,7 @@ static void MX_ADC1_Init(void)
 
   /* USER CODE END ADC1_Init 1 */
   /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
-  */
+   */
   hadc1.Instance = ADC1;
   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
@@ -307,7 +313,7 @@ static void MX_ADC1_Init(void)
     Error_Handler();
   }
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
+   */
   sConfig.Channel = ADC_CHANNEL_0;
   sConfig.Rank = 1;
   sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
@@ -321,10 +327,10 @@ static void MX_ADC1_Init(void)
 }
 
 /**
-  * @brief TIM1 Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief TIM1 Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_TIM1_Init(void)
 {
 
@@ -396,10 +402,10 @@ static void MX_TIM1_Init(void)
 }
 
 /**
-  * @brief TIM2 Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief TIM2 Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_TIM2_Init(void)
 {
 
@@ -452,13 +458,21 @@ static void MX_TIM2_Init(void)
 
 /* USER CODE BEGIN Header_StartDefaultTask */
 /**
-  * @brief  Function implementing the defaultTask thread.
-  * @param  argument: Not used
-  * @retval None
-  */
+ * @brief  Function implementing the defaultTask thread.
+ * @param  argument: Not used
+ * @retval None
+ */
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
+
+  /**
+   * @brief global var definition
+   */
+  uint8_t g_buf[256]; /**< uart buffer */
+  uint16_t g_len;     /**< uart buffer length */
+  volatile uint8_t res;
+
   u8 key;
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
@@ -474,17 +488,53 @@ void StartDefaultTask(void *argument)
       TEST_LED = !TEST_LED;
       break;
     }
-    osDelay(10);
+    /* read uart */
+    g_len = uart1_read(g_buf, 256);
+    if (g_len)
+    {
+      /* run shell */
+      res = shell_parse((char *)g_buf, g_len);
+      if (res == 0)
+      {
+        /* run success */
+      }
+      else if (res == 1)
+      {
+        uart1_print("ssd1306: run failed.\n");
+      }
+      else if (res == 2)
+      {
+        uart1_print("ssd1306: unknow command.\n");
+      }
+      else if (res == 3)
+      {
+        uart1_print("ssd1306: length is too long.\n");
+      }
+      else if (res == 4)
+      {
+        uart1_print("ssd1306: pretreat failed.\n");
+      }
+      else if (res == 5)
+      {
+        uart1_print("ssd1306: param is invalid.\n");
+      }
+      else
+      {
+        uart1_print("ssd1306: unknow status code.\n");
+      }
+      uart1_flush();
+    }
+    osDelay(100);
   }
   /* USER CODE END 5 */
 }
 
 /* USER CODE BEGIN Header_StartSysStatus */
 /**
-* @brief Function implementing the sysStatus thread.
-* @param argument: Not used
-* @retval None
-*/
+ * @brief Function implementing the sysStatus thread.
+ * @param argument: Not used
+ * @retval None
+ */
 /* USER CODE END Header_StartSysStatus */
 void StartSysStatus(void *argument)
 {
@@ -493,51 +543,51 @@ void StartSysStatus(void *argument)
   for (;;)
   {
     osDelay(100);
-    SYS_LED = 0; //LED0亮
+    SYS_LED = 0; // LED0亮
     osDelay(100);
-    SYS_LED = 1; //LED0灭
+    SYS_LED = 1; // LED0灭
   }
   /* USER CODE END StartSysStatus */
 }
 
 /* USER CODE BEGIN Header_StartGuiRefresh */
 /**
-* @brief Function implementing the guiRefresh thread.
-* @param argument: Not used
-* @retval None
-*/
+ * @brief Function implementing the guiRefresh thread.
+ * @param argument: Not used
+ * @retval None
+ */
 /* USER CODE END Header_StartGuiRefresh */
 void StartGuiRefresh(void *argument)
 {
-  int i = 0;
-  int t, d;
-  char buf[20];
+  // int i = 0;
+  // int t, d;
+  // char buf[20];
 
   for (;;)
   {
-    t = HAL_GetTick();
-    ssd1306_Fill(Black);
-    ssd1306_SetCursor(i, 10);
-    sprintf(buf, "%2d ms", d);
-    ssd1306_WriteString(buf, Font_16x26, White);
-    ssd1306_UpdateScreen();
-    i++;
-    if (i > 80)
-    {
-      i = 0;
-    }
-    d = HAL_GetTick() - t;
+    // t = HAL_GetTick();
+    // ssd1306_Fill(Black);
+    // ssd1306_SetCursor(i, 10);
+    // sprintf(buf, "%2d ms", d);
+    // ssd1306_WriteString(buf, Font_16x26, White);
+    // ssd1306_UpdateScreen();
+    // i++;
+    // if (i > 80)
+    // {
+    //   i = 0;
+    // }
+    // d = HAL_GetTick() - t;
   }
 }
 
 /**
-  * @brief  Period elapsed callback in non blocking mode
-  * @note   This function is called  when TIM10 interrupt took place, inside
-  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
-  * a global variable "uwTick" used as application time base.
-  * @param  htim : TIM handle
-  * @retval None
-  */
+ * @brief  Period elapsed callback in non blocking mode
+ * @note   This function is called  when TIM10 interrupt took place, inside
+ * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+ * a global variable "uwTick" used as application time base.
+ * @param  htim : TIM handle
+ * @retval None
+ */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   /* USER CODE BEGIN Callback 0 */
@@ -553,9 +603,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 }
 
 /**
-  * @brief  This function is executed in case of error occurrence.
-  * @retval None
-  */
+ * @brief  This function is executed in case of error occurrence.
+ * @retval None
+ */
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
@@ -569,12 +619,12 @@ void Error_Handler(void)
 
 #ifdef USE_FULL_ASSERT
 /**
-  * @brief  Reports the name of the source file and the source line number
-  *         where the assert_param error has occurred.
-  * @param  file: pointer to the source file name
-  * @param  line: assert_param error line source number
-  * @retval None
-  */
+ * @brief  Reports the name of the source file and the source line number
+ *         where the assert_param error has occurred.
+ * @param  file: pointer to the source file name
+ * @param  line: assert_param error line source number
+ * @retval None
+ */
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */

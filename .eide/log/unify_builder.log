@@ -3657,3 +3657,263 @@ Finished: 1 information, 0 warning and 3 error messages.
 [2022-01-27 01:49:48]	[done]
 	build successfully !
 
+[2022-01-27 23:17:06]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.h", line 11: Error:  #20: identifier "u8" is undefined
+  	u8 Cur_Index;//褰撳墠绱㈠紩椤?  	^
+".\HARDWARE\GUI\gui.h", line 12: Error:  #20: identifier "u8" is undefined
+  	u8 previous;//涓婁竴椤?  	^
+".\HARDWARE\GUI\gui.h", line 13: Error:  #20: identifier "u8" is undefined
+  	u8 next;//涓嬩竴椤?  	^
+".\HARDWARE\GUI\gui.h", line 14: Error:  #20: identifier "u8" is undefined
+  	u8 enter;//纭??
+  	^
+".\HARDWARE\GUI\gui.h", line 15: Error:  #20: identifier "u8" is undefined
+  	u8 back;//杩斿洖
+  	^
+".\HARDWARE\GUI\gui.h", line 16: Error:  #92: identifier-list parameters may only be used in a function definition
+  	void (*current_operation)(u8,u8);//	褰撳墠绱㈠紩鎵ц?鐨勫嚱鏁?鐣岄潰)
+  	                          ^
+".\HARDWARE\GUI\gui.h", line 16: Error:  #100: duplicate parameter name
+  	void (*current_operation)(u8,u8);//	褰撳墠绱㈠紩鎵ц?鐨勫嚱鏁?鐣岄潰)
+  	                             ^
+".\HARDWARE\GUI\gui.h", line 34: Error:  #20: identifier "u8" is undefined
+  void Main_UI(u8 page_index,u8 key_val);
+               ^
+".\HARDWARE\GUI\gui.h", line 34: Error:  #20: identifier "u8" is undefined
+  void Main_UI(u8 page_index,u8 key_val);
+                             ^
+".\HARDWARE\GUI\gui.h", line 35: Error:  #20: identifier "u8" is undefined
+  void Main_Menu_Func(u8 page_index,u8 key_val);
+                      ^
+".\HARDWARE\GUI\gui.h", line 35: Error:  #20: identifier "u8" is undefined
+  void Main_Menu_Func(u8 page_index,u8 key_val);
+                                    ^
+".\HARDWARE\GUI\gui.h", line 36: Error:  #20: identifier "u8" is undefined
+  void Wifi_Child(u8 page_index,u8 key_val);
+                  ^
+".\HARDWARE\GUI\gui.h", line 36: Error:  #20: identifier "u8" is undefined
+  void Wifi_Child(u8 page_index,u8 key_val);
+                                ^
+".\HARDWARE\GUI\gui.h", line 37: Error:  #20: identifier "u8" is undefined
+  void Bluetooth_Child(u8 page_index,u8 key_val);
+                       ^
+".\HARDWARE\GUI\gui.h", line 37: Error:  #20: identifier "u8" is undefined
+  void Bluetooth_Child(u8 page_index,u8 key_val);
+                                     ^
+".\HARDWARE\GUI\gui.h", line 38: Error:  #20: identifier "u8" is undefined
+  void Setting_Child(u8 page_index,u8 key_val);
+                     ^
+".\HARDWARE\GUI\gui.h", line 38: Error:  #20: identifier "u8" is undefined
+  void Setting_Child(u8 page_index,u8 key_val);
+                                   ^
+".\HARDWARE\GUI\gui.h", line 39: Error:  #20: identifier "u8" is undefined
+  void Info_Child(u8 page_index,u8 key_val);
+                  ^
+".\HARDWARE\GUI\gui.h", line 39: Error:  #20: identifier "u8" is undefined
+  void Info_Child(u8 page_index,u8 key_val);
+                                ^
+".\HARDWARE\GUI\gui.h", line 40: Error:  #20: identifier "u8" is undefined
+  void OLED_Lock(u8 page_index,u8 key_val);
+                 ^
+".\HARDWARE\GUI\gui.h", line 40: Error:  #20: identifier "u8" is undefined
+  void OLED_Lock(u8 page_index,u8 key_val);
+                               ^
+".\HARDWARE\GUI\gui.c", line 10: Warning:  #550-D: variable "last_index" was set but never used
+  static u8 last_index = _Main_UI;			   //涓婁竴涓?晫闈㈢储寮曞?            ^
+".\HARDWARE\GUI\gui.c", line 12: Warning:  #177-D: variable "BEEP_swi" was declared but never referenced
+  static u8 BEEP_swi = ON;
+            ^
+.\HARDWARE\GUI\gui.c: 2 warnings, 21 errors
+
+[2022-01-27 23:17:20]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.h", line 11: Error:  #20: identifier "u8" is undefined
+  	u8 Cur_Index;//褰撳墠绱㈠紩椤?  	^
+".\HARDWARE\GUI\gui.h", line 12: Error:  #20: identifier "u8" is undefined
+  	u8 previous;//涓婁竴椤?  	^
+".\HARDWARE\GUI\gui.h", line 13: Error:  #20: identifier "u8" is undefined
+  	u8 next;//涓嬩竴椤?  	^
+".\HARDWARE\GUI\gui.h", line 14: Error:  #20: identifier "u8" is undefined
+  	u8 enter;//纭??
+  	^
+".\HARDWARE\GUI\gui.h", line 15: Error:  #20: identifier "u8" is undefined
+  	u8 back;//杩斿洖
+  	^
+".\HARDWARE\GUI\gui.h", line 16: Error:  #92: identifier-list parameters may only be used in a function definition
+  	void (*current_operation)(u8,u8);//	褰撳墠绱㈠紩鎵ц?鐨勫嚱鏁?鐣岄潰)
+  	                          ^
+".\HARDWARE\GUI\gui.h", line 16: Error:  #100: duplicate parameter name
+  	void (*current_operation)(u8,u8);//	褰撳墠绱㈠紩鎵ц?鐨勫嚱鏁?鐣岄潰)
+  	                             ^
+".\HARDWARE\GUI\gui.h", line 34: Error:  #20: identifier "u8" is undefined
+  void Main_UI(u8 page_index,u8 key_val);
+               ^
+".\HARDWARE\GUI\gui.h", line 34: Error:  #20: identifier "u8" is undefined
+  void Main_UI(u8 page_index,u8 key_val);
+                             ^
+".\HARDWARE\GUI\gui.h", line 35: Error:  #20: identifier "u8" is undefined
+  void Main_Menu_Func(u8 page_index,u8 key_val);
+                      ^
+".\HARDWARE\GUI\gui.h", line 35: Error:  #20: identifier "u8" is undefined
+  void Main_Menu_Func(u8 page_index,u8 key_val);
+                                    ^
+".\HARDWARE\GUI\gui.h", line 36: Error:  #20: identifier "u8" is undefined
+  void Wifi_Child(u8 page_index,u8 key_val);
+                  ^
+".\HARDWARE\GUI\gui.h", line 36: Error:  #20: identifier "u8" is undefined
+  void Wifi_Child(u8 page_index,u8 key_val);
+                                ^
+".\HARDWARE\GUI\gui.h", line 37: Error:  #20: identifier "u8" is undefined
+  void Bluetooth_Child(u8 page_index,u8 key_val);
+                       ^
+".\HARDWARE\GUI\gui.h", line 37: Error:  #20: identifier "u8" is undefined
+  void Bluetooth_Child(u8 page_index,u8 key_val);
+                                     ^
+".\HARDWARE\GUI\gui.h", line 38: Error:  #20: identifier "u8" is undefined
+  void Setting_Child(u8 page_index,u8 key_val);
+                     ^
+".\HARDWARE\GUI\gui.h", line 38: Error:  #20: identifier "u8" is undefined
+  void Setting_Child(u8 page_index,u8 key_val);
+                                   ^
+".\HARDWARE\GUI\gui.h", line 39: Error:  #20: identifier "u8" is undefined
+  void Info_Child(u8 page_index,u8 key_val);
+                  ^
+".\HARDWARE\GUI\gui.h", line 39: Error:  #20: identifier "u8" is undefined
+  void Info_Child(u8 page_index,u8 key_val);
+                                ^
+".\HARDWARE\GUI\gui.h", line 40: Error:  #20: identifier "u8" is undefined
+  void OLED_Lock(u8 page_index,u8 key_val);
+                 ^
+".\HARDWARE\GUI\gui.h", line 40: Error:  #20: identifier "u8" is undefined
+  void OLED_Lock(u8 page_index,u8 key_val);
+                               ^
+".\HARDWARE\GUI\gui.c", line 10: Warning:  #550-D: variable "last_index" was set but never used
+  static u8 last_index = _Main_UI;			   //涓婁竴涓?晫闈㈢储寮曞?            ^
+.\HARDWARE\GUI\gui.c: 1 warning, 21 errors
+
+[2022-01-27 23:17:47]	[done]
+	build successfully !
+
+[2022-01-28 00:21:56]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usart\usart.c", line 37: Error:  #5: cannot open source input file "uart.h": No such file or directory
+  #include "uart.h"
+                   ^
+.\SYSTEM\usart\usart.c: 0 warnings, 1 error
+
+[2022-01-28 00:22:16]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 2: Error:  #5: cannot open source input file "ssd1306.h": No such file or directory
+  #include "ssd1306.h"
+                      ^
+.\HARDWARE\GUI\gui.c: 0 warnings, 1 error
+
+[2022-01-28 00:22:29]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 2: Error:  #5: cannot open source input file "fonts.h": No such file or directory
+  #include "fonts.h"
+                    ^
+.\HARDWARE\GUI\gui.c: 0 warnings, 1 error
+
+[2022-01-28 00:22:38]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 61: Warning:  #223-D: function "ssd1306_Fill" declared implicitly
+  		ssd1306_Fill(Black); //娓呭睆
+  		^
+".\HARDWARE\GUI\gui.c", line 61: Error:  #20: identifier "Black" is undefined
+  		ssd1306_Fill(Black); //娓呭睆
+  		             ^
+".\HARDWARE\GUI\gui.c", line 8: Warning:  #550-D: variable "last_index" was set but never used
+  static u8 last_index = _Main_UI;			   //涓婁竴涓?晫闈㈢储寮曞?            ^
+.\HARDWARE\GUI\gui.c: 2 warnings, 1 error
+
+[2022-01-28 00:22:50]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 125: Error:  #20: identifier "ssd1306" is undefined
+    shell_register("ssd1306", ssd1306);
+                              ^
+".\src\main.c", line 524: Warning:  #223-D: function "ssd1306_Fill" declared implicitly
+      ssd1306_Fill(Black);
+      ^
+".\src\main.c", line 524: Error:  #20: identifier "Black" is undefined
+      ssd1306_Fill(Black);
+                   ^
+".\src\main.c", line 525: Warning:  #223-D: function "ssd1306_SetCursor" declared implicitly
+      ssd1306_SetCursor(i, 10);
+      ^
+".\src\main.c", line 527: Warning:  #223-D: function "ssd1306_WriteString" declared implicitly
+      ssd1306_WriteString(buf, Font_16x26, White);
+      ^
+".\src\main.c", line 527: Error:  #20: identifier "Font_16x26" is undefined
+      ssd1306_WriteString(buf, Font_16x26, White);
+                               ^
+".\src\main.c", line 527: Error:  #20: identifier "White" is undefined
+      ssd1306_WriteString(buf, Font_16x26, White);
+                                           ^
+".\src\main.c", line 528: Warning:  #223-D: function "ssd1306_UpdateScreen" declared implicitly
+      ssd1306_UpdateScreen();
+      ^
+.\src\main.c: 4 warnings, 4 errors
+
+[2022-01-28 00:23:08]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 125: Error:  #20: identifier "ssd1306" is undefined
+    shell_register("ssd1306", ssd1306);
+                              ^
+".\src\main.c", line 517: Warning:  #177-D: variable "i" was declared but never referenced
+    int i = 0;
+        ^
+".\src\main.c", line 518: Warning:  #177-D: variable "t" was declared but never referenced
+    int t, d;
+        ^
+".\src\main.c", line 518: Warning:  #177-D: variable "d" was declared but never referenced
+    int t, d;
+           ^
+".\src\main.c", line 519: Warning:  #177-D: variable "buf" was declared but never referenced
+    char buf[20];
+         ^
+.\src\main.c: 4 warnings, 1 error
+
+[2022-01-28 00:26:50]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 125: Error:  #20: identifier "ssd1306" is undefined
+    shell_register("ssd1306", ssd1306);
+                              ^
+.\src\main.c: 0 warnings, 1 error
+
+[2022-01-28 00:32:27]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol shell_init (referred from main.o).
+Error: L6218E: Undefined symbol shell_register (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-28 00:42:28]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol shell_init (referred from main.o).
+Error: L6218E: Undefined symbol shell_register (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-28 00:45:02]	[done]
+	build successfully !
+
+[2022-01-28 00:47:54]	[done]
+	build successfully !
+

@@ -29,7 +29,13 @@
             "string.h": "c",
             "font_9_mono.h": "c",
             "font_12_mono.h": "c",
-            "gfx_bw.h": "c"
+            "gfx_bw.h": "c",
+            "gui.h": "c",
+            "driver_ssd1306.h": "c",
+            "driver_ssd1306_interface.h": "c",
+            "driver_ssd1306_basic.h": "c",
+            "test.h": "c",
+            "shell.h": "c"
         },
         "files.autoGuessEncoding": true,
         "[yaml]": {
