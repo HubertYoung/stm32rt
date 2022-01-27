@@ -3917,3 +3917,1371 @@ Finished: 1 information, 0 warning and 2 error messages.
 [2022-01-28 00:47:54]	[done]
 	build successfully !
 
+[2022-01-27 21:28:39]	[done]
+	build successfully !
+
+[2022-01-27 21:29:51]	[done]
+	build successfully !
+
+[2022-01-27 21:31:16]	[done]
+	build successfully !
+
+[2022-01-27 21:33:20]	[done]
+	build successfully !
+
+[2022-01-27 21:35:16]	[done]
+	build successfully !
+
+[2022-01-27 21:47:27]	[done]
+	build successfully !
+
+[2022-01-27 21:48:18]	[done]
+	build successfully !
+
+[2022-01-27 21:50:23]	[done]
+	build successfully !
+
+[2022-01-27 21:50:37]	[done]
+	build successfully !
+
+[2022-01-27 21:52:05]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 123: Warning:  #223-D: function "uart1_init" declared implicitly
+    uart1_init(115200); //鍒濆?鍖朥SART
+    ^
+".\src\main.c", line 127: Error:  #167: argument of type "char *" is incompatible with parameter of type "u32"
+    uart_init("ssd1306: welcome to libdriver ssd1306.\n");
+              ^
+".\src\main.c", line 492: Warning:  #223-D: function "uart1_read" declared implicitly
+      g_len = uart1_read(g_buf, 256);
+              ^
+".\src\main.c", line 503: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: run failed.\n");
+          ^
+".\src\main.c", line 507: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: unknow command.\n");
+          ^
+".\src\main.c", line 511: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: length is too long.\n");
+          ^
+".\src\main.c", line 515: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: pretreat failed.\n");
+          ^
+".\src\main.c", line 519: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: param is invalid.\n");
+          ^
+".\src\main.c", line 523: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: unknow status code.\n");
+          ^
+".\src\main.c", line 525: Warning:  #223-D: function "uart1_flush" declared implicitly
+        uart1_flush();
+        ^
+".\src\main.c", line 253: Warning:  #177-D: function "MX_I2C1_Init" was declared but never referenced
+  static void MX_I2C1_Init(void)
+              ^
+.\src\main.c: 10 warnings, 1 error
+
+[2022-01-27 22:03:16]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 127: Error:  #167: argument of type "char *" is incompatible with parameter of type "u32"
+    uart1_init("ssd1306: welcome to libdriver ssd1306.\n");
+               ^
+".\src\main.c", line 492: Warning:  #223-D: function "uart1_read" declared implicitly
+      g_len = uart1_read(g_buf, 256);
+              ^
+".\src\main.c", line 503: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: run failed.\n");
+          ^
+".\src\main.c", line 507: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: unknow command.\n");
+          ^
+".\src\main.c", line 511: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: length is too long.\n");
+          ^
+".\src\main.c", line 515: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: pretreat failed.\n");
+          ^
+".\src\main.c", line 519: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: param is invalid.\n");
+          ^
+".\src\main.c", line 523: Warning:  #223-D: function "uart1_print" declared implicitly
+          uart1_print("ssd1306: unknow status code.\n");
+          ^
+".\src\main.c", line 525: Warning:  #223-D: function "uart1_flush" declared implicitly
+        uart1_flush();
+        ^
+".\src\main.c", line 253: Warning:  #177-D: function "MX_I2C1_Init" was declared but never referenced
+  static void MX_I2C1_Init(void)
+              ^
+.\src\main.c: 9 warnings, 1 error
+
+[2022-01-27 22:03:56]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol g_uart1_buffer multiply defined (by driver_ssd1306_interface.o and usart.o).
+Error: L6200E: Symbol g_uart1_buffer multiply defined (by main.o and usart.o).
+Error: L6200E: Symbol g_uart1_point multiply defined (by driver_ssd1306_interface.o and usart.o).
+Error: L6200E: Symbol g_uart1_point multiply defined (by main.o and usart.o).
+Error: L6200E: Symbol g_uart1_tx_done multiply defined (by driver_ssd1306_interface.o and usart.o).
+Error: L6200E: Symbol g_uart1_tx_done multiply defined (by main.o and usart.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 6 error messages.
+
+
+[2022-01-27 22:17:40]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 127: Error:  #165: too few arguments in function call
+    uart1_write("ssd1306: welcome to libdriver ssd1306.\n");
+                                                          ^
+".\src\main.c", line 253: Warning:  #177-D: function "MX_I2C1_Init" was declared but never referenced
+  static void MX_I2C1_Init(void)
+              ^
+.\src\main.c: 1 warning, 1 error
+
+[2022-01-27 22:18:23]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol HAL_UART_ErrorCallback multiply defined (by stm32f4xx_it.o and usart.o).
+Error: L6200E: Symbol HAL_UART_MspDeInit multiply defined (by stm32f4xx_hal_msp.o and usart.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+
+
+[2022-01-27 22:19:37]	[done]
+	build successfully !
+
+[2022-01-27 22:20:04]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol HAL_TIM_MspPostInit (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-27 22:20:38]	[done]
+	build successfully !
+
+[2022-01-27 22:21:31]	[done]
+	build successfully !
+
+[2022-01-27 22:23:05]	[done]
+	build successfully !
+
+[2022-01-27 22:30:55]	compilation failed at : "c:\Users\13443\source\stm32rt\src\stm32f4xx_hal_msp.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\stm32f4xx_hal_msp.c", line 76: Error:  #20: identifier "uint32_t" is undefined
+  extern uint32_t SystemCoreClock;          /*!< System Clock Frequency (Core Clock) */
+         ^
+".\src\stm32f4xx_hal_msp.c", line 78: Error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t  AHBPrescTable[16];    /*!< AHB prescalers table values */
+               ^
+".\src\stm32f4xx_hal_msp.c", line 79: Error:  #20: identifier "uint8_t" is undefined
+  extern const uint8_t  APBPrescTable[8];     /*!< APB prescalers table values */
+               ^
+.\src\stm32f4xx_hal_msp.c: 0 warnings, 3 errors
+
+[2022-01-27 22:32:03]	[done]
+	build successfully !
+
+[2022-01-27 22:32:13]	[done]
+	build successfully !
+
+[2022-01-27 22:41:54]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol SysTick_Handler multiply defined (by stm32f4xx_it.o and cmsis_os2.o).
+Error: L6200E: Symbol SVC_Handler multiply defined (by stm32f4xx_it.o and port.o).
+Error: L6200E: Symbol PendSV_Handler multiply defined (by stm32f4xx_it.o and port.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 3 error messages.
+
+
+[2022-01-27 23:41:42]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\KEY\key.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\LED\led.c", line 19: Error:  #20: identifier "GPIO_InitTypeDef" is undefined
+      GPIO_InitTypeDef GPIO_Initure;
+      ^
+".\HARDWARE\LED\led.c", line 20: Warning:  #223-D: function "__HAL_RCC_GPIOC_CLK_ENABLE" declared implicitly
+      __HAL_RCC_GPIOC_CLK_ENABLE(); //开启GPIOF时钟
+      ^
+".\HARDWARE\LED\led.c", line 22: Error:  #20: identifier "GPIO_PIN_13" is undefined
+      GPIO_Initure.Pin = GPIO_PIN_13| GPIO_PIN_14;          //PF9,10
+                         ^
+".\HARDWARE\LED\led.c", line 22: Error:  #20: identifier "GPIO_PIN_14" is undefined
+      GPIO_Initure.Pin = GPIO_PIN_13| GPIO_PIN_14;          //PF9,10
+                                      ^
+".\HARDWARE\LED\led.c", line 23: Error:  #20: identifier "GPIO_MODE_OUTPUT_PP" is undefined
+      GPIO_Initure.Mode = GPIO_MODE_OUTPUT_PP; //推挽输出
+                          ^
+".\HARDWARE\LED\led.c", line 24: Error:  #20: identifier "GPIO_PULLUP" is undefined
+      GPIO_Initure.Pull = GPIO_PULLUP;         //上拉
+                          ^
+".\HARDWARE\LED\led.c", line 25: Error:  #20: identifier "GPIO_SPEED_HIGH" is undefined
+      GPIO_Initure.Speed = GPIO_SPEED_HIGH;    //高速
+                           ^
+".\HARDWARE\LED\led.c", line 26: Warning:  #223-D: function "HAL_GPIO_Init" declared implicitly
+      HAL_GPIO_Init(GPIOC, &GPIO_Initure);
+      ^
+".\HARDWARE\LED\led.c", line 28: Warning:  #223-D: function "HAL_GPIO_WritePin" declared implicitly
+      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13|GPIO_PIN_14, GPIO_PIN_SET); //PF9置1，默认初始化后灯灭
+      ^
+".\HARDWARE\LED\led.c", line 28: Error:  #20: identifier "GPIO_PIN_SET" is undefined
+      HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13|GPIO_PIN_14, GPIO_PIN_SET); //PF9置1，默认初始化后灯灭
+                                                        ^
+.\HARDWARE\LED\led.c: 3 warnings, 7 errors
+".\SYSTEM\sys\sys.c", line 40: Error:  #20: identifier "HAL_StatusTypeDef" is undefined
+      HAL_StatusTypeDef ret = HAL_OK;
+      ^
+".\SYSTEM\sys\sys.c", line 40: Error:  #20: identifier "HAL_OK" is undefined
+      HAL_StatusTypeDef ret = HAL_OK;
+                              ^
+".\SYSTEM\sys\sys.c", line 41: Error:  #20: identifier "RCC_OscInitTypeDef" is undefined
+      RCC_OscInitTypeDef RCC_OscInitStructure; 
+      ^
+".\SYSTEM\sys\sys.c", line 42: Error:  #20: identifier "RCC_ClkInitTypeDef" is undefined
+      RCC_ClkInitTypeDef RCC_ClkInitStructure;
+      ^
+".\SYSTEM\sys\sys.c", line 44: Warning:  #223-D: function "__HAL_RCC_PWR_CLK_ENABLE" declared implicitly
+      __HAL_RCC_PWR_CLK_ENABLE(); //浣胯兘PWR鏃堕挓
+      ^
+".\SYSTEM\sys\sys.c", line 48: Warning:  #223-D: function "__HAL_PWR_VOLTAGESCALING_CONFIG" declared implicitly
+      __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);//璁剧疆璋冨帇鍣ㄨ緭鍑虹數鍘嬬骇鍒?
+      ^
+".\SYSTEM\sys\sys.c", line 48: Error:  #20: identifier "PWR_REGULATOR_VOLTAGE_SCALE1" is undefined
+      __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);//璁剧疆璋冨帇鍣ㄨ緭鍑虹數鍘嬬骇鍒?
+                                      ^
+".\SYSTEM\sys\sys.c", line 50: Error:  #20: identifier "RCC_OSCILLATORTYPE_HSE" is undefined
+      RCC_OscInitStructure.OscillatorType=RCC_OSCILLATORTYPE_HSE;    //鏃堕挓婧愪负HSE
+                                          ^
+".\SYSTEM\sys\sys.c", line 51: Error:  #20: identifier "RCC_HSE_ON" is undefined
+      RCC_OscInitStructure.HSEState=RCC_HSE_ON;                      //鎵撳紑HSE
+                                    ^
+".\SYSTEM\sys\sys.c", line 52: Error:  #20: identifier "RCC_PLL_ON" is undefined
+      RCC_OscInitStructure.PLL.PLLState=RCC_PLL_ON;//鎵撳紑PLL
+                                        ^
+".\SYSTEM\sys\sys.c", line 53: Error:  #20: identifier "RCC_PLLSOURCE_HSE" is undefined
+      RCC_OscInitStructure.PLL.PLLSource=RCC_PLLSOURCE_HSE;//PLL鏃堕挓婧愰夋嫨HSE
+                                         ^
+".\SYSTEM\sys\sys.c", line 58: Warning:  #223-D: function "HAL_RCC_OscConfig" declared implicitly
+      ret=HAL_RCC_OscConfig(&RCC_OscInitStructure);//鍒濆?鍖?          ^
+".\SYSTEM\sys\sys.c", line 62: Warning:  #223-D: function "HAL_PWREx_EnableOverDrive" declared implicitly
+      ret=HAL_PWREx_EnableOverDrive(); //寮鍚疧ver-Driver鍔熻兘
+          ^
+".\SYSTEM\sys\sys.c", line 66: Error:  #20: identifier "RCC_CLOCKTYPE_SYSCLK" is undefined
+      RCC_ClkInitStructure.ClockType=(RCC_CLOCKTYPE_SYSCLK|RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2);
+                                      ^
+".\SYSTEM\sys\sys.c", line 66: Error:  #20: identifier "RCC_CLOCKTYPE_HCLK" is undefined
+      RCC_ClkInitStructure.ClockType=(RCC_CLOCKTYPE_SYSCLK|RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2);
+                                                           ^
+".\SYSTEM\sys\sys.c", line 66: Error:  #20: identifier "RCC_CLOCKTYPE_PCLK1" is undefined
+      RCC_ClkInitStructure.ClockType=(RCC_CLOCKTYPE_SYSCLK|RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2);
+                                                                              ^
+".\SYSTEM\sys\sys.c", line 66: Error:  #20: identifier "RCC_CLOCKTYPE_PCLK2" is undefined
+      RCC_ClkInitStructure.ClockType=(RCC_CLOCKTYPE_SYSCLK|RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2);
+                                                                                                  ^
+".\SYSTEM\sys\sys.c", line 67: Error:  #20: identifier "RCC_SYSCLKSOURCE_PLLCLK" is undefined
+      RCC_ClkInitStructure.SYSCLKSource=RCC_SYSCLKSOURCE_PLLCLK;//璁剧疆绯荤粺鏃堕挓鏃堕挓婧愪负PLL
+                                        ^
+".\SYSTEM\sys\sys.c", line 68: Error:  #20: identifier "RCC_SYSCLK_DIV1" is undefined
+      RCC_ClkInitStructure.AHBCLKDivider=RCC_SYSCLK_DIV1;//AHB鍒嗛?绯绘暟涓?
+                                         ^
+".\SYSTEM\sys\sys.c", line 69: Error:  #20: identifier "RCC_HCLK_DIV4" is undefined
+      RCC_ClkInitStructure.APB1CLKDivider=RCC_HCLK_DIV4; //APB1鍒嗛?绯绘暟涓?
+                                          ^
+".\SYSTEM\sys\sys.c", line 70: Error:  #20: identifier "RCC_HCLK_DIV2" is undefined
+      RCC_ClkInitStructure.APB2CLKDivider=RCC_HCLK_DIV2; //APB2鍒嗛?绯绘暟涓?
+                                          ^
+".\SYSTEM\sys\sys.c", line 71: Warning:  #223-D: function "HAL_RCC_ClockConfig" declared implicitly
+      ret=HAL_RCC_ClockConfig(&RCC_ClkInitStructure,FLASH_LATENCY_5);//鍚屾椂璁剧疆FLASH寤舵椂鍛ㄦ湡涓?WS锛屼篃灏辨槸6涓狢PU鍛ㄦ湡銆?          ^
+".\SYSTEM\sys\sys.c", line 71: Error:  #20: identifier "FLASH_LATENCY_5" is undefined
+      ret=HAL_RCC_ClockConfig(&RCC_ClkInitStructure,FLASH_LATENCY_5);//鍚屾椂璁剧疆FLASH寤舵椂鍛ㄦ湡涓?WS锛屼篃灏辨槸6涓狢PU鍛ㄦ湡銆?                                                    ^
+.\SYSTEM\sys\sys.c: 5 warnings, 18 errors
+".\HARDWARE\KEY\key.c", line 19: Error:  #20: identifier "GPIO_InitTypeDef" is undefined
+      GPIO_InitTypeDef GPIO_Initure;
+      ^
+".\HARDWARE\KEY\key.c", line 21: Warning:  #223-D: function "__HAL_RCC_GPIOB_CLK_ENABLE" declared implicitly
+      __HAL_RCC_GPIOB_CLK_ENABLE(); //开启GPIOB时钟
+      ^
+".\HARDWARE\KEY\key.c", line 23: Error:  #20: identifier "GPIO_PIN_12" is undefined
+      GPIO_Initure.Pin = GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15; //PA0
+                         ^
+".\HARDWARE\KEY\key.c", line 23: Error:  #20: identifier "GPIO_PIN_13" is undefined
+      GPIO_Initure.Pin = GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15; //PA0
+                                       ^
+".\HARDWARE\KEY\key.c", line 23: Error:  #20: identifier "GPIO_PIN_14" is undefined
+      GPIO_Initure.Pin = GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15; //PA0
+                                                     ^
+".\HARDWARE\KEY\key.c", line 23: Error:  #20: identifier "GPIO_PIN_15" is undefined
+      GPIO_Initure.Pin = GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15; //PA0
+                                                                   ^
+".\HARDWARE\KEY\key.c", line 24: Error:  #20: identifier "GPIO_MODE_INPUT" is undefined
+      GPIO_Initure.Mode = GPIO_MODE_INPUT;                                      //输入
+                          ^
+".\HARDWARE\KEY\key.c", line 25: Error:  #20: identifier "GPIO_PULLDOWN" is undefined
+      GPIO_Initure.Pull = GPIO_PULLDOWN;                                        //下拉
+                          ^
+".\HARDWARE\KEY\key.c", line 26: Error:  #20: identifier "GPIO_SPEED_HIGH" is undefined
+      GPIO_Initure.Speed = GPIO_SPEED_HIGH;                                     //高速
+                           ^
+".\HARDWARE\KEY\key.c", line 27: Warning:  #223-D: function "HAL_GPIO_Init" declared implicitly
+      HAL_GPIO_Init(GPIOB, &GPIO_Initure);
+      ^
+".\HARDWARE\KEY\key.c", line 41: Warning:  #223-D: function "HAL_GPIO_ReadPin" declared implicitly
+      if (key_up && (KEY_LEFT == 1 || KEY_UP == 1 || KEY_RIGHT == 1 || KEY_DOWN == 1))
+                     ^
+".\HARDWARE\KEY\key.c", line 41: Error:  #20: identifier "GPIO_PIN_12" is undefined
+      if (key_up && (KEY_LEFT == 1 || KEY_UP == 1 || KEY_RIGHT == 1 || KEY_DOWN == 1))
+                     ^
+".\HARDWARE\KEY\key.c", line 41: Error:  #20: identifier "GPIO_PIN_13" is undefined
+      if (key_up && (KEY_LEFT == 1 || KEY_UP == 1 || KEY_RIGHT == 1 || KEY_DOWN == 1))
+                                      ^
+".\HARDWARE\KEY\key.c", line 41: Error:  #20: identifier "GPIO_PIN_14" is undefined
+      if (key_up && (KEY_LEFT == 1 || KEY_UP == 1 || KEY_RIGHT == 1 || KEY_DOWN == 1))
+                                                     ^
+".\HARDWARE\KEY\key.c", line 41: Error:  #20: identifier "GPIO_PIN_15" is undefined
+      if (key_up && (KEY_LEFT == 1 || KEY_UP == 1 || KEY_RIGHT == 1 || KEY_DOWN == 1))
+                                                                       ^
+.\HARDWARE\KEY\key.c: 3 warnings, 12 errors
+
+[2022-01-27 23:41:59]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\delay\delay.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\delay\delay.c", line 87: Error:  #147-D: declaration is incompatible with "void delay_ms(u16)" (declared at line 21 of ".\SYSTEM\delay\delay.h")
+  void delay_ms(u32 nms)
+       ^
+.\SYSTEM\delay\delay.c: 0 warnings, 1 error
+
+[2022-01-27 23:42:41]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\delay\delay.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\delay\delay.c", line 87: Error:  #147-D: declaration is incompatible with "void delay_ms(u16)" (declared at line 21 of ".\SYSTEM\delay\delay.h")
+  void delay_ms(u32 nms)
+       ^
+.\SYSTEM\delay\delay.c: 0 warnings, 1 error
+
+[2022-01-27 23:45:44]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\delay\delay.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\delay\delay.c", line 87: Error:  #147-D: declaration is incompatible with "void delay_ms(u16)" (declared at line 21 of ".\SYSTEM\delay\delay.h")
+  void delay_ms(u32 nms)
+       ^
+.\SYSTEM\delay\delay.c: 0 warnings, 1 error
+
+[2022-01-27 23:46:24]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol SysTick_Handler multiply defined (by delay.o and cmsis_os2.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-01-27 23:49:25]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 21: Error:  #5: cannot open source input file "cmsis_os.h": No such file or directory
+  #include "cmsis_os.h"
+                       ^
+.\src\main.c: 0 warnings, 1 error
+
+[2022-01-27 23:50:34]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 60: Error:  #20: identifier "osThreadId_t" is undefined
+  osThreadId_t defaultTaskHandle;
+  ^
+".\src\main.c", line 61: Error:  #20: identifier "osThreadAttr_t" is undefined
+  const osThreadAttr_t defaultTask_attributes = {
+        ^
+".\src\main.c", line 64: Error:  #20: identifier "osPriority_t" is undefined
+      .priority = (osPriority_t)osPriorityNormal,
+                   ^
+".\src\main.c", line 64: Error:  #253: expected a ","
+      .priority = (osPriority_t)osPriorityNormal,
+                                ^
+".\src\main.c", line 67: Error:  #20: identifier "osThreadId_t" is undefined
+  osThreadId_t sysStatusHandle;
+  ^
+".\src\main.c", line 68: Error:  #20: identifier "osThreadAttr_t" is undefined
+  const osThreadAttr_t sysStatus_attributes = {
+        ^
+".\src\main.c", line 71: Error:  #253: expected a ","
+      .priority = (osPriority_t)osPriorityLow,
+                                ^
+".\src\main.c", line 74: Error:  #20: identifier "osThreadId_t" is undefined
+  osThreadId_t guiRefreshHandle;
+  ^
+".\src\main.c", line 75: Error:  #20: identifier "osThreadAttr_t" is undefined
+  const osThreadAttr_t guiRefresh_attributes = {
+        ^
+".\src\main.c", line 78: Error:  #253: expected a ","
+      .priority = (osPriority_t)osPriorityLow,
+                                ^
+".\src\main.c", line 154: Warning:  #223-D: function "osKernelInitialize" declared implicitly
+    osKernelInitialize();
+    ^
+".\src\main.c", line 174: Warning:  #223-D: function "osThreadNew" declared implicitly
+    defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+                        ^
+".\src\main.c", line 191: Warning:  #223-D: function "osKernelStart" declared implicitly
+    osKernelStart();
+    ^
+".\src\main.c", line 484: Warning:  #223-D: function "osDelay" declared implicitly
+      osDelay(100);
+      ^
+".\src\main.c", line 502: Warning:  #223-D: function "osDelay" declared implicitly
+      osDelay(100);
+      ^
+".\src\main.c", line 525: Warning:  #223-D: function "osDelay" declared implicitly
+      osDelay(100);
+      ^
+".\src\main.c", line 85: Warning:  #177-D: function "MX_I2C1_Init" was declared but never referenced
+  static void MX_I2C1_Init(void);
+              ^
+".\src\main.c", line 86: Warning:  #177-D: function "MX_TIM1_Init" was declared but never referenced
+  static void MX_TIM1_Init(void);
+              ^
+.\src\main.c: 8 warnings, 10 errors
+
+[2022-01-28 00:04:55]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol vApplicationGetIdleTaskMemory (referred from tasks.o).
+Error: L6218E: Undefined symbol vApplicationGetTimerTaskMemory (referred from timers.o).
+Error: L6218E: Undefined symbol HAL_PWREx_EnableOverDrive (referred from sys.o).
+Error: L6218E: Undefined symbol osDelay (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-01-28 00:07:42]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c", line 261: Error:  #20: identifier "T0PR" is undefined
+  	T0PR = portPRESCALE_VALUE;
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c", line 274: Error:  #20: identifier "T0MR0" is undefined
+  	T0MR0 = ulCompareMatch;
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c", line 277: Error:  #20: identifier "T0MCR" is undefined
+  	T0MCR = portRESET_COUNT_ON_MATCH | portINTERRUPT_ON_MATCH;
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c", line 280: Error:  #20: identifier "VICIntSelect" is undefined
+  	VICIntSelect &= ~( portTIMER_VIC_CHANNEL_BIT );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c", line 281: Error:  #20: identifier "VICIntEnable" is undefined
+  	VICIntEnable |= portTIMER_VIC_CHANNEL_BIT;
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c", line 287: Error:  #20: identifier "VICVectAddr0" is undefined
+  		VICVectAddr0 = ( uint32_t ) vPreemptiveTick;
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c", line 295: Error:  #20: identifier "VICVectCntl0" is undefined
+  	VICVectCntl0 = portTIMER_VIC_CHANNEL | portTIMER_VIC_ENABLE;
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c", line 299: Error:  #20: identifier "T0TCR" is undefined
+  	T0TCR = portENABLE_TIMER;
+  	^
+.\Libraries\FreeRTOS\portable\RVDS\ARM7_LPC21xx\port.c: 0 warnings, 8 errors
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 226: Error:  #147-D: declaration is incompatible with "StackType_t *pxPortInitialiseStack(StackType_t *, TaskFunction_t, void *)" (declared at line 144 of ".\Libraries\FreeRTOS\include\portable.h")
+  StackType_t *pxPortInitialiseStack( StackType_t *pxTopOfStack, TaskFunction_t pxCode, void *pvParameters, BaseType_t xRunPrivileged )
+               ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 269: Error:  #20: identifier "portSVC_START_SCHEDULER" is undefined
+  		case portSVC_START_SCHEDULER	:	portNVIC_SYSPRI1_REG |= portNVIC_SVC_PRI;
+  		     ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 273: Error:  #20: identifier "portSVC_YIELD" is undefined
+  		case portSVC_YIELD				:	portNVIC_INT_CTRL_REG = portNVIC_PENDSVSET_BIT;
+  		     ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 283: Error:  #20: identifier "portSVC_RAISE_PRIVILEGE" is undefined
+  		case portSVC_RAISE_PRIVILEGE	:	__asm
+  		     ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 348: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 445: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == 1000UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 456: Warning:  #223-D: function "vPortResetPrivilege" declared implicitly
+  	vPortResetPrivilege( xRunningPrivileged );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 464: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 470: Warning:  #223-D: function "vPortResetPrivilege" declared implicitly
+  	vPortResetPrivilege( xRunningPrivileged );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 593: Error:  #20: identifier "portUNPRIVILEGED_FLASH_REGION" is undefined
+  											( portUNPRIVILEGED_FLASH_REGION );
+  											  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 595: Error:  #20: identifier "portMPU_REGION_READ_ONLY" is undefined
+  		portMPU_REGION_ATTRIBUTE_REG =	( portMPU_REGION_READ_ONLY ) |
+  		                              	  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 596: Error:  #20: identifier "portMPU_REGION_CACHEABLE_BUFFERABLE" is undefined
+  										( portMPU_REGION_CACHEABLE_BUFFERABLE ) |
+  										  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 605: Error:  #20: identifier "portPRIVILEGED_FLASH_REGION" is undefined
+  											( portPRIVILEGED_FLASH_REGION );
+  											  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 607: Error:  #20: identifier "portMPU_REGION_PRIVILEGED_READ_ONLY" is undefined
+  		portMPU_REGION_ATTRIBUTE_REG =	( portMPU_REGION_PRIVILEGED_READ_ONLY ) |
+  		                              	  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 616: Error:  #20: identifier "portPRIVILEGED_RAM_REGION" is undefined
+  											( portPRIVILEGED_RAM_REGION );
+  											  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 618: Error:  #20: identifier "portMPU_REGION_PRIVILEGED_READ_WRITE" is undefined
+  		portMPU_REGION_ATTRIBUTE_REG =	( portMPU_REGION_PRIVILEGED_READ_WRITE ) |
+  		                              	  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 627: Error:  #20: identifier "portGENERAL_PERIPHERALS_REGION" is undefined
+  											( portGENERAL_PERIPHERALS_REGION );
+  											  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 629: Error:  #20: identifier "portMPU_REGION_READ_WRITE" is undefined
+  		portMPU_REGION_ATTRIBUTE_REG =	( portMPU_REGION_READ_WRITE | portMPU_REGION_EXECUTE_NEVER ) |
+  		                              	  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 629: Error:  #20: identifier "portMPU_REGION_EXECUTE_NEVER" is undefined
+  		portMPU_REGION_ATTRIBUTE_REG =	( portMPU_REGION_READ_WRITE | portMPU_REGION_EXECUTE_NEVER ) |
+  		                              	                              ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 678: Error:  #20: identifier "xMPU_SETTINGS" is undefined
+  void vPortStoreTaskMPUSettings( xMPU_SETTINGS *xMPUSettings, const struct xMEMORY_REGION * const xRegions, StackType_t *pxBottomOfStack, uint32_t ulStackDepth )
+                                  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 695: Error:  #20: identifier "portSTACK_REGION" is undefined
+  				( portSTACK_REGION );
+  				  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 698: Error:  #20: identifier "portMPU_REGION_READ_WRITE" is undefined
+  				( portMPU_REGION_READ_WRITE ) |
+  				  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 699: Error:  #20: identifier "portMPU_REGION_CACHEABLE_BUFFERABLE" is undefined
+  				( portMPU_REGION_CACHEABLE_BUFFERABLE ) |
+  				  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 711: Error:  #20: identifier "portMPU_REGION_PRIVILEGED_READ_WRITE" is undefined
+  				( portMPU_REGION_PRIVILEGED_READ_WRITE ) |
+  				  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 735: Error:  #20: identifier "portSTACK_REGION" is undefined
+  					( portSTACK_REGION ); /* Region number. */
+  					  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 738: Error:  #20: identifier "portMPU_REGION_READ_WRITE" is undefined
+  					( portMPU_REGION_READ_WRITE ) | /* Read and write. */
+  					  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 740: Error:  #20: identifier "portMPU_REGION_CACHEABLE_BUFFERABLE" is undefined
+  					( portMPU_REGION_CACHEABLE_BUFFERABLE ) |
+  					  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 756: Error:  #20: identifier "portSTACK_REGION" is undefined
+  						( portSTACK_REGION + ul ); /* Region number. */
+  						  ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 766: Error:  #20: identifier "portSTACK_REGION" is undefined
+  				xMPUSettings->xRegion[ ul ].ulRegionBaseAddress = ( portSTACK_REGION + ul ) | portMPU_REGION_VALID;
+  				                                                    ^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 824: Warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+  			^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 840: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+  		^
+.\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c: 7 warnings, 24 errors
+
+[2022-01-28 00:08:31]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 348: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 445: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == 1000UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 464: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 824: Warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+  			^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c", line 840: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+  		^
+".\\Libraries\\FreeRTOS\\portable\\RVDS\\ARM_CM4_MPU\\port.c", line 496: Error: A1586E: Bad operand types (UnDefOT, Constant) for operator (
+  496 00000092  mov r0, #( 5 << (8 - 4U) )
+1 Error, 0 Warnings
+.\Libraries\FreeRTOS\portable\RVDS\ARM_CM4_MPU\port.c: 5 warnings, 0 errors
+
+[2022-01-28 00:08:44]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 271: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == ~0UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 340: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 345: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p1_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 346: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p0_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 371: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ucMaxPriorityValue == ( configKERNEL_INTERRUPT_PRIORITY & ucMaxPriorityValue ) );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 425: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == 1000UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 441: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 448: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 768: Warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+  			^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 784: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+  		^
+".\\Libraries\\FreeRTOS\\portable\\RVDS\\ARM_CM4F\\port.c", line 483: Error: A1586E: Bad operand types (UnDefOT, Constant) for operator (
+  483 00000072  mov r0, #( 5 << (8 - 4U) )
+1 Error, 0 Warnings
+.\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c: 10 warnings, 0 errors
+
+[2022-01-28 00:14:01]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 271: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == ~0UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 340: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 345: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p1_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 346: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p0_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 371: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ucMaxPriorityValue == ( configKERNEL_INTERRUPT_PRIORITY & ucMaxPriorityValue ) );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 425: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == 1000UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 441: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 448: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 768: Warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+  			^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 784: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+  		^
+".\\Libraries\\FreeRTOS\\portable\\RVDS\\ARM_CM4F\\port.c", line 483: Error: A1586E: Bad operand types (UnDefOT, Constant) for operator (
+  483 00000072  mov r0, #( 5 << (8 - 4U) )
+1 Error, 0 Warnings
+.\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c: 10 warnings, 0 errors
+
+[2022-01-28 00:15:55]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 271: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == ~0UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 340: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 345: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p1_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 346: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p0_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 371: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ucMaxPriorityValue == ( configKERNEL_INTERRUPT_PRIORITY & ucMaxPriorityValue ) );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 425: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == 1000UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 441: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 448: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 768: Warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+  			^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 784: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+  		^
+".\\Libraries\\FreeRTOS\\portable\\RVDS\\ARM_CM4F\\port.c", line 483: Error: A1586E: Bad operand types (UnDefOT, Constant) for operator (
+  483 00000072  mov r0, #( 5 << (8 - 4U) )
+1 Error, 0 Warnings
+.\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c: 10 warnings, 0 errors
+
+[2022-01-28 00:19:21]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 271: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == ~0UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 340: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 345: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p1_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 346: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p0_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 371: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ucMaxPriorityValue == ( configKERNEL_INTERRUPT_PRIORITY & ucMaxPriorityValue ) );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 425: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == 1000UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 441: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 448: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 768: Warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+  			^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 784: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+  		^
+".\\Libraries\\FreeRTOS\\portable\\RVDS\\ARM_CM4F\\port.c", line 483: Error: A1586E: Bad operand types (UnDefOT, Constant) for operator (
+  483 00000072  mov r0, #( 5 << (8 - 4U) )
+1 Error, 0 Warnings
+.\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c: 10 warnings, 0 errors
+
+[2022-01-28 00:20:02]	compilation failed at : "c:\Users\13443\source\stm32rt\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 271: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == ~0UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 340: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 345: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p1_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 346: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( portCPUID != portCORTEX_M7_r0p0_ID );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 371: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ucMaxPriorityValue == ( configKERNEL_INTERRUPT_PRIORITY & ucMaxPriorityValue ) );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 425: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == 1000UL );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 441: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+  		^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 448: Warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting );
+  	^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 768: Warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+  			^
+".\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c", line 784: Warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+  		^
+".\\Libraries\\FreeRTOS\\portable\\RVDS\\ARM_CM4F\\port.c", line 483: Error: A1586E: Bad operand types (UnDefOT, Constant) for operator (
+  483 00000072  mov r0, #( 5 << (8 - 4U) )
+1 Error, 0 Warnings
+.\Libraries\FreeRTOS\portable\RVDS\ARM_CM4F\port.c: 10 warnings, 0 errors
+
+[2022-01-28 00:23:14]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol HAL_PWREx_EnableOverDrive (referred from sys.o).
+Error: L6218E: Undefined symbol osDelay (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-28 00:26:30]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol HAL_PWREx_EnableOverDrive (referred from sys.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-28 00:28:18]	[done]
+	build successfully !
+
+[2022-01-28 00:30:23]	[done]
+	build successfully !
+
+[2022-01-28 00:31:42]	[done]
+	build successfully !
+
+[2022-01-28 00:31:56]	[done]
+	build successfully !
+
+[2022-01-28 00:35:59]	[done]
+	build successfully !
+
+[2022-01-28 00:41:27]	[done]
+	build successfully !
+
+[2022-01-28 00:43:36]	[done]
+	build successfully !
+
+[2022-01-28 00:43:44]	[done]
+	build successfully !
+
+[2022-01-28 00:44:32]	[done]
+	build successfully !
+
+[2022-01-28 00:45:30]	[done]
+	build successfully !
+
+[2022-01-28 00:47:02]	[done]
+	build successfully !
+
+[2022-01-28 00:47:41]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol pvPortMalloc multiply defined (by heap_2.o and heap_1.o).
+Error: L6200E: Symbol pvPortMalloc multiply defined (by heap_3.o and heap_1.o).
+Error: L6200E: Symbol pvPortMalloc multiply defined (by heap_4.o and heap_1.o).
+Error: L6200E: Symbol pvPortMalloc multiply defined (by heap_5.o and heap_1.o).
+Error: L6200E: Symbol vPortFree multiply defined (by heap_2.o and heap_1.o).
+Error: L6200E: Symbol vPortFree multiply defined (by heap_3.o and heap_1.o).
+Error: L6200E: Symbol vPortFree multiply defined (by heap_4.o and heap_1.o).
+Error: L6200E: Symbol vPortFree multiply defined (by heap_5.o and heap_1.o).
+Error: L6200E: Symbol vPortInitialiseBlocks multiply defined (by heap_2.o and heap_1.o).
+Error: L6200E: Symbol vPortInitialiseBlocks multiply defined (by heap_4.o and heap_1.o).
+Error: L6200E: Symbol xPortGetFreeHeapSize multiply defined (by heap_2.o and heap_1.o).
+Error: L6200E: Symbol xPortGetFreeHeapSize multiply defined (by heap_4.o and heap_1.o).
+Error: L6200E: Symbol xPortGetFreeHeapSize multiply defined (by heap_5.o and heap_1.o).
+Error: L6200E: Symbol xPortGetMinimumEverFreeHeapSize multiply defined (by heap_5.o and heap_4.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 14 error messages.
+
+
+[2022-01-28 00:52:31]	[done]
+	build successfully !
+
+[2022-01-28 00:56:42]	[done]
+	build successfully !
+
+[2022-01-28 00:56:51]	[done]
+	build successfully !
+
+[2022-01-28 00:57:19]	[done]
+	build successfully !
+
+[2022-01-28 01:00:12]	[done]
+	build successfully !
+
+[2022-01-28 01:03:25]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol uart_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-28 01:04:39]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol HAL_UART_ErrorCallback multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol HAL_UART_MspDeInit multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol HAL_UART_MspInit multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol HAL_UART_RxCpltCallback multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol HAL_UART_TxCpltCallback multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart1_handle multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart1_rx_buffer multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart2_handle multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart2_rx_buffer multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart1_buffer multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart1_point multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart1_tx_done multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart2_buffer multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart2_point multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol g_uart2_tx_done multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol USART1_IRQHandler multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol USART2_IRQHandler multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart1_deinit multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart1_flush multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart1_init multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart1_print multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart1_read multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart1_write multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart2_deinit multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart2_flush multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart2_init multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart2_read multiply defined (by usart.o and uart.o).
+Error: L6200E: Symbol uart2_write multiply defined (by usart.o and uart.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 28 error messages.
+
+
+[2022-01-28 01:04:59]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol uart_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-28 01:06:01]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol uart1_write (referred from driver_ssd1306_interface.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-28 01:06:40]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306_ativate_scroll (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_clear (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_deactivate_scroll (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_gram_draw_picture (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_gram_fill_rect (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_gram_update (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_gram_write_point (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_gram_write_string (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_info (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_debug_print (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_delay_ms (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_iic_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_iic_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_iic_write (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_reset_gpio_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_reset_gpio_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_reset_gpio_write (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_cmd_data_gpio_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_cmd_data_gpio_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_cmd_data_gpio_write (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_write_cmd (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_addr_pin (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_charge_pump (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_column_address_range (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_com_pins_hardware_conf (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_contrast (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_deselect_level (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_display (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_display_clock (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_display_mode (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_display_offset (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_display_start_line (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_entire_display (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_fade_blinking_mode (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_high_column_start_address (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_interface (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_left_horizontal_scroll (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_low_column_start_address (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_memory_addressing_mode (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_multiplex_ratio (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_page_address_range (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_precharge_period (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_right_horizontal_scroll (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_scan_direction (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_segment_remap (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_vertical_left_horizontal_scroll (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_vertical_right_horizontal_scroll (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_set_zoom_in (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_clear (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_deactivate_scroll (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_deinit (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_disable_zoom_in (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_display_off (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_display_on (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_enable_zoom_in (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_fade_blinking (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_init (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_read_point (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_rect (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_string (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_vertical_left_horizontal_scroll (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_vertical_right_horizontal_scroll (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_write_point (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_clear (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_deinit (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_display_off (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_display_on (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_init (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_read_point (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_rect (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_string (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_write_point (referred from test.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 76 error messages.
+
+
+[2022-01-28 01:06:51]	[done]
+	build successfully !
+
+[2022-01-28 01:09:12]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 124: Error:  #20: identifier "gui" is undefined
+  	static gui gui_num=0.00;
+  	       ^
+.\src\main.c: 0 warnings, 1 error
+
+[2022-01-28 01:09:33]	[done]
+	build successfully !
+
+[2022-01-28 01:13:08]	[done]
+	build successfully !
+
+[2022-01-28 01:13:47]	[done]
+	build successfully !
+
+[2022-01-28 01:15:26]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol shell_parse (referred from main.o).
+Error: L6218E: Undefined symbol uart1_flush (referred from main.o).
+Error: L6218E: Undefined symbol uart1_print (referred from main.o).
+Error: L6218E: Undefined symbol uart1_read (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-01-28 01:18:02]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol shell_parse (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-28 01:18:30]	[done]
+	build successfully !
+
+[2022-01-28 01:19:35]	[done]
+	build successfully !
+
+[2022-01-28 01:19:50]	[done]
+	build successfully !
+
+[2022-01-28 01:20:22]	[done]
+	build successfully !
+
+[2022-01-28 01:21:49]	[done]
+	build successfully !
+
+[2022-01-28 01:22:54]	[done]
+	build successfully !
+
+[2022-01-28 01:25:12]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306 (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-28 01:25:26]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306_interface_debug_print (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_delay_ms (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_iic_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_iic_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_iic_write (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_reset_gpio_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_reset_gpio_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_reset_gpio_write (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_cmd_data_gpio_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_cmd_data_gpio_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_cmd_data_gpio_write (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_write_cmd (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_clear (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_deactivate_scroll (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_deinit (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_disable_zoom_in (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_display_off (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_display_on (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_enable_zoom_in (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_fade_blinking (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_init (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_read_point (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_rect (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_string (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_vertical_left_horizontal_scroll (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_vertical_right_horizontal_scroll (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_write_point (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_clear (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_deinit (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_display_off (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_display_on (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_init (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_read_point (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_rect (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_string (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_basic_write_point (referred from test.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 38 error messages.
+
+
+[2022-01-28 01:25:39]	[done]
+	build successfully !
+
+[2022-01-28 01:27:12]	[done]
+	build successfully !
+
+[2022-01-28 01:30:03]	[done]
+	build successfully !
+
+[2022-01-28 01:30:26]	[done]
+	build successfully !
+
+[2022-01-28 01:31:00]	[done]
+	build successfully !
+
+[2022-01-28 01:33:27]	[done]
+	build successfully !
+
+[2022-01-28 01:35:47]	[done]
+	build successfully !
+
+[2022-01-28 01:39:18]	[done]
+	build successfully !
+
+[2022-01-28 01:39:35]	[done]
+	build successfully !
+
+[2022-01-28 01:42:16]	[done]
+	build successfully !
+
+[2022-01-28 01:53:35]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usmart\usmart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usart\usart.h", line 1: Error:  #3: #include file ".\SYSTEM\usart\usart.h" includes itself
+  #include "usart.h"
+                    ^
+.\SYSTEM\usmart\usmart.c: 0 warnings, 1 error
+
+[2022-01-28 01:55:14]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usmart\usmart_config.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usmart\usmart_config.c", line 7: Error:  #5: cannot open source input file "lcd.h": No such file or directory
+  #include "lcd.h"
+                  ^
+.\SYSTEM\usmart\usmart_config.c: 0 warnings, 1 error
+
+[2022-01-28 01:56:37]	compilation failed at : "c:\Users\13443\source\stm32rt\src\stm32f4xx_it.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.h", line 34: Error:  #5: cannot open source input file "shell.h": No such file or directory
+  #include "shell.h"
+                    ^
+.\src\stm32f4xx_it.c: 0 warnings, 1 error
+
+[2022-01-28 01:56:49]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol OSIntEnter (referred from usart.o).
+Error: L6218E: Undefined symbol OSIntExit (referred from usart.o).
+Error: L6218E: Undefined symbol shell_parse (referred from main.o).
+Error: L6218E: Undefined symbol uart1_flush (referred from main.o).
+Error: L6218E: Undefined symbol uart1_init (referred from main.o).
+Error: L6218E: Undefined symbol uart1_print (referred from main.o).
+Error: L6218E: Undefined symbol uart1_read (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 7 error messages.
+
+
+[2022-01-28 01:57:39]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usmart\usmart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usmart\usmart.c", line 99: Warning:  #223-D: function "printf" declared implicitly
+  			printf("\r\n");
+  			^
+".\SYSTEM\usmart\usmart.c", line 103: Warning:  #870-D: invalid multibyte character sequence
+  			printf("瀹?浣犲彲浠ラ氳繃涓插彛鍔╂墜璋冪敤绋嬪簭閲岄潰鐨勪换浣曞嚱鏁?骞舵墽琛?鍥犳?,浣犲彲\r\n");
+  			         ^
+".\SYSTEM\usmart\usmart.c", line 103: Warning:  #870-D: invalid multibyte character sequence
+  			printf("瀹?浣犲彲浠ラ氳繃涓插彛鍔╂墜璋冪敤绋嬪簭閲岄潰鐨勪换浣曞嚱鏁?骞舵墽琛?鍥犳?,浣犲彲\r\n");
+  			                                        ^
+".\SYSTEM\usmart\usmart.c", line 103: Warning:  #870-D: invalid multibyte character sequence
+  			printf("瀹?浣犲彲浠ラ氳繃涓插彛鍔╂墜璋冪敤绋嬪簭閲岄潰鐨勪换浣曞嚱鏁?骞舵墽琛?鍥犳?,浣犲彲\r\n");
+  			                                             ^
+".\SYSTEM\usmart\usmart.c", line 105: Warning:  #870-D: invalid multibyte character sequence
+  			printf("銆佸嚱鏁板叆鍙ｅ湴鍧绛変綔涓哄弬鏁?,鍗曚釜鍑芥暟鏈澶氭敮鎸?0涓?緭鍏ュ弬鏁?骞舵敮鎸乗r\n"),  
+  			                          ^
+".\SYSTEM\usmart\usmart.c", line 105: Warning:  #870-D: invalid multibyte character sequence
+  			printf("銆佸嚱鏁板叆鍙ｅ湴鍧绛変綔涓哄弬鏁?,鍗曚釜鍑芥暟鏈澶氭敮鎸?0涓?緭鍏ュ弬鏁?骞舵敮鎸乗r\n"),  
+  			                                        ^
+".\SYSTEM\usmart\usmart.c", line 105: Warning:  #870-D: invalid multibyte character sequence
+  			printf("銆佸嚱鏁板叆鍙ｅ湴鍧绛変綔涓哄弬鏁?,鍗曚釜鍑芥暟鏈澶氭敮鎸?0涓?緭鍏ュ弬鏁?骞舵敮鎸乗r\n"),  
+  			                                                 ^
+".\SYSTEM\usmart\usmart.c", line 106: Warning:  #870-D: invalid multibyte character sequence
+  			printf("鍑芥暟杩斿洖鍊兼樉绀?鏀?寔鍙傛暟鏄剧ず杩涘埗璁剧疆鍔熻兘,鏀?寔杩涘埗杞?崲鍔熻兘.\r\n");
+  			                  ^
+".\SYSTEM\usmart\usmart.c", line 107: Warning:  #870-D: invalid multibyte character sequence
+  			printf("鎶鏈?敮鎸?www.openedv.com\r\n");
+  			              ^
+".\SYSTEM\usmart\usmart.c", line 108: Warning:  #870-D: invalid multibyte character sequence
+  			printf("USMART鏈?涓?郴缁熷懡浠?蹇呴』灏忓啓):\r\n");
+  			               ^
+".\SYSTEM\usmart\usmart.c", line 108: Warning:  #870-D: invalid multibyte character sequence
+  			printf("USMART鏈?涓?郴缁熷懡浠?蹇呴』灏忓啓):\r\n");
+  			                       ^
+".\SYSTEM\usmart\usmart.c", line 115: Warning:  #870-D: invalid multibyte character sequence
+  			printf("runtime:1,寮鍚?嚱鏁拌繍琛岃?鏃?0,鍏抽棴鍑芥暟杩愯?璁℃椂;\r\n\n");
+  			                              ^
+".\SYSTEM\usmart\usmart.c", line 314: Warning:  #223-D: function "printf" declared implicitly
+  	printf("\r\n%s(",sfname);//杈撳嚭姝ｈ?鎵ц?鐨勫嚱鏁板悕
+  	^
+".\SYSTEM\usmart\usmart.c", line 397: Error:  #20: identifier "USART_RX_STA" is undefined
+  	if(USART_RX_STA&0x8000)//涓插彛鎺ユ敹瀹屾垚锛?  	   ^
+".\SYSTEM\usmart\usmart.c", line 400: Error:  #20: identifier "USART_RX_BUF" is undefined
+  		USART_RX_BUF[len]='\0';	//鍦ㄦ湯灏惧姞鍏ョ粨鏉熺?. 
+  		^
+".\SYSTEM\usmart\usmart.c", line 412: Warning:  #223-D: function "printf" declared implicitly
+  						printf("鍑芥暟閿欒?!\r\n");
+  						^
+.\SYSTEM\usmart\usmart.c: 14 warnings, 2 errors
+
+[2022-01-28 01:58:02]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usmart\usmart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usmart\usmart.c", line 99: Warning:  #223-D: function "printf" declared implicitly
+  			printf("\r\n");
+  			^
+".\SYSTEM\usmart\usmart.c", line 314: Warning:  #223-D: function "printf" declared implicitly
+  	printf("\r\n%s(",sfname);//杈撳嚭姝ｈ?鎵ц?鐨勫嚱鏁板悕
+  	^
+".\SYSTEM\usmart\usmart.c", line 397: Error:  #20: identifier "USART_RX_STA" is undefined
+  	if(USART_RX_STA&0x8000)//涓插彛鎺ユ敹瀹屾垚锛?  	   ^
+".\SYSTEM\usmart\usmart.c", line 400: Error:  #20: identifier "USART_RX_BUF" is undefined
+  		USART_RX_BUF[len]='\0';	//鍦ㄦ湯灏惧姞鍏ョ粨鏉熺?. 
+  		^
+".\SYSTEM\usmart\usmart.c", line 412: Warning:  #223-D: function "printf" declared implicitly
+  						printf("鍑芥暟閿欒?!\r\n");
+  						^
+.\SYSTEM\usmart\usmart.c: 3 warnings, 2 errors
+
+[2022-01-28 01:58:20]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usmart\usmart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usmart\usmart.c", line 99: Warning:  #223-D: function "printf" declared implicitly
+  			printf("\r\n");
+  			^
+".\SYSTEM\usmart\usmart.c", line 314: Warning:  #223-D: function "printf" declared implicitly
+  	printf("\r\n%s(",sfname);//杈撳嚭姝ｈ?鎵ц?鐨勫嚱鏁板悕
+  	^
+".\SYSTEM\usmart\usmart.c", line 397: Error:  #20: identifier "USART_RX_STA" is undefined
+  	if(USART_RX_STA&0x8000)//涓插彛鎺ユ敹瀹屾垚锛?  	   ^
+".\SYSTEM\usmart\usmart.c", line 400: Error:  #20: identifier "USART_RX_BUF" is undefined
+  		USART_RX_BUF[len]='\0';	//鍦ㄦ湯灏惧姞鍏ョ粨鏉熺?. 
+  		^
+".\SYSTEM\usmart\usmart.c", line 412: Warning:  #223-D: function "printf" declared implicitly
+  						printf("鍑芥暟閿欒?!\r\n");
+  						^
+.\SYSTEM\usmart\usmart.c: 3 warnings, 2 errors
+
+[2022-01-28 01:58:26]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usmart\usmart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usmart\usmart.c", line 99: Warning:  #223-D: function "printf" declared implicitly
+  			printf("\r\n");
+  			^
+".\SYSTEM\usmart\usmart.c", line 103: Warning:  #870-D: invalid multibyte character sequence
+  			printf("瀹?浣犲彲浠ラ氳繃涓插彛鍔╂墜璋冪敤绋嬪簭閲岄潰鐨勪换浣曞嚱鏁?骞舵墽琛?鍥犳?,浣犲彲\r\n");
+  			         ^
+".\SYSTEM\usmart\usmart.c", line 103: Warning:  #870-D: invalid multibyte character sequence
+  			printf("瀹?浣犲彲浠ラ氳繃涓插彛鍔╂墜璋冪敤绋嬪簭閲岄潰鐨勪换浣曞嚱鏁?骞舵墽琛?鍥犳?,浣犲彲\r\n");
+  			                                        ^
+".\SYSTEM\usmart\usmart.c", line 103: Warning:  #870-D: invalid multibyte character sequence
+  			printf("瀹?浣犲彲浠ラ氳繃涓插彛鍔╂墜璋冪敤绋嬪簭閲岄潰鐨勪换浣曞嚱鏁?骞舵墽琛?鍥犳?,浣犲彲\r\n");
+  			                                             ^
+".\SYSTEM\usmart\usmart.c", line 105: Warning:  #870-D: invalid multibyte character sequence
+  			printf("銆佸嚱鏁板叆鍙ｅ湴鍧绛変綔涓哄弬鏁?,鍗曚釜鍑芥暟鏈澶氭敮鎸?0涓?緭鍏ュ弬鏁?骞舵敮鎸乗r\n"),  
+  			                          ^
+".\SYSTEM\usmart\usmart.c", line 105: Warning:  #870-D: invalid multibyte character sequence
+  			printf("銆佸嚱鏁板叆鍙ｅ湴鍧绛変綔涓哄弬鏁?,鍗曚釜鍑芥暟鏈澶氭敮鎸?0涓?緭鍏ュ弬鏁?骞舵敮鎸乗r\n"),  
+  			                                        ^
+".\SYSTEM\usmart\usmart.c", line 105: Warning:  #870-D: invalid multibyte character sequence
+  			printf("銆佸嚱鏁板叆鍙ｅ湴鍧绛変綔涓哄弬鏁?,鍗曚釜鍑芥暟鏈澶氭敮鎸?0涓?緭鍏ュ弬鏁?骞舵敮鎸乗r\n"),  
+  			                                                 ^
+".\SYSTEM\usmart\usmart.c", line 106: Warning:  #870-D: invalid multibyte character sequence
+  			printf("鍑芥暟杩斿洖鍊兼樉绀?鏀?寔鍙傛暟鏄剧ず杩涘埗璁剧疆鍔熻兘,鏀?寔杩涘埗杞?崲鍔熻兘.\r\n");
+  			                  ^
+".\SYSTEM\usmart\usmart.c", line 107: Warning:  #870-D: invalid multibyte character sequence
+  			printf("鎶鏈?敮鎸?www.openedv.com\r\n");
+  			              ^
+".\SYSTEM\usmart\usmart.c", line 108: Warning:  #870-D: invalid multibyte character sequence
+  			printf("USMART鏈?涓?郴缁熷懡浠?蹇呴』灏忓啓):\r\n");
+  			               ^
+".\SYSTEM\usmart\usmart.c", line 108: Warning:  #870-D: invalid multibyte character sequence
+  			printf("USMART鏈?涓?郴缁熷懡浠?蹇呴』灏忓啓):\r\n");
+  			                       ^
+".\SYSTEM\usmart\usmart.c", line 115: Warning:  #870-D: invalid multibyte character sequence
+  			printf("runtime:1,寮鍚?嚱鏁拌繍琛岃?鏃?0,鍏抽棴鍑芥暟杩愯?璁℃椂;\r\n\n");
+  			                              ^
+".\SYSTEM\usmart\usmart.c", line 314: Warning:  #223-D: function "printf" declared implicitly
+  	printf("\r\n%s(",sfname);//杈撳嚭姝ｈ?鎵ц?鐨勫嚱鏁板悕
+  	^
+".\SYSTEM\usmart\usmart.c", line 397: Error:  #20: identifier "USART_RX_STA" is undefined
+  	if(USART_RX_STA&0x8000)//涓插彛鎺ユ敹瀹屾垚锛?  	   ^
+".\SYSTEM\usmart\usmart.c", line 400: Error:  #20: identifier "USART_RX_BUF" is undefined
+  		USART_RX_BUF[len]='\0';	//鍦ㄦ湯灏惧姞鍏ョ粨鏉熺?. 
+  		^
+".\SYSTEM\usmart\usmart.c", line 412: Warning:  #223-D: function "printf" declared implicitly
+  						printf("鍑芥暟閿欒?!\r\n");
+  						^
+.\SYSTEM\usmart\usmart.c: 14 warnings, 2 errors
+
+[2022-01-28 01:59:41]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol shell_parse (referred from main.o).
+Error: L6218E: Undefined symbol uart1_flush (referred from main.o).
+Error: L6218E: Undefined symbol uart1_init (referred from main.o).
+Error: L6218E: Undefined symbol uart1_print (referred from main.o).
+Error: L6218E: Undefined symbol uart1_read (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 5 error messages.
+
+
+[2022-01-28 02:00:13]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol uart1_init (referred from main.o).
+Error: L6218E: Undefined symbol uart1_print (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-28 02:00:45]	[done]
+	build successfully !
+
+[2022-01-28 02:01:43]	[done]
+	build successfully !
+

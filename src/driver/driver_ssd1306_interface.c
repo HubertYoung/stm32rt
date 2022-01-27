@@ -37,6 +37,7 @@
 
 #include "driver_ssd1306_interface.h"
 #include "delay.h"
+#include "sys.h"
 #include "iic.h"
 #include "usart.h"
 #include <stdarg.h>
@@ -90,7 +91,7 @@ uint8_t ssd1306_interface_iic_write(uint8_t addr, uint8_t reg, uint8_t *buf, uin
  */
 uint8_t ssd1306_interface_spi_init(void)
 {
-    return 1;
+    return 0;
 }
 
 /**
@@ -102,7 +103,7 @@ uint8_t ssd1306_interface_spi_init(void)
  */
 uint8_t ssd1306_interface_spi_deinit(void)
 {
-    return 1;
+    return 0;
 }
 
 /**
@@ -116,7 +117,7 @@ uint8_t ssd1306_interface_spi_deinit(void)
  */
 uint8_t ssd1306_interface_spi_write_cmd(uint8_t *buf, uint16_t len)
 {
-    return 1;
+    return 0;
 }
 
 /**
@@ -137,24 +138,25 @@ void ssd1306_interface_delay_ms(uint32_t ms)
  */
 uint16_t ssd1306_interface_debug_print(char *fmt, ...)
 {
-    volatile char str[256];
-    volatile uint8_t len;
-    va_list args;
+    printf(fmt);
+    // volatile char str[256];
+    // volatile uint8_t len;
+    // va_list args;
     
-    memset((char *)str, 0, sizeof(char)*256); 
-    va_start(args, fmt);
-    vsnprintf((char *)str, 256, (char const *)fmt, args);
-    va_end(args);
+    // memset((char *)str, 0, sizeof(char)*256); 
+    // va_start(args, fmt);
+    // vsnprintf((char *)str, 256, (char const *)fmt, args);
+    // va_end(args);
         
-    len = strlen((char *)str);
-    if (uart1_write((uint8_t *)str, len))
-    {
-        return 0;
-    }
-    else
-    { 
-        return len;
-    }
+    // len = strlen((char *)str);
+    // if (uart1_write((uint8_t *)str, len))
+    // {
+    //     return 0;
+    // }
+    // else
+    // { 
+    //     return len;
+    // }
 }
 
 /**
@@ -166,7 +168,7 @@ uint16_t ssd1306_interface_debug_print(char *fmt, ...)
  */
 uint8_t ssd1306_interface_spi_cmd_data_gpio_init(void)
 {
-    return 1;
+    return 0;
 }
 
 /**
@@ -178,7 +180,7 @@ uint8_t ssd1306_interface_spi_cmd_data_gpio_init(void)
  */
 uint8_t ssd1306_interface_spi_cmd_data_gpio_deinit(void)
 {
-    return 1;
+    return 0;
 }
 
 /**
@@ -191,7 +193,7 @@ uint8_t ssd1306_interface_spi_cmd_data_gpio_deinit(void)
  */
 uint8_t ssd1306_interface_spi_cmd_data_gpio_write(uint8_t value)
 {
-    return 1;
+    return 0;
 }
 
 /**
@@ -203,7 +205,7 @@ uint8_t ssd1306_interface_spi_cmd_data_gpio_write(uint8_t value)
  */
 uint8_t ssd1306_interface_reset_gpio_init(void)
 {
-    return 1;
+    return 0;
 }
 
 /**
@@ -215,7 +217,7 @@ uint8_t ssd1306_interface_reset_gpio_init(void)
  */
 uint8_t ssd1306_interface_reset_gpio_deinit(void)
 {
-    return 1;
+    return 0;
 }
 
 /**
@@ -228,5 +230,5 @@ uint8_t ssd1306_interface_reset_gpio_deinit(void)
  */
 uint8_t ssd1306_interface_reset_gpio_write(uint8_t value)
 {
-    return 1;
+    return 0;
 }

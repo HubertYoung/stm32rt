@@ -35,7 +35,13 @@
             "driver_ssd1306_interface.h": "c",
             "driver_ssd1306_basic.h": "c",
             "test.h": "c",
-            "shell.h": "c"
+            "shell.h": "c",
+            "usart.h": "c",
+            "stdio.h": "c",
+            "stm32f4xx_it.h": "c",
+            "iic.h": "c",
+            "task.h": "c",
+            "freertos.h": "c"
         },
         "files.autoGuessEncoding": true,
         "[yaml]": {
