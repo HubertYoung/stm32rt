@@ -1,6 +1,6 @@
 #include "oled.h"
 #include "iic.h"
-#include "oledfont.h"
+// #include "oledfont.h"
 #include "delay.h"
 
 void writecmd(u8 command)
@@ -93,111 +93,111 @@ void oled_refreshram(u8 a[128][8])
     }
 }
 
-void oled_setpos(u8 x, u8 y, u8 i)
-{
-    u8 pos, bx, temp = 0;
-    if (x > 127 || y > 63)
-        return;
-    pos = (y) / 8;
-    bx = y % 8;
-    temp = 1 << bx;
-    if (i)
-        OLED_GRAM[x][pos] |= temp;
-    else
-        OLED_GRAM[x][pos] &= ~temp;
-}
+// void oled_setpos(u8 x, u8 y, u8 i)
+// {
+//     u8 pos, bx, temp = 0;
+//     if (x > 127 || y > 63)
+//         return;
+//     pos = (y) / 8;
+//     bx = y % 8;
+//     temp = 1 << bx;
+//     if (i)
+//         OLED_GRAM[x][pos] |= temp;
+//     else
+//         OLED_GRAM[x][pos] &= ~temp;
+// }
 
-void oled_showchar(u8 x, u8 y, u8 chr, u8 size)
-{
-    u8 temp, t, t1;
-    u8 y0 = y;
-    u8 csize = (size / 8 + ((size % 8) ? 1 : 0)) * (size / 2);
-    chr = chr - ' ';
-    for (t = 0; t < csize; t++)
-    {
-        if (size == 12)
-            temp = asc2_1206[chr][t]; //调用1206字体
-        else if (size == 16)
-            temp = asc2_1608[chr][t]; //调用1608字体
-        else if (size == 24)
-            temp = asc2_2412[chr][t]; //调用2412字体
-        else
-            return; //没有的字库
-        for (t1 = 0; t1 < 8; t1++)
-        {
-            if (temp & 0x80)
-                oled_setpos(x, y, 1);
-            else
-                oled_setpos(x, y, 0);
-            temp <<= 1;
-            y++;
-            if ((y - y0) == size)
-            {
-                y = y0;
-                x++;
-                break;
-            }
-        }
-    }
-}
+// void oled_showchar(u8 x, u8 y, u8 chr, u8 size)
+// {
+//     u8 temp, t, t1;
+//     u8 y0 = y;
+//     u8 csize = (size / 8 + ((size % 8) ? 1 : 0)) * (size / 2);
+//     chr = chr - ' ';
+//     for (t = 0; t < csize; t++)
+//     {
+//         if (size == 12)
+//             temp = asc2_1206[chr][t]; //调用1206字体
+//         else if (size == 16)
+//             temp = asc2_1608[chr][t]; //调用1608字体
+//         else if (size == 24)
+//             temp = asc2_2412[chr][t]; //调用2412字体
+//         else
+//             return; //没有的字库
+//         for (t1 = 0; t1 < 8; t1++)
+//         {
+//             if (temp & 0x80)
+//                 oled_setpos(x, y, 1);
+//             else
+//                 oled_setpos(x, y, 0);
+//             temp <<= 1;
+//             y++;
+//             if ((y - y0) == size)
+//             {
+//                 y = y0;
+//                 x++;
+//                 break;
+//             }
+//         }
+//     }
+// }
 
-void oled_showstr(u8 x, u8 y, const u8 *p, u8 size)
-{
-    while ((*p <= '~') && (*p >= ' '))
-    {
-        if (x > (128 - (size / 2)))
-        {
-            x = 0;
-            y += size;
-        }
-        if (y > (64 - size))
-        {
-            y = x = 0;
-            oled_clear();
-        }
-        oled_showchar(x, y, *p, size);
-        x += size / 2;
-        p++;
-    }
-}
+// void oled_showstr(u8 x, u8 y, const u8 *p, u8 size)
+// {
+//     while ((*p <= '~') && (*p >= ' '))
+//     {
+//         if (x > (128 - (size / 2)))
+//         {
+//             x = 0;
+//             y += size;
+//         }
+//         if (y > (64 - size))
+//         {
+//             y = x = 0;
+//             oled_clear();
+//         }
+//         oled_showchar(x, y, *p, size);
+//         x += size / 2;
+//         p++;
+//     }
+// }
 
-void oled_chinese(u8 x, u8 y, u8 num)
-{
-    u8 t, t1, tem1, size = 16;
-    u16 y0 = y;
-    for (t = 0; t < 32; t++)
-    {
-        tem1 = hanzi_1616[num][t];
-        for (t1 = 0; t1 < 8; t1++)
-        {
-            if (tem1 & 0x80)
-                oled_setpos(x, y, 1);
-            tem1 <<= 1;
-            y++;
-            if (y >= 64)
-                return; //超区域了
-            if ((y - y0) == size)
-            {
-                y = y0;
-                x++;
-                if (x >= 128)
-                    return; //超区域了
-                break;
-            }
-        }
-    }
-}
+// void oled_chinese(u8 x, u8 y, u8 num)
+// {
+//     u8 t, t1, tem1, size = 16;
+//     u16 y0 = y;
+//     for (t = 0; t < 32; t++)
+//     {
+//         tem1 = hanzi_1616[num][t];
+//         for (t1 = 0; t1 < 8; t1++)
+//         {
+//             if (tem1 & 0x80)
+//                 oled_setpos(x, y, 1);
+//             tem1 <<= 1;
+//             y++;
+//             if (y >= 64)
+//                 return; //超区域了
+//             if ((y - y0) == size)
+//             {
+//                 y = y0;
+//                 x++;
+//                 if (x >= 128)
+//                     return; //超区域了
+//                 break;
+//             }
+//         }
+//     }
+// }
 
-void oled_fill(u8 x1, u8 y1, u8 x2, u8 y2)
-{
-    u8 x, y;
-    for (x = x1; x <= x2; x++)
-    {
-        for (y = y1; y <= y2; y++)
-            oled_setpos(x, y, 1);
-    }
-    oled_refreshram(OLED_GRAM);
-}
+// void oled_fill(u8 x1, u8 y1, u8 x2, u8 y2)
+// {
+//     u8 x, y;
+//     for (x = x1; x <= x2; x++)
+//     {
+//         for (y = y1; y <= y2; y++)
+//             oled_setpos(x, y, 1);
+//     }
+//     oled_refreshram(OLED_GRAM);
+// }
 
 void oled_clear()
 {
@@ -208,9 +208,9 @@ void oled_clear()
     oled_refreshram(OLED_GRAM);
 }
 
-void oled_printf(unsigned char *strings, u8 rows)
-{
-    oled_clear();
-    oled_showstr(1, (rows - 1) * 12 - 1, strings, 12);
-    oled_refreshram(OLED_GRAM);
-}
+// void oled_printf(unsigned char *strings, u8 rows)
+// {
+//     oled_clear();
+//     oled_showstr(1, (rows - 1) * 12 - 1, strings, 12);
+//     oled_refreshram(OLED_GRAM);
+// }

@@ -6575,3 +6575,224 @@ Finished: 1 information, 0 warning and 3 error messages.
 [2022-01-29 01:13:30]	[done]
 	build successfully !
 
+[2022-01-29 02:09:26]	[done]
+	build successfully !
+
+[2022-01-29 02:14:47]	[done]
+	build successfully !
+
+[2022-01-29 02:16:18]	[done]
+	build successfully !
+
+[2022-01-29 02:19:40]	[done]
+	build successfully !
+
+[2022-01-29 02:22:02]	[done]
+	build successfully !
+
+[2022-01-29 02:23:29]	[done]
+	build successfully !
+
+[2022-01-29 02:27:08]	[done]
+	build successfully !
+
+[2022-01-29 02:30:40]	[done]
+	build successfully !
+
+[2022-01-29 02:32:59]	[done]
+	build successfully !
+
+[2022-01-29 02:34:01]	[done]
+	build successfully !
+
+[2022-01-29 02:35:19]	[done]
+	build successfully !
+
+[2022-01-29 02:36:24]	[done]
+	build successfully !
+
+[2022-01-29 02:36:37]	[done]
+	build successfully !
+
+[2022-01-29 02:36:57]	[done]
+	build successfully !
+
+[2022-01-29 02:37:21]	[done]
+	build successfully !
+
+[2022-01-29 02:37:39]	[done]
+	build successfully !
+
+[2022-01-29 02:38:28]	[done]
+	build successfully !
+
+[2022-01-29 02:39:41]	[done]
+	build successfully !
+
+[2022-01-29 02:40:40]	[done]
+	build successfully !
+
+[2022-01-29 02:41:46]	[done]
+	build successfully !
+
+[2022-01-29 02:42:44]	[done]
+	build successfully !
+
+[2022-01-29 02:46:24]	[done]
+	build successfully !
+
+[2022-01-29 02:46:51]	[done]
+	build successfully !
+
+[2022-01-29 02:47:31]	[done]
+	build successfully !
+
+[2022-01-29 02:52:19]	[done]
+	build successfully !
+
+[2022-01-29 02:53:39]	[done]
+	build successfully !
+
+[2022-01-29 03:01:45]	[done]
+	build successfully !
+
+[2022-01-29 03:02:00]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\SOLGUI\SOLGUI_Printf.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\SOLGUI\SOLGUI_Printf.c", line 45: Error:  #2706: case label value has already appeared in this switch at line 30
+  	case F8X10:
+  	     ^
+.\HARDWARE\SOLGUI\SOLGUI_Printf.c: 0 warnings, 1 error
+
+[2022-01-29 03:02:30]	[done]
+	build successfully !
+
+[2022-01-29 03:03:13]	[done]
+	build successfully !
+
+[2022-01-29 03:15:04]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 59: Error:  #20: identifier "SD_f_mount_test" is undefined
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 59: Error:  #20: identifier "SD_f_write_test" is undefined
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 59: Error:  #20: identifier "SD_f_open_test" is undefined
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 59: Error:  #20: identifier "SDtatus" is undefined
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 59: Error:  #20: identifier "f_res" is undefined
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 59: Error:  #20: identifier "SDCardInfo" is undefined
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 59: Error:  #20: identifier "SDdatabuff" is undefined
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 187: Warning:  #177-D: variable "key" was declared but never referenced
+      u8 key;
+         ^
+.\src\main.c: 1 warning, 7 errors
+
+[2022-01-29 03:15:32]	[done]
+	build successfully !
+
+[2022-01-29 03:16:52]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 59: Error:  #20: identifier "SD_f_mount_test" is undefined
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 59: Warning:  #170-D: pointer points outside of underlying object
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 59: Warning:  #170-D: pointer points outside of underlying object
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 59: Warning:  #170-D: pointer points outside of underlying object
+  __M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+  ^
+".\src\main.c", line 194: Warning:  #177-D: variable "key" was declared but never referenced
+      u8 key;
+         ^
+.\src\main.c: 4 warnings, 1 error
+
+[2022-01-29 03:17:08]	[done]
+	build successfully !
+
+[2022-01-29 03:19:47]	[done]
+	build successfully !
+
+[2022-01-29 03:22:55]	[done]
+	build successfully !
+
+[2022-01-29 03:24:25]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 193: Warning:  #177-D: variable "key" was declared but never referenced
+      u8 key;
+         ^
+".\src\main.c", line 216: Error:  #165: too few arguments in function call
+      SOLGUI_Init();
+                  ^
+.\src\main.c: 1 warning, 1 error
+
+[2022-01-29 03:26:57]	[done]
+	build successfully !
+
+[2022-01-29 03:28:58]	[done]
+	build successfully !
+
+[2022-01-29 03:29:15]	[done]
+	build successfully !
+
+[2022-01-29 03:29:32]	[done]
+	build successfully !
+
+[2022-01-29 03:31:01]	[done]
+	build successfully !
+
+[2022-01-29 03:31:18]	[done]
+	build successfully !
+
+[2022-01-29 03:31:46]	[done]
+	build successfully !
+
+[2022-01-29 03:32:28]	[done]
+	build successfully !
+
+[2022-01-29 03:35:42]	[done]
+	build successfully !
+
+[2022-01-29 03:36:00]	[done]
+	build successfully !
+
+[2022-01-29 03:36:49]	[done]
+	build successfully !
+
+[2022-01-29 03:38:37]	[done]
+	build successfully !
+
+[2022-01-29 03:42:31]	[done]
+	build successfully !
+
+[2022-01-29 03:46:21]	[done]
+	build successfully !
+
+[2022-01-29 03:47:21]	[done]
+	build successfully !
+
+[2022-01-29 03:48:35]	[done]
+	build successfully !
+
+[2022-01-29 03:50:20]	[done]
+	build successfully !
+
+[2022-01-29 03:52:50]	[done]
+	build successfully !
+

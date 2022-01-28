@@ -14,6 +14,7 @@
 #include "oled.h"
 #include "iic.h"
 #include "SOLGUI_Include.h"
+#include "SOLGUI_Hardware.h"
 
 #include "pwm.h"
 
@@ -27,7 +28,7 @@ TaskHandle_t StartTask_Handler;
 void start_task(void *pvParameters);
 
 //任务优先级
-#define SYS_TASK_PRIO 2
+#define SYS_TASK_PRIO 4
 //任务堆栈大小
 #define SYS_STK_SIZE 128
 //任务句柄
@@ -45,45 +46,55 @@ TaskHandle_t KEYTask_Handler;
 void key_task(void *pvParameters);
 
 //任务优先级
-#define GUI_TASK_PRIO 4
+#define GUI_TASK_PRIO 2
 //任务堆栈大小
-#define GUI_STK_SIZE 50
+#define GUI_STK_SIZE 256
 //任务句柄
 TaskHandle_t GUITask_Handler;
 //任务函数
 void gui_task(void *pvParameters);
 uint8_t res;
 u32 switch_reg = 0;
-MENU_PAGE wifi_list, wifi_init, wifi_conn, tcp_conn, senddata;
+MENU_PAGE main_page, wifi_init, wifi_conn, tcp_conn, senddata;
 
-__M_PAGE(wifi_list, "wifi_list", PAGE_NULL,
+__M_PAGE(main_page, "MainPage", PAGE_NULL,
          {
+             //  SOLGUI_Cursor(6, 5, 3);
+             //  SOLGUI_Widget_Button(0, "1.f_mount", SD_f_mount_test); //按键
+             // //  SOLGUI_Widget_Button(1, "2.f_write", SD_f_write_test); //按键
+             // //  SOLGUI_Widget_Button(2, "3.f_open", SD_f_open_test);   //按键
+             //  SOLGUI_Widget_Text(0, 32, ~F6X8, "S=%d,r=%d,C=%d", 1, 1, 1);
+             //  SOLGUI_Widget_Text(0, 24, F6X8, "%s", "2");
+             //  SOLGUI_Widget_Text(0, 16, F6X8, "%s", "2" + 21);
+             //  SOLGUI_Widget_Text(0, 8, F6X8, "%s", "2" + 42);
+             //  SOLGUI_Widget_Text(0, 0, F6X8, "%s", "2" + 63);
              SOLGUI_Cursor(6, 0, 4);
              SOLGUI_Widget_GotoPage(0, &wifi_init);
              SOLGUI_Widget_GotoPage(1, &wifi_conn);
              SOLGUI_Widget_GotoPage(2, &tcp_conn);
              SOLGUI_Widget_GotoPage(3, &senddata);
          });
-__M_PAGE(wifi_init, "wifi_init", &wifi_list,
+__M_PAGE(wifi_init, "wifi_init", &main_page,
          {
              SOLGUI_Cursor(0, 0, 1);
              SOLGUI_Widget_Switch(0, "WIFI init ON/OFF", &switch_reg, 0);
          });
-__M_PAGE(wifi_conn, "wifi_conn", &wifi_list,
+__M_PAGE(wifi_conn, "wifi_conn", &main_page,
          {
              SOLGUI_Cursor(0, 0, 1);
              SOLGUI_Widget_Switch(0, "WIFI connection ON/OFF", &switch_reg, 1);
          });
-__M_PAGE(tcp_conn, "tcp_conn", &wifi_list,
+__M_PAGE(tcp_conn, "tcp_conn", &main_page,
          {
              SOLGUI_Cursor(0, 0, 1);
              SOLGUI_Widget_Switch(0, "TCP connection ON/OFF", &switch_reg, 2);
          });
-__M_PAGE(senddata, "senddata", &wifi_list,
+__M_PAGE(senddata, "senddata", &main_page,
          {
              SOLGUI_Cursor(0, 0, 1);
              SOLGUI_Widget_Switch(0, "send mode ON/OFF", &switch_reg, 3);
          });
+
 int main(void)
 {
     HAL_Init();                      //初始化HAL库
@@ -94,9 +105,6 @@ int main(void)
     uart_init(115200);               //初始化串口
     usmart_dev.init(84);             //初始化USMART
 
-    SOLGUI_Init(&wifi_list);
-    // SOLGUI_Cursor(6,0,4);
-    // SOLGUI_printf(SCREEN_X_WIDTH-6,56,F6X8,"%c",0x84);			//操作指示（根据键值解析部分来编写）
     //目的达到24khz 设置2分频 84M/(pcs * aar) = 24kHz
     // 2000    -> 1K
     // 20      -> 100k,如果进度值为0.5k, 每次减少10
@@ -178,19 +186,7 @@ void key_task(void *pvParameters)
     u8 key;
     while (1)
     {
-        // key = KEY_Scan(0); //按键扫描
-        // switch (key)
-        // {
-        // case KEY_LEFT_PRES: {}
-        //     TEST_LED = !TEST_LED;
-        //     	 /* run reg test */
-        //     // ssd1306_display_test(SSD1306_INTERFACE_IIC, SSD1306_ADDR_SA0_0);
 
-        //     break;
-        // case KEY_RIGHT_PRES:
-        //     TEST_LED = !TEST_LED;
-        //     break;
-        // }
         vTaskDelay(1000);
     }
 }
@@ -198,16 +194,29 @@ void key_task(void *pvParameters)
 void gui_task(void *pvParameters)
 {
     u8 key = 0;
-    // ssd1306_basic_clear();
+
+    SOLGUI_Hardware_Init();
+
+    SOLGUI_printf(0, 24, F8X10, "FOSTEX");
+    SOLGUI_printf(0, 48, F8X10, "MODLE 20");
+    SOLGUI_Refresh();
+
+    delay_ms(1000);
+    SOLGUI_Menu_SetHomePage(&main_page);
+    SOLGUI_Menu_PageStage();
+    SOLGUI_Refresh();
     while (1)
     {
-        // GUI_Refresh();Not enough information to list image symbols.
-        // test();
-        key = KEY_Scan(0);
-        SOLGUI_InputKey(key);
-        SOLGUI_Menu_PageStage();
-        SOLGUI_Refresh();
+        u8 temp_key = KEY_Scan(0);
+        if (key != temp_key)
+        {
+            key = temp_key;
+            SOLGUI_InputKey(key);
+            SOLGUI_Menu_PageStage();
+            SOLGUI_Refresh();
+        }
+
         TEST_LED = ~TEST_LED;
-        vTaskDelay(100);
+        vTaskDelay(10);
     }
 }

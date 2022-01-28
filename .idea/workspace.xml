@@ -7,25 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3f6c061-3ab4-4b96-87c8-8c10ac51b152" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eide/eide.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/eide.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eide/log/cl.eide.log" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/log/cl.eide.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eide/log/unify_builder.log" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/log/unify_builder.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/.cortex-debug.peripherals.state.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/.cortex-debug.registers.state.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HARDWARE/GUI/gui.c" beforeDir="false" afterPath="$PROJECT_DIR$/HARDWARE/GUI/gui.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HARDWARE/OLED/driver_ssd1306.c" beforeDir="false" afterPath="$PROJECT_DIR$/HARDWARE/OLED/driver_ssd1306.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM/delay/delay.c" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/delay/delay.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM/delay/delay.h" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/delay/delay.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM/usmart/usmart_config.c" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/usmart/usmart_config.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/driver/driver_ssd1306_advance.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/driver/driver_ssd1306_advance.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stm32rt.code-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/stm32rt.code-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/temp/.mxproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/stm32freertos.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/temp/stm32freertos.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +34,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.cidr.embedded.config" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,6 +56,8 @@
       <workItem from="1643377284622" duration="16000" />
       <workItem from="1643385352368" duration="910000" />
       <workItem from="1643388367396" duration="1022000" />
+      <workItem from="1643390472869" duration="32000" />
+      <workItem from="1643390517739" duration="372000" />
     </task>
     <task id="LOCAL-00001" summary="按键输入">
       <created>1643210585348</created>
@@ -82,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643219491700</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="OLED menu">
+      <created>1643390495438</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643390495438</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +99,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="按键输入" />
     <MESSAGE value="OLED" />
-    <option name="LAST_COMMIT_MESSAGE" value="OLED" />
+    <MESSAGE value="OLED menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="OLED menu" />
   </component>
 </project>

@@ -1,8 +1,12 @@
-#ifndef SOLGUI_TYPE_H		
+#ifndef SOLGUI_TYPE_H
 #define SOLGUI_TYPE_H
 
 #include "sys.h"
-typedef enum {False=0,True=!False} boolean;
+typedef enum
+{
+    False = 0,
+    True = !False
+} boolean;
 
 //typedef unsigned long  u32;
 //typedef unsigned short u16;

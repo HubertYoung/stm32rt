@@ -16,7 +16,7 @@
 /*---------可根据实际使用情况开关，节约空间---------*/
 #define FONT4X6_EN 				0	 		//允许使用4x6字体
 #define FONT8X8_EN 				0	 		//允许使用8x8字体
-#define FONT8X10_EN				0	 		//允许使用8x10字体
+#define FONT8X10_EN				1	 		//允许使用8x10字体
 
 //--------------【基础图形库开关】
 #define GBASIC_LINE_EN			0			//允许使用直线绘制
@@ -46,7 +46,7 @@
 #define WIDGET_PICTURE_EN		1				//允许使用控件：Picture图
 
 //--------------【选项最大数目】
-#define OPTIONS_MAX				16				//每页最大可以容纳的选项数（不可设置太大）
+#define OPTIONS_MAX				10				//每页最大可以容纳的选项数（不可设置太大）
 
 //--------------【FIFO键值缓存大小】
 #define FIFOBUF_SIZE			5				//可以缓存的键值数（默认即可）

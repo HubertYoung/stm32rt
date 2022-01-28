@@ -36,10 +36,10 @@
 #define KEY_RIGHT        HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_14) 	//KEY2°´¼üPE2
 #define KEY_DOWN       HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_15)  //WKUP°´¼üPA0
 
-#define KEY_LEFT_PRES 	1
-#define KEY_UP_PRES	2
-#define KEY_RIGHT_PRES	3
-#define KEY_DOWN_PRES   4
+#define KEY_LEFT_PRES 	0x50
+#define KEY_UP_PRES	0x20
+#define KEY_RIGHT_PRES	0x60
+#define KEY_DOWN_PRES   0x40
 
 void KEY_Init(void);
 u8 KEY_Scan(u8 mode);
