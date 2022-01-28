@@ -7,115 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3f6c061-3ab4-4b96-87c8-8c10ac51b152" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/FreeRTOSConfig.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/mpu_prototypes.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/stdint.readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/Keil/See-also-the-RVDS-directory.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/MemMang/ReadMe.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/MemMang/heap_1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/MemMang/heap_3.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM7_LPC21xx/port.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM7_LPC21xx/portASM.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM7_LPC21xx/portmacro.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM7_LPC21xx/portmacro.inc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CA9/port.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CA9/portASM.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CA9/portmacro.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CA9/portmacro.inc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM0/port.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM0/portmacro.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM3/port.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM4F/portmacro.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM4_MPU/port.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM4_MPU/portmacro.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM7/ReadMe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM7/r0p1/port.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM7/r0p1/portmacro.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SYSTEM/usmart/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SYSTEM/usmart/usmart.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SYSTEM/usmart/usmart.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SYSTEM/usmart/usmart_config.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SYSTEM/usmart/usmart_str.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SYSTEM/usmart/usmart_str.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stm32f4xx_it.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/.mxproject" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/hs_err_pid18860.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/replay_pid18860.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eide/eide.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/eide.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eide/log/cl.eide.log" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/log/cl.eide.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eide/log/unify_builder.log" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/log/unify_builder.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/History.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/croutine.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/croutine.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/event_groups.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/event_groups.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/FreeRTOS.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/FreeRTOS.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/FreeRTOSConfig_template.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/StackMacros.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/StackMacros.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/atomic.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/croutine.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/croutine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/deprecated_definitions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/deprecated_definitions.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/event_groups.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/event_groups.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/list.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/list.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/message_buffer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/mpu_prototypes.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/mpu_wrappers.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/mpu_wrappers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/portable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/portable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/projdefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/projdefs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/queue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/queue.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/semphr.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/semphr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/stack_macros.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/stream_buffer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/task.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/task.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/include/timers.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/include/timers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/list.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/list.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/portable/MemMang/heap_1.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/portable/MemMang/heap_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/MemMang/heap_2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/portable/MemMang/heap_3.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/portable/MemMang/heap_4.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/MemMang/heap_4.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/portable/MemMang/heap_5.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/MemMang/heap_5.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM4F/port.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/portable/RVDS/ARM_CM3/portmacro.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/queue.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/queue.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/st_readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/stream_buffer.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/tasks.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/tasks.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FreeRTOS/Source/timers.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FreeRTOS/timers.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/.cortex-debug.peripherals.state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/.cortex-debug.registers.state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HARDWARE/GUI/gui.c" beforeDir="false" afterPath="$PROJECT_DIR$/HARDWARE/GUI/gui.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HARDWARE/OLED/driver_ssd1306.c" beforeDir="false" afterPath="$PROJECT_DIR$/HARDWARE/OLED/driver_ssd1306.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SYSTEM/delay/delay.c" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/delay/delay.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SYSTEM/delay/delay.h" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/delay/delay.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM/shell/shell.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM/shell/shell.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM/sys/sys.c" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/sys/sys.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM/sys/sys.h" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/sys/sys.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM/usart/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/usart/usart.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM/usart/usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/usart/usart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inc/FreeRTOSConfig.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inc/stm32f4xx_hal_conf.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inc/stm32f4xx_it.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/driver/driver_ssd1306_interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/driver/driver_ssd1306_interface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM/usmart/usmart_config.c" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM/usmart/usmart_config.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/driver/driver_ssd1306_advance.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/driver/driver_ssd1306_advance.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stm32f4xx_hal_msp.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/stm32f4xx_hal_msp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/stm32f4xx_it.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system_stm32f4xx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/stm32rt.code-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/stm32rt.code-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Inc/FreeRTOSConfig.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Inc/main.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Inc/stm32f4xx_hal_conf.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Inc/stm32f4xx_it.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Src/freertos.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Src/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Src/stm32f4xx_hal_msp.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Src/stm32f4xx_hal_timebase_tim.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Src/stm32f4xx_it.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/Core/Src/system_stm32f4xx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/temp/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/stm32freertos.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/temp/stm32freertos.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,13 +52,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.cidr.embedded.config" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -160,6 +63,10 @@
       <workItem from="1643203347703" duration="2122000" />
       <workItem from="1643219437317" duration="66000" />
       <workItem from="1643303493591" duration="1491000" />
+      <workItem from="1643385450031" duration="180000" />
+      <workItem from="1643377284622" duration="16000" />
+      <workItem from="1643385352368" duration="910000" />
+      <workItem from="1643388367396" duration="1022000" />
     </task>
     <task id="LOCAL-00001" summary="按键输入">
       <created>1643210585348</created>
@@ -180,6 +87,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="按键输入" />

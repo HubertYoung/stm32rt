@@ -41,7 +41,14 @@
             "stm32f4xx_it.h": "c",
             "iic.h": "c",
             "task.h": "c",
-            "freertos.h": "c"
+            "freertos.h": "c",
+            "driver_ssd1306_display_test.h": "c",
+            "pwm.h": "c",
+            "usmart.h": "c",
+            "driver_ssd1306_advance.h": "c",
+            "driver_ssd1306_091.h": "c",
+            "oledfont.h": "c",
+            "solgui_include.h": "c"
         },
         "files.autoGuessEncoding": true,
         "[yaml]": {

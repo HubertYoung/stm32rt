@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <string.h>
 
+// #include "driver_ssd1306_basic.h"
+
 static u8 func_index = _Main_UI;			   //当前页面索引值
 static u8 last_index = _Main_UI;			   //上一个界面索引值
 static void (*current_operation_func)(u8, u8); //定义一个函数指针
@@ -57,7 +59,6 @@ void GUI_Refresh(void)
 		default:
 			break;
 		}
-	
 		// ssd1306_Fill(Black); //清屏
 	}
 	current_operation_func = table[func_index].current_operation;
@@ -71,7 +72,11 @@ void GUI_Refresh(void)
 */
 void Main_UI(u8 page_index, u8 key_val)
 {
-	
+	printf("Main_UI\r\n");
+	char buff[20];
+	// snprintf(buff, sizeof(buff), "当前转速%02d", 100);
+	// ssd1306_basic_string(0, 0, buff, sizeof(buff), 1, SSD1306_FONT_16);
+	// ssd1306_basic_string(0, 0, buff, sizeof(buff), 1, SSD1306_FONT_16);
     // ssd1306_SetCursor(0, 0); //起始点
 	// char buff[20]; //创建文字缓冲区
 	// snprintf(buff, sizeof(buff), "cur_s=%02d", 100);

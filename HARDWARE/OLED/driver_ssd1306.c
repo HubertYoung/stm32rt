@@ -94,6 +94,7 @@
 #define SSD1306_CMD_COM_PINS_CONF                           0xDA        /**< command com pins conf */ 
 #define SSD1306_CMD_COMH_DESLECT_LEVEL                      0xDB        /**< command comh deslect level */ 
 #define SSD1306_CMD_NOP                                     0xE3        /**< command nop */ 
+#define SSD1306_CMD_DUTY                                    0x3F        /**< command nop */ 
 
 /**
  * @brief     write one byte
@@ -1429,7 +1430,7 @@ uint8_t ssd1306_set_left_horizontal_scroll(ssd1306_handle_t *handle, uint8_t sta
  *            - 1 set vertical right horizontal scroll failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- * @note      start_page_addr <= 0x07, end_page_addr <= 0x07, rows <= 0x3F
+ * @note      start_page_addr <= 0x07, end_page_addr <= 0x07, rows <= SSD1306_CMD_DUTY
  */
 uint8_t ssd1306_set_vertical_right_horizontal_scroll(ssd1306_handle_t *handle, uint8_t start_page_addr, uint8_t end_page_addr, 
                                                      uint8_t rows, ssd1306_scroll_frame_t frames)
@@ -1457,7 +1458,7 @@ uint8_t ssd1306_set_vertical_right_horizontal_scroll(ssd1306_handle_t *handle, u
         
         return 1;                                                                       /* return error */
     }
-    if (rows > 0x3F)                                                                    /* check rows */
+    if (rows > SSD1306_CMD_DUTY)                                                                    /* check rows */
     {
         handle->debug_print("ssd1306: rows is invalid.\n");                             /* rows is invalid */
        
@@ -1468,7 +1469,7 @@ uint8_t ssd1306_set_vertical_right_horizontal_scroll(ssd1306_handle_t *handle, u
     buf[2] = start_page_addr & 0x07;                                                    /* set start page addr */
     buf[3] = frames & 0x07;                                                             /* set frames */
     buf[4] = end_page_addr & 0x07;                                                      /* set end page addr */
-    buf[5] = rows & 0x3F;                                                               /* set rows */
+    buf[5] = rows & SSD1306_CMD_DUTY;                                                               /* set rows */
   
     return _ssd1306_multiple_write_byte(handle, (uint8_t *)buf, 6, SSD1306_CMD);        /* write command */
 }
@@ -1485,7 +1486,7 @@ uint8_t ssd1306_set_vertical_right_horizontal_scroll(ssd1306_handle_t *handle, u
  *            - 1 set vertical left horizontal scroll failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- * @note      start_page_addr <= 0x07, end_page_addr <= 0x07, rows <= 0x3F
+ * @note      start_page_addr <= 0x07, end_page_addr <= 0x07, rows <= SSD1306_CMD_DUTY
  */
 uint8_t ssd1306_set_vertical_left_horizontal_scroll(ssd1306_handle_t *handle, uint8_t start_page_addr, uint8_t end_page_addr, 
                                                     uint8_t rows, ssd1306_scroll_frame_t frames)
@@ -1513,7 +1514,7 @@ uint8_t ssd1306_set_vertical_left_horizontal_scroll(ssd1306_handle_t *handle, ui
         
         return 1;                                                                       /* return error */
     }
-    if (rows > 0x3F)                                                                    /* check rows */
+    if (rows > SSD1306_CMD_DUTY)                                                                    /* check rows */
     {
         handle->debug_print("ssd1306: rows is invalid.\n");                             /* rows is invalid */
        
@@ -1524,7 +1525,7 @@ uint8_t ssd1306_set_vertical_left_horizontal_scroll(ssd1306_handle_t *handle, ui
     buf[2] = start_page_addr & 0x07;                                                    /* set start page addr */
     buf[3] = frames & 0x07;                                                             /* set frames */
     buf[4] = end_page_addr & 0x07;                                                      /* set end page addr */
-    buf[5] = rows & 0x3F;                                                               /* set rows */
+    buf[5] = rows & SSD1306_CMD_DUTY;                                                               /* set rows */
   
     return _ssd1306_multiple_write_byte(handle, (uint8_t *)buf, 6, SSD1306_CMD);        /* write command */
 }
@@ -1586,7 +1587,7 @@ uint8_t ssd1306_ativate_scroll(ssd1306_handle_t *handle)
  *            - 1 set display start line failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- * @note      line <= 0x3F
+ * @note      line <= SSD1306_CMD_DUTY
  */
 uint8_t ssd1306_set_display_start_line(ssd1306_handle_t *handle, uint8_t line)
 {
@@ -1599,14 +1600,14 @@ uint8_t ssd1306_set_display_start_line(ssd1306_handle_t *handle, uint8_t line)
         return 3;                                                                                       /* return error */
     }
     
-    if (line > 0x3F)                                                                                    /* check line */
+    if (line > SSD1306_CMD_DUTY)                                                                                    /* check line */
     {
         handle->debug_print("ssd1306: line is invalid.\n");                                             /* line is invalid */
         
         return 4;                                                                                       /* return error */
     }
   
-    return _ssd1306_write_byte(handle, SSD1306_CMD_DISPLAY_START_LINE|(line&0x3F), SSD1306_CMD);        /* write command */
+    return _ssd1306_write_byte(handle, SSD1306_CMD_DISPLAY_START_LINE|(line&SSD1306_CMD_DUTY), SSD1306_CMD);        /* write command */
 }
 
 /**
@@ -1711,7 +1712,7 @@ uint8_t ssd1306_set_segment_remap(ssd1306_handle_t *handle, ssd1306_segment_colu
  *            - 1 set vertical scroll area failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- * @note      start_row <= 0x3F, end_row <= 0x7F, start_row >= end_row
+ * @note      start_row <= SSD1306_CMD_DUTY, end_row <= 0x7F, start_row >= end_row
  */
 uint8_t ssd1306_set_vertical_scroll_area(ssd1306_handle_t *handle, uint8_t start_row, uint8_t end_row)
 {
@@ -1726,7 +1727,7 @@ uint8_t ssd1306_set_vertical_scroll_area(ssd1306_handle_t *handle, uint8_t start
         return 3;                                                                       /* return error */
     }
     
-    if (start_row > 0x3F)                                                               /* check start row */
+    if (start_row > SSD1306_CMD_DUTY)                                                               /* check start row */
     {
         handle->debug_print("ssd1306: start_row is invalid.\n");                        /* start_row is invalid */
        
@@ -1962,7 +1963,7 @@ uint8_t ssd1306_set_scan_direction(ssd1306_handle_t *handle, ssd1306_scan_direct
  *            - 1 set display offset failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- * @note      offset <= 0x3F
+ * @note      offset <= SSD1306_CMD_DUTY
  */
 uint8_t ssd1306_set_display_offset(ssd1306_handle_t *handle, uint8_t offset)
 {
@@ -1977,7 +1978,7 @@ uint8_t ssd1306_set_display_offset(ssd1306_handle_t *handle, uint8_t offset)
         return 3;                                                                       /* return error */
     }
     
-    if (offset > 0x3F)                                                                  /* check offset */
+    if (offset > SSD1306_CMD_DUTY)                                                                  /* check offset */
     {
         handle->debug_print("ssd1306: offset is invalid.\n");                           /* offset is invalid */
        

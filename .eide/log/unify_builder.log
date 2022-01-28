@@ -5385,3 +5385,1193 @@ Finished: 1 information, 0 warning and 2 error messages.
 [2022-01-28 03:25:02]	[done]
 	build successfully !
 
+[2022-01-29 02:02:23]	[done]
+	build successfully !
+
+[2022-01-28 20:50:02]	[done]
+	build successfully !
+
+[2022-01-28 20:54:26]	[done]
+	build successfully !
+
+[2022-01-28 21:03:12]	[done]
+	build successfully !
+
+[2022-01-28 21:03:54]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 213: Error:  #118: a void function may not return a value
+                      return 1;
+                             ^
+".\src\main.c", line 217: Error:  #118: a void function may not return a value
+                      return 0;
+                             ^
+".\src\main.c", line 219: Warning:  #111-D: statement is unreachable
+              break;
+              ^
+.\src\main.c: 1 warning, 2 errors
+
+[2022-01-28 21:04:44]	[done]
+	build successfully !
+
+[2022-01-28 21:25:22]	[done]
+	build successfully !
+
+[2022-01-28 21:28:54]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usmart\usmart_config.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\test\test.h", line 7: Error:  #5: cannot open source input file "driver_ssd1306_advance.h": No such file or directory
+  #include "driver_ssd1306_advance.h"
+                                     ^
+.\SYSTEM\usmart\usmart_config.c: 0 warnings, 1 error
+
+[2022-01-28 21:29:12]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306_advance_clear (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_deactivate_scroll (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_deinit (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_disable_zoom_in (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_display_off (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_display_on (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_enable_zoom_in (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_fade_blinking (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_init (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_read_point (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_rect (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_string (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_vertical_left_horizontal_scroll (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_vertical_right_horizontal_scroll (referred from test.o).
+Error: L6218E: Undefined symbol ssd1306_advance_write_point (referred from test.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 15 error messages.
+
+
+[2022-01-28 21:29:58]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 67: Warning:  #223-D: function "ssd1306_basic_init" declared implicitly
+      res = ssd1306_basic_init(SSD1306_INTERFACE_IIC, SSD1306_ADDR_SA0_0);
+            ^
+".\src\main.c", line 67: Error:  #20: identifier "SSD1306_INTERFACE_IIC" is undefined
+      res = ssd1306_basic_init(SSD1306_INTERFACE_IIC, SSD1306_ADDR_SA0_0);
+                               ^
+".\src\main.c", line 67: Error:  #20: identifier "SSD1306_ADDR_SA0_0" is undefined
+      res = ssd1306_basic_init(SSD1306_INTERFACE_IIC, SSD1306_ADDR_SA0_0);
+                                                      ^
+".\src\main.c", line 70: Warning:  #223-D: function "ssd1306_basic_deinit" declared implicitly
+          ssd1306_basic_deinit();
+          ^
+".\src\main.c", line 74: Warning:  #223-D: function "ssd1306_basic_string" declared implicitly
+      res = ssd1306_basic_string(0, 0, "123", 3, 1, SSD1306_FONT_16);
+            ^
+".\src\main.c", line 74: Error:  #20: identifier "SSD1306_FONT_16" is undefined
+      res = ssd1306_basic_string(0, 0, "123", 3, 1, SSD1306_FONT_16);
+                                                    ^
+".\src\main.c", line 77: Warning:  #223-D: function "ssd1306_interface_debug_print" declared implicitly
+          ssd1306_interface_debug_print("ssd1306: show string failed.\n");
+          ^
+".\src\main.c", line 78: Warning:  #223-D: function "ssd1306_basic_deinit" declared implicitly
+          ssd1306_basic_deinit();
+          ^
+".\src\main.c", line 83: Warning:  #223-D: function "ssd1306_basic_rect" declared implicitly
+      res = ssd1306_basic_rect(0, 31, 31, 31, 1);
+            ^
+".\src\main.c", line 86: Warning:  #223-D: function "ssd1306_basic_deinit" declared implicitly
+          ssd1306_basic_deinit();
+          ^
+".\src\main.c", line 155: Warning:  #223-D: function "ssd1306_display_test" declared implicitly
+              ssd1306_display_test(SSD1306_INTERFACE_IIC, SSD1306_ADDR_SA0_0);
+              ^
+".\src\main.c", line 155: Error:  #20: identifier "SSD1306_INTERFACE_IIC" is undefined
+              ssd1306_display_test(SSD1306_INTERFACE_IIC, SSD1306_ADDR_SA0_0);
+                                   ^
+".\src\main.c", line 155: Error:  #20: identifier "SSD1306_ADDR_SA0_0" is undefined
+              ssd1306_display_test(SSD1306_INTERFACE_IIC, SSD1306_ADDR_SA0_0);
+                                                          ^
+.\src\main.c: 8 warnings, 5 errors
+
+[2022-01-28 21:30:49]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306 (referred from usmart_config.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-28 21:31:10]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306 (referred from usmart_config.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-28 21:31:49]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usmart\usmart_config.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usmart\usmart_config.c", line 22: Error:  #20: identifier "ssd1306_display_test" is undefined
+  	(void*)ssd1306_display_test,"uint8_t ssd1306_display_test(ssd1306_interface_t interface, ssd1306_address_t addr)",
+  	       ^
+".\SYSTEM\usmart\usmart_config.c", line 22: Error:  #44: expression must have pointer type
+  	(void*)ssd1306_display_test,"uint8_t ssd1306_display_test(ssd1306_interface_t interface, ssd1306_address_t addr)",
+  	       ^
+".\SYSTEM\usmart\usmart_config.c", line 45: Error:  #28: expression must have a constant value
+  	usmart_nametab,
+  	^
+.\SYSTEM\usmart\usmart_config.c: 0 warnings, 3 errors
+
+[2022-01-28 21:32:33]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usmart\usmart_config.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usmart\usmart_config.c", line 21: Error:  #20: identifier "ssd1306_display_test" is undefined
+  	(void*)ssd1306_display_test,"uint8_t ssd1306_display_test(ssd1306_interface_t interface, ssd1306_address_t addr)",
+  	       ^
+".\SYSTEM\usmart\usmart_config.c", line 21: Error:  #44: expression must have pointer type
+  	(void*)ssd1306_display_test,"uint8_t ssd1306_display_test(ssd1306_interface_t interface, ssd1306_address_t addr)",
+  	       ^
+".\SYSTEM\usmart\usmart_config.c", line 44: Error:  #28: expression must have a constant value
+  	usmart_nametab,
+  	^
+.\SYSTEM\usmart\usmart_config.c: 0 warnings, 3 errors
+
+[2022-01-28 21:33:10]	[done]
+	build successfully !
+
+[2022-01-28 22:06:09]	[done]
+	build successfully !
+
+[2022-01-28 22:25:30]	[done]
+	build successfully !
+
+[2022-01-28 22:25:43]	[done]
+	build successfully !
+
+[2022-01-28 22:26:36]	[done]
+	build successfully !
+
+[2022-01-28 22:26:55]	[done]
+	build successfully !
+
+[2022-01-28 22:28:51]	[done]
+	build successfully !
+
+[2022-01-28 22:33:33]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol ssd1306_basic_clear multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Error: L6200E: Symbol ssd1306_basic_deinit multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Error: L6200E: Symbol ssd1306_basic_display_off multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Error: L6200E: Symbol ssd1306_basic_display_on multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Error: L6200E: Symbol ssd1306_basic_init multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Error: L6200E: Symbol ssd1306_basic_picture multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Error: L6200E: Symbol ssd1306_basic_read_point multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Error: L6200E: Symbol ssd1306_basic_rect multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Error: L6200E: Symbol ssd1306_basic_string multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Error: L6200E: Symbol ssd1306_basic_write_point multiply defined (by driver_ssd1306_basic.o and driver_ssd1306_091.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 10 error messages.
+
+
+[2022-01-28 22:33:47]	[done]
+	build successfully !
+
+[2022-01-28 22:34:06]	[done]
+	build successfully !
+
+[2022-01-28 22:37:49]	[done]
+	build successfully !
+
+[2022-01-28 22:39:12]	[done]
+	build successfully !
+
+[2022-01-28 22:44:04]	[done]
+	build successfully !
+
+[2022-01-28 22:46:00]	[done]
+	build successfully !
+
+[2022-01-28 22:56:16]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 77: Warning:  #870-D: invalid multibyte character sequence
+      char buff[] ="褰撳墠杞??";
+                          ^
+".\HARDWARE\GUI\gui.c", line 89: Error:  #65: expected a ";"
+  }
+  ^
+".\HARDWARE\GUI\gui.c", line 77: Warning:  #550-D: variable "buff" was set but never used
+      char buff[] ="褰撳墠杞??";
+           ^
+".\HARDWARE\GUI\gui.c", line 10: Warning:  #550-D: variable "last_index" was set but never used
+  static u8 last_index = _Main_UI;			   //涓婁竴涓?晫闈㈢储寮曞?            ^
+.\HARDWARE\GUI\gui.c: 3 warnings, 1 error
+
+[2022-01-28 22:56:51]	[done]
+	build successfully !
+
+[2022-01-28 23:01:39]	[done]
+	build successfully !
+
+[2022-01-28 23:05:03]	[done]
+	build successfully !
+
+[2022-01-28 23:06:49]	[done]
+	build successfully !
+
+[2022-01-28 23:07:39]	[done]
+	build successfully !
+
+[2022-01-28 23:11:13]	[done]
+	build successfully !
+
+[2022-01-28 23:11:31]	[done]
+	build successfully !
+
+[2022-01-28 23:12:01]	[done]
+	build successfully !
+
+[2022-01-28 23:12:16]	[done]
+	build successfully !
+
+[2022-01-28 23:12:51]	[done]
+	build successfully !
+
+[2022-01-28 23:14:19]	[done]
+	build successfully !
+
+[2022-01-28 23:26:26]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED2\oled.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED2\oled.c", line 46: Warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	OLED_SCLK_Set();
+  	^
+".\HARDWARE\OLED2\oled.c", line 46: Error:  #20: identifier "GPIO_Pin_8" is undefined
+  	OLED_SCLK_Set();
+  	^
+".\HARDWARE\OLED2\oled.c", line 47: Error:  #20: identifier "GPIO_Pin_9" is undefined
+  	OLED_SDIN_Set();
+  	^
+".\HARDWARE\OLED2\oled.c", line 48: Warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  	OLED_SDIN_Clr();
+  	^
+".\HARDWARE\OLED2\oled.c", line 57: Warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	OLED_SCLK_Set();
+  	^
+".\HARDWARE\OLED2\oled.c", line 57: Error:  #20: identifier "GPIO_Pin_8" is undefined
+  	OLED_SCLK_Set();
+  	^
+".\HARDWARE\OLED2\oled.c", line 59: Warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  	OLED_SDIN_Clr();
+  	^
+".\HARDWARE\OLED2\oled.c", line 59: Error:  #20: identifier "GPIO_Pin_9" is undefined
+  	OLED_SDIN_Clr();
+  	^
+".\HARDWARE\OLED2\oled.c", line 82: Warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	OLED_SCLK_Set();
+  	^
+".\HARDWARE\OLED2\oled.c", line 82: Error:  #20: identifier "GPIO_Pin_8" is undefined
+  	OLED_SCLK_Set();
+  	^
+".\HARDWARE\OLED2\oled.c", line 83: Warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  	OLED_SCLK_Clr();
+  	^
+".\HARDWARE\OLED2\oled.c", line 94: Warning:  #223-D: function "GPIO_ResetBits" declared implicitly
+  	OLED_SCLK_Clr();
+  	^
+".\HARDWARE\OLED2\oled.c", line 94: Error:  #20: identifier "GPIO_Pin_8" is undefined
+  	OLED_SCLK_Clr();
+  	^
+".\HARDWARE\OLED2\oled.c", line 102: Warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  			OLED_SDIN_Set();
+  			^
+".\HARDWARE\OLED2\oled.c", line 102: Error:  #20: identifier "GPIO_Pin_9" is undefined
+  			OLED_SDIN_Set();
+  			^
+".\HARDWARE\OLED2\oled.c", line 105: Error:  #20: identifier "GPIO_Pin_9" is undefined
+  			OLED_SDIN_Clr();
+  			^
+".\HARDWARE\OLED2\oled.c", line 107: Warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  		OLED_SCLK_Set();
+  		^
+".\HARDWARE\OLED2\oled.c", line 359: Warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOD | RCC_APB2Periph_GPIOG, ENABLE); //浣胯兘PC,D,G绔?彛鏃堕挓
+  	^
+".\HARDWARE\OLED2\oled.c", line 359: Error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOD | RCC_APB2Periph_GPIOG, ENABLE); //浣胯兘PC,D,G绔?彛鏃堕挓
+  	                       ^
+".\HARDWARE\OLED2\oled.c", line 359: Error:  #20: identifier "RCC_APB2Periph_GPIOD" is undefined
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOD | RCC_APB2Periph_GPIOG, ENABLE); //浣胯兘PC,D,G绔?彛鏃堕挓
+  	                                              ^
+".\HARDWARE\OLED2\oled.c", line 359: Error:  #20: identifier "RCC_APB2Periph_GPIOG" is undefined
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOD | RCC_APB2Periph_GPIOG, ENABLE); //浣胯兘PC,D,G绔?彛鏃堕挓
+  	                                                                     ^
+".\HARDWARE\OLED2\oled.c", line 361: Error:  #136: struct "<unnamed>" has no field "GPIO_Pin"
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_8; //PD3,PD6鎺ㄦ尳杈撳嚭
+  	                   ^
+".\HARDWARE\OLED2\oled.c", line 361: Error:  #20: identifier "GPIO_Pin_4" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_8; //PD3,PD6鎺ㄦ尳杈撳嚭
+  	                              ^
+".\HARDWARE\OLED2\oled.c", line 361: Error:  #20: identifier "GPIO_Pin_5" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_8; //PD3,PD6鎺ㄦ尳杈撳嚭
+  	                                           ^
+".\HARDWARE\OLED2\oled.c", line 361: Error:  #20: identifier "GPIO_Pin_6" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_8; //PD3,PD6鎺ㄦ尳杈撳嚭
+  	                                                        ^
+".\HARDWARE\OLED2\oled.c", line 361: Error:  #20: identifier "GPIO_Pin_7" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_8; //PD3,PD6鎺ㄦ尳杈撳嚭
+  	                                                                     ^
+".\HARDWARE\OLED2\oled.c", line 361: Error:  #20: identifier "GPIO_Pin_3" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_8; //PD3,PD6鎺ㄦ尳杈撳嚭
+  	                                                                                  ^
+".\HARDWARE\OLED2\oled.c", line 361: Error:  #20: identifier "GPIO_Pin_8" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_8; //PD3,PD6鎺ㄦ尳杈撳嚭
+  	                                                                                               ^
+".\HARDWARE\OLED2\oled.c", line 362: Error:  #136: struct "<unnamed>" has no field "GPIO_Mode"
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;														   //鎺ㄦ尳杈撳嚭
+  	                   ^
+".\HARDWARE\OLED2\oled.c", line 362: Error:  #20: identifier "GPIO_Mode_Out_PP" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;														   //鎺ㄦ尳杈撳嚭
+  	                               ^
+".\HARDWARE\OLED2\oled.c", line 363: Error:  #136: struct "<unnamed>" has no field "GPIO_Speed"
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;														   //閫熷害50MHz
+  	                   ^
+".\HARDWARE\OLED2\oled.c", line 363: Error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;														   //閫熷害50MHz
+  	                                ^
+".\HARDWARE\OLED2\oled.c", line 364: Warning:  #223-D: function "GPIO_Init" declared implicitly
+  	GPIO_Init(GPIOD, &GPIO_InitStructure);																	   //鍒濆?鍖朑PIOD3,6
+  	^
+".\HARDWARE\OLED2\oled.c", line 365: Warning:  #223-D: function "GPIO_SetBits" declared implicitly
+  	GPIO_SetBits(GPIOD, GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_8);		   //PD3,PD6 杈撳嚭楂?  	^
+".\HARDWARE\OLED2\oled.c", line 378: Error:  #136: struct "<unnamed>" has no field "GPIO_Pin"
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1; //PC0,1 OUT鎺ㄦ尳杈撳嚭
+  	                   ^
+".\HARDWARE\OLED2\oled.c", line 378: Error:  #20: identifier "GPIO_Pin_0" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1; //PC0,1 OUT鎺ㄦ尳杈撳嚭
+  	                              ^
+".\HARDWARE\OLED2\oled.c", line 378: Error:  #20: identifier "GPIO_Pin_1" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1; //PC0,1 OUT鎺ㄦ尳杈撳嚭
+  	                                           ^
+".\HARDWARE\OLED2\oled.c", line 382: Error:  #136: struct "<unnamed>" has no field "GPIO_Pin"
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_15; //PG15 OUT鎺ㄦ尳杈撳嚭	  RST
+  	                   ^
+".\HARDWARE\OLED2\oled.c", line 382: Error:  #20: identifier "GPIO_Pin_15" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_15; //PG15 OUT鎺ㄦ尳杈撳嚭	  RST
+  	                              ^
+".\HARDWARE\OLED2\oled.c", line 383: Error:  #20: identifier "GPIOG" is undefined
+  	GPIO_Init(GPIOG, &GPIO_InitStructure);
+  	          ^
+.\HARDWARE\OLED2\oled.c: 12 warnings, 28 errors
+
+[2022-01-28 23:29:31]	[done]
+	build successfully !
+
+[2022-01-28 23:30:06]	[done]
+	build successfully !
+
+[2022-01-28 23:43:50]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED2\oled_driver.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 14: Error:  #5: cannot open source input file "oled.h": No such file or directory
+  #include "oled.h"
+                   ^
+.\src\main.c: 0 warnings, 1 error
+".\HARDWARE\OLED2\oled_driver.c", line 10: Warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+  	RCC_APB1PeriphClockCmd(IIC_RCC_APB1Periph_I2CX, ENABLE);
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 10: Error:  #20: identifier "RCC_APB1Periph_I2C1" is undefined
+  	RCC_APB1PeriphClockCmd(IIC_RCC_APB1Periph_I2CX, ENABLE);
+  	                       ^
+".\HARDWARE\OLED2\oled_driver.c", line 11: Warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+  	RCC_APB2PeriphClockCmd(IIC_RCC_APB2Periph_GPIOX, ENABLE);
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 11: Error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+  	RCC_APB2PeriphClockCmd(IIC_RCC_APB2Periph_GPIOX, ENABLE);
+  	                       ^
+".\HARDWARE\OLED2\oled_driver.c", line 13: Error:  #136: struct "<unnamed>" has no field "GPIO_Pin"
+  	GPIO_InitStructure.GPIO_Pin = IIC_SCL_Pin_X | IIC_SDA_Pin_X;
+  	                   ^
+".\HARDWARE\OLED2\oled_driver.c", line 13: Error:  #20: identifier "GPIO_Pin_8" is undefined
+  	GPIO_InitStructure.GPIO_Pin = IIC_SCL_Pin_X | IIC_SDA_Pin_X;
+  	                              ^
+".\HARDWARE\OLED2\oled_driver.c", line 13: Error:  #20: identifier "GPIO_Pin_9" is undefined
+  	GPIO_InitStructure.GPIO_Pin = IIC_SCL_Pin_X | IIC_SDA_Pin_X;
+  	                                              ^
+".\HARDWARE\OLED2\oled_driver.c", line 14: Error:  #136: struct "<unnamed>" has no field "GPIO_Speed"
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  	                   ^
+".\HARDWARE\OLED2\oled_driver.c", line 14: Error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+  	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  	                                ^
+".\HARDWARE\OLED2\oled_driver.c", line 15: Error:  #136: struct "<unnamed>" has no field "GPIO_Mode"
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD; //I2C蹇呴』寮婕忚緭鍑?  	                   ^
+".\HARDWARE\OLED2\oled_driver.c", line 15: Error:  #20: identifier "GPIO_Mode_AF_OD" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD; //I2C蹇呴』寮婕忚緭鍑?  	                               ^
+".\HARDWARE\OLED2\oled_driver.c", line 16: Warning:  #223-D: function "GPIO_Init" declared implicitly
+  	GPIO_Init(IIC_GPIOX, &GPIO_InitStructure);
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 18: Warning:  #223-D: function "I2C_DeInit" declared implicitly
+  	I2C_DeInit(I2CX);
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 19: Error:  #136: struct "<unnamed>" has no field "I2C_Mode"
+  	I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;
+  	                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 19: Error:  #20: identifier "I2C_Mode_I2C" is undefined
+  	I2C_InitStructure.I2C_Mode = I2C_Mode_I2C;
+  	                             ^
+".\HARDWARE\OLED2\oled_driver.c", line 20: Error:  #136: struct "<unnamed>" has no field "I2C_DutyCycle"
+  	I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;
+  	                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 20: Error:  #20: identifier "I2C_DutyCycle_2" is undefined
+  	I2C_InitStructure.I2C_DutyCycle = I2C_DutyCycle_2;
+  	                                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 21: Error:  #136: struct "<unnamed>" has no field "I2C_OwnAddress1"
+  	I2C_InitStructure.I2C_OwnAddress1 = 0x30; //涓绘満鐨処2C鍦板潃,闅忎究鍐?  	                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 22: Error:  #136: struct "<unnamed>" has no field "I2C_Ack"
+  	I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;
+  	                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 22: Error:  #20: identifier "I2C_Ack_Enable" is undefined
+  	I2C_InitStructure.I2C_Ack = I2C_Ack_Enable;
+  	                            ^
+".\HARDWARE\OLED2\oled_driver.c", line 23: Error:  #136: struct "<unnamed>" has no field "I2C_AcknowledgedAddress"
+  	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+  	                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 23: Error:  #20: identifier "I2C_AcknowledgedAddress_7bit" is undefined
+  	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+  	                                            ^
+".\HARDWARE\OLED2\oled_driver.c", line 24: Error:  #136: struct "<unnamed>" has no field "I2C_ClockSpeed"
+  	I2C_InitStructure.I2C_ClockSpeed = 1320000;
+  	                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 26: Warning:  #223-D: function "I2C_Cmd" declared implicitly
+  	I2C_Cmd(I2CX, ENABLE);
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 27: Warning:  #223-D: function "I2C_Init" declared implicitly
+  	I2C_Init(I2CX, &I2C_InitStructure);
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 39: Warning:  #223-D: function "I2C_GetFlagStatus" declared implicitly
+  	while (I2C_GetFlagStatus(I2CX, I2C_FLAG_BUSY))
+  	       ^
+".\HARDWARE\OLED2\oled_driver.c", line 42: Warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
+  	I2C_GenerateSTART(I2CX, ENABLE); //寮鍚疘2C1
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 43: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT))
+  	        ^
+".\HARDWARE\OLED2\oled_driver.c", line 43: Error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT))
+  	                             ^
+".\HARDWARE\OLED2\oled_driver.c", line 46: Warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
+  	I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter); //鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 46: Error:  #20: identifier "I2C_Direction_Transmitter" is undefined
+  	I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter); //鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  	                                        ^
+".\HARDWARE\OLED2\oled_driver.c", line 47: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED))
+  	        ^
+".\HARDWARE\OLED2\oled_driver.c", line 47: Error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED))
+  	                             ^
+".\HARDWARE\OLED2\oled_driver.c", line 50: Warning:  #223-D: function "I2C_SendData" declared implicitly
+  	I2C_SendData(I2CX, addr); //瀵勫瓨鍣ㄥ湴鍧
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 51: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED))
+  	        ^
+".\HARDWARE\OLED2\oled_driver.c", line 51: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED))
+  	                             ^
+".\HARDWARE\OLED2\oled_driver.c", line 55: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED))
+  	        ^
+".\HARDWARE\OLED2\oled_driver.c", line 55: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED))
+  	                             ^
+".\HARDWARE\OLED2\oled_driver.c", line 58: Warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
+  	I2C_GenerateSTOP(I2CX, ENABLE); //鍏抽棴I2C1鎬荤嚎
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 79: Warning:  #223-D: function "I2C_GetFlagStatus" declared implicitly
+  	while (I2C_GetFlagStatus(I2CX, I2C_FLAG_BUSY))
+  	       ^
+".\HARDWARE\OLED2\oled_driver.c", line 81: Warning:  #223-D: function "I2C_GenerateSTART" declared implicitly
+  	I2C_GenerateSTART(I2C1, ENABLE); //寮鍚疘2C1
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 82: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT))
+  	        ^
+".\HARDWARE\OLED2\oled_driver.c", line 82: Error:  #20: identifier "I2C_EVENT_MASTER_MODE_SELECT" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_MODE_SELECT))
+  	                             ^
+".\HARDWARE\OLED2\oled_driver.c", line 84: Warning:  #223-D: function "I2C_Send7bitAddress" declared implicitly
+  	I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter); //鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 84: Error:  #20: identifier "I2C_Direction_Transmitter" is undefined
+  	I2C_Send7bitAddress(I2CX, OLED_ADDRESS, I2C_Direction_Transmitter); //鍣ㄤ欢鍦板潃 -- 榛樿?0x78
+  	                                        ^
+".\HARDWARE\OLED2\oled_driver.c", line 85: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED))
+  	        ^
+".\HARDWARE\OLED2\oled_driver.c", line 85: Error:  #20: identifier "I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED))
+  	                             ^
+".\HARDWARE\OLED2\oled_driver.c", line 87: Warning:  #223-D: function "I2C_SendData" declared implicitly
+  	I2C_SendData(I2CX, 0x40); //瀵勫瓨鍣ㄥ湴鍧
+  	^
+".\HARDWARE\OLED2\oled_driver.c", line 88: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED))
+  	        ^
+".\HARDWARE\OLED2\oled_driver.c", line 88: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  	while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED))
+  	                             ^
+".\HARDWARE\OLED2\oled_driver.c", line 93: Warning:  #223-D: function "I2C_CheckEvent" declared implicitly
+  		while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED))
+  		        ^
+".\HARDWARE\OLED2\oled_driver.c", line 93: Error:  #20: identifier "I2C_EVENT_MASTER_BYTE_TRANSMITTED" is undefined
+  		while (!I2C_CheckEvent(I2CX, I2C_EVENT_MASTER_BYTE_TRANSMITTED))
+  		                             ^
+".\HARDWARE\OLED2\oled_driver.c", line 96: Warning:  #223-D: function "I2C_GenerateSTOP" declared implicitly
+  	I2C_GenerateSTOP(I2CX, ENABLE); //鍏抽棴I2C1鎬荤嚎
+  	^
+.\HARDWARE\OLED2\oled_driver.c: 24 warnings, 29 errors
+
+[2022-01-28 23:47:15]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED2\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED2\oled_driver.c", line 103: Error:  #169: expected a declaration
+      __HAL_RCC_GPIOB_CLK_ENABLE();   //浣胯兘GPIOB鏃堕挓
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 106: Error:  #77-D: this declaration has no storage class or type specifier
+      GPIO_Initure.Pin=GPIO_PIN_8|GPIO_PIN_9;
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 106: Error:  #147: declaration is incompatible with "GPIO_InitTypeDef GPIO_Initure" (declared at line 101)
+      GPIO_Initure.Pin=GPIO_PIN_8|GPIO_PIN_9;
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 106: Error:  #65: expected a ";"
+      GPIO_Initure.Pin=GPIO_PIN_8|GPIO_PIN_9;
+                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 107: Error:  #77-D: this declaration has no storage class or type specifier
+      GPIO_Initure.Mode=GPIO_MODE_OUTPUT_PP;  //鎺ㄦ尳杈撳嚭
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 107: Error:  #147: declaration is incompatible with "GPIO_InitTypeDef GPIO_Initure" (declared at line 106)
+      GPIO_Initure.Mode=GPIO_MODE_OUTPUT_PP;  //鎺ㄦ尳杈撳嚭
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 107: Error:  #65: expected a ";"
+      GPIO_Initure.Mode=GPIO_MODE_OUTPUT_PP;  //鎺ㄦ尳杈撳嚭
+                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 108: Error:  #77-D: this declaration has no storage class or type specifier
+      GPIO_Initure.Pull=GPIO_PULLUP;          //涓婃媺
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 108: Error:  #147: declaration is incompatible with "GPIO_InitTypeDef GPIO_Initure" (declared at line 107)
+      GPIO_Initure.Pull=GPIO_PULLUP;          //涓婃媺
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 108: Error:  #65: expected a ";"
+      GPIO_Initure.Pull=GPIO_PULLUP;          //涓婃媺
+                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 109: Error:  #77-D: this declaration has no storage class or type specifier
+      GPIO_Initure.Speed=GPIO_SPEED_FAST;     //蹇??      ^
+".\HARDWARE\OLED2\oled_driver.c", line 109: Error:  #147: declaration is incompatible with "GPIO_InitTypeDef GPIO_Initure" (declared at line 108)
+      GPIO_Initure.Speed=GPIO_SPEED_FAST;     //蹇??      ^
+".\HARDWARE\OLED2\oled_driver.c", line 109: Error:  #65: expected a ";"
+      GPIO_Initure.Speed=GPIO_SPEED_FAST;     //蹇??                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 110: Error:  #79: expected a type specifier
+      HAL_GPIO_Init(GPIOB,&GPIO_Initure);
+                    ^
+".\HARDWARE\OLED2\oled_driver.c", line 110: Error:  #79: expected a type specifier
+      HAL_GPIO_Init(GPIOB,&GPIO_Initure);
+                          ^
+".\HARDWARE\OLED2\oled_driver.c", line 110: Error:  #260-D: explicit type is missing ("int" assumed)
+      HAL_GPIO_Init(GPIOB,&GPIO_Initure);
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 110: Error:  #147: declaration is incompatible with "void HAL_GPIO_Init(GPIO_TypeDef *, GPIO_InitTypeDef *)" (declared at line 225 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h")
+      HAL_GPIO_Init(GPIOB,&GPIO_Initure);
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 112: Error:  #40: expected an identifier
+      IIC_SDA=1;
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 112: Error:  #79: expected a type specifier
+      IIC_SDA=1;
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 112: Error:  #145: function "<error>" may not be initialized
+      IIC_SDA=1;
+             ^
+".\HARDWARE\OLED2\oled_driver.c", line 113: Error:  #40: expected an identifier
+      IIC_SCL=1;  
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 113: Error:  #79: expected a type specifier
+      IIC_SCL=1;  
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 113: Error:  #145: function "<error>" may not be initialized
+      IIC_SCL=1;  
+             ^
+.\HARDWARE\OLED2\oled_driver.c: 0 warnings, 23 errors
+
+[2022-01-28 23:47:36]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED2\oled_driver.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED2\oled_driver.c", line 103: Error:  #169: expected a declaration
+      __HAL_RCC_GPIOB_CLK_ENABLE();   //浣胯兘GPIOB鏃堕挓
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 106: Error:  #77-D: this declaration has no storage class or type specifier
+      GPIO_Initure.Pin=GPIO_PIN_8|GPIO_PIN_9;
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 106: Error:  #147: declaration is incompatible with "GPIO_InitTypeDef GPIO_Initure" (declared at line 101)
+      GPIO_Initure.Pin=GPIO_PIN_8|GPIO_PIN_9;
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 106: Error:  #65: expected a ";"
+      GPIO_Initure.Pin=GPIO_PIN_8|GPIO_PIN_9;
+                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 107: Error:  #77-D: this declaration has no storage class or type specifier
+      GPIO_Initure.Mode=GPIO_MODE_OUTPUT_PP;  //鎺ㄦ尳杈撳嚭
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 107: Error:  #147: declaration is incompatible with "GPIO_InitTypeDef GPIO_Initure" (declared at line 106)
+      GPIO_Initure.Mode=GPIO_MODE_OUTPUT_PP;  //鎺ㄦ尳杈撳嚭
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 107: Error:  #65: expected a ";"
+      GPIO_Initure.Mode=GPIO_MODE_OUTPUT_PP;  //鎺ㄦ尳杈撳嚭
+                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 108: Error:  #77-D: this declaration has no storage class or type specifier
+      GPIO_Initure.Pull=GPIO_PULLUP;          //涓婃媺
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 108: Error:  #147: declaration is incompatible with "GPIO_InitTypeDef GPIO_Initure" (declared at line 107)
+      GPIO_Initure.Pull=GPIO_PULLUP;          //涓婃媺
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 108: Error:  #65: expected a ";"
+      GPIO_Initure.Pull=GPIO_PULLUP;          //涓婃媺
+                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 109: Error:  #77-D: this declaration has no storage class or type specifier
+      GPIO_Initure.Speed=GPIO_SPEED_FAST;     //蹇??      ^
+".\HARDWARE\OLED2\oled_driver.c", line 109: Error:  #147: declaration is incompatible with "GPIO_InitTypeDef GPIO_Initure" (declared at line 108)
+      GPIO_Initure.Speed=GPIO_SPEED_FAST;     //蹇??      ^
+".\HARDWARE\OLED2\oled_driver.c", line 109: Error:  #65: expected a ";"
+      GPIO_Initure.Speed=GPIO_SPEED_FAST;     //蹇??                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 110: Error:  #79: expected a type specifier
+      HAL_GPIO_Init(GPIOB,&GPIO_Initure);
+                    ^
+".\HARDWARE\OLED2\oled_driver.c", line 110: Error:  #79: expected a type specifier
+      HAL_GPIO_Init(GPIOB,&GPIO_Initure);
+                          ^
+".\HARDWARE\OLED2\oled_driver.c", line 110: Error:  #260-D: explicit type is missing ("int" assumed)
+      HAL_GPIO_Init(GPIOB,&GPIO_Initure);
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 110: Error:  #147: declaration is incompatible with "void HAL_GPIO_Init(GPIO_TypeDef *, GPIO_InitTypeDef *)" (declared at line 225 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h")
+      HAL_GPIO_Init(GPIOB,&GPIO_Initure);
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 112: Error:  #40: expected an identifier
+      IIC_SDA=1;
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 112: Error:  #79: expected a type specifier
+      IIC_SDA=1;
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 112: Error:  #145: function "<error>" may not be initialized
+      IIC_SDA=1;
+             ^
+".\HARDWARE\OLED2\oled_driver.c", line 113: Error:  #40: expected an identifier
+      IIC_SCL=1;  
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 113: Error:  #79: expected a type specifier
+      IIC_SCL=1;  
+      ^
+".\HARDWARE\OLED2\oled_driver.c", line 113: Error:  #145: function "<error>" may not be initialized
+      IIC_SCL=1;  
+             ^
+.\HARDWARE\OLED2\oled_driver.c: 0 warnings, 23 errors
+
+[2022-01-28 23:58:52]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED2\oled_driver.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED2\oled_driver.c", line 55: Error:  #167: argument of type "ADC_HandleTypeDef *" is incompatible with parameter of type "I2C_HandleTypeDef *"
+  	HAL_I2C_Mem_Write(&hadc1, OLED_ADDRESS & 0xFE, addr, I2C_MEMADD_SIZE_8BIT, &data, 1, 0xFFFF);
+  	                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 60: Error:  #167: argument of type "ADC_HandleTypeDef *" is incompatible with parameter of type "I2C_HandleTypeDef *"
+  	HAL_I2C_Mem_Write(&hadc1, OLED_ADDRESS & 0xFE, 0x00, I2C_MEMADD_SIZE_8BIT, &cmd, 1, 0xFFFF);
+  	                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 65: Error:  #167: argument of type "ADC_HandleTypeDef *" is incompatible with parameter of type "I2C_HandleTypeDef *"
+  	HAL_I2C_Mem_Write(&hadc1, OLED_ADDRESS & 0xFE, 0x40, I2C_MEMADD_SIZE_8BIT, &dat, 1, 0xFFFF);
+  	                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 77: Error:  #167: argument of type "ADC_HandleTypeDef *" is incompatible with parameter of type "I2C_HandleTypeDef *"
+  		HAL_I2C_Mem_Write(&hadc1, OLED_ADDRESS & 0xFE, 0x40, I2C_MEMADD_SIZE_8BIT, BMP + i * 128, 128, 0xFFFF);
+  		                  ^
+".\HARDWARE\OLED2\oled_driver.c", line 70: Warning:  #177-D: variable "n" was declared but never referenced
+  	uint8_t i, n;
+  	           ^
+.\HARDWARE\OLED2\oled_driver.c: 1 warning, 4 errors
+
+[2022-01-29 00:00:37]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol Error_Handler (referred from oled_driver.o).
+Error: L6218E: Undefined symbol OLED_Clear (referred from main.o).
+Error: L6218E: Undefined symbol OLED_ShowString (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 3 error messages.
+
+
+[2022-01-29 00:02:06]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol demo (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-29 00:02:34]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol DelayMs (referred from test.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-29 00:03:31]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol demo (referred from main.o).
+Error: L6218E: Undefined symbol DelayMs (referred from test.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-29 00:03:46]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol DelayMs (referred from test.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-29 00:04:12]	[done]
+	build successfully !
+
+[2022-01-29 00:05:40]	[done]
+	build successfully !
+
+[2022-01-29 00:07:01]	[done]
+	build successfully !
+
+[2022-01-29 00:10:57]	[done]
+	build successfully !
+
+[2022-01-29 00:11:29]	[done]
+	build successfully !
+
+[2022-01-29 00:11:47]	[done]
+	build successfully !
+
+[2022-01-29 00:12:08]	[done]
+	build successfully !
+
+[2022-01-29 00:31:49]	compilation failed at : "c:\Users\13443\source\stm32rt\src\driver\driver_ssd1306_interface.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\driver\driver_ssd1306_interface.c", line 54: Error:  #120: return value type does not match the function type
+      return iic_init();
+             ^
+".\src\driver\driver_ssd1306_interface.c", line 66: Warning:  #223-D: function "iic_deinit" declared implicitly
+      return iic_deinit();
+             ^
+".\src\driver\driver_ssd1306_interface.c", line 82: Warning:  #223-D: function "iic_write" declared implicitly
+      return iic_write(addr, reg, buf, len);
+             ^
+".\src\driver\driver_ssd1306_interface.c", line 160: Warning:  #940-D: missing return statement at end of non-void function "ssd1306_interface_debug_print"
+  }
+  ^
+.\src\driver\driver_ssd1306_interface.c: 3 warnings, 1 error
+
+[2022-01-29 00:32:10]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 14: Error:  #5: cannot open source input file "test.h": No such file or directory
+  #include "test.h"
+                   ^
+.\src\main.c: 0 warnings, 1 error
+
+[2022-01-29 00:37:11]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306_basic_string (referred from gui.o).
+Error: L6218E: Undefined symbol iic_ack (referred from oled.o).
+Error: L6218E: Undefined symbol iic_start (referred from oled.o).
+Error: L6218E: Undefined symbol iic_stop (referred from oled.o).
+Error: L6218E: Undefined symbol iic_write_byte (referred from oled.o).
+Error: L6218E: Undefined symbol InitGraph (referred from main.o).
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Error: L6218E: Undefined symbol test (referred from main.o).
+Error: L6218E: Undefined symbol ssd1306_interface_debug_print (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_delay_ms (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_iic_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_iic_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_iic_write (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_reset_gpio_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_reset_gpio_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_reset_gpio_write (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_cmd_data_gpio_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_cmd_data_gpio_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_cmd_data_gpio_write (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_deinit (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_init (referred from driver_ssd1306_display_test.o).
+Error: L6218E: Undefined symbol ssd1306_interface_spi_write_cmd (referred from driver_ssd1306_display_test.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 22 error messages.
+
+
+[2022-01-29 00:37:26]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306_basic_string (referred from gui.o).
+Error: L6218E: Undefined symbol iic_ack (referred from oled.o).
+Error: L6218E: Undefined symbol iic_start (referred from oled.o).
+Error: L6218E: Undefined symbol iic_stop (referred from oled.o).
+Error: L6218E: Undefined symbol iic_write_byte (referred from oled.o).
+Error: L6218E: Undefined symbol ssd1306_display_test (referred from usmart_config.o).
+Error: L6218E: Undefined symbol InitGraph (referred from main.o).
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Error: L6218E: Undefined symbol test (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 9 error messages.
+
+
+[2022-01-29 00:37:38]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306_basic_string (referred from gui.o).
+Error: L6218E: Undefined symbol oled_clear (referred from SOLGUI_Hardware.o).
+Error: L6218E: Undefined symbol oled_init (referred from SOLGUI_Hardware.o).
+Error: L6218E: Undefined symbol oled_refreshram (referred from SOLGUI_Hardware.o).
+Error: L6218E: Undefined symbol ssd1306_display_test (referred from usmart_config.o).
+Error: L6218E: Undefined symbol InitGraph (referred from main.o).
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Error: L6218E: Undefined symbol test (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 8 error messages.
+
+
+[2022-01-29 00:38:02]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol oled_clear (referred from SOLGUI_Hardware.o).
+Error: L6218E: Undefined symbol oled_init (referred from SOLGUI_Hardware.o).
+Error: L6218E: Undefined symbol oled_refreshram (referred from SOLGUI_Hardware.o).
+Error: L6218E: Undefined symbol ssd1306_display_test (referred from usmart_config.o).
+Error: L6218E: Undefined symbol InitGraph (referred from main.o).
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Error: L6218E: Undefined symbol test (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 7 error messages.
+
+
+[2022-01-29 00:38:38]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\SOLGUI\SOLGUI_Hardware.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\SOLGUI\SOLGUI_Hardware.c", line 6: Error:  #5: cannot open source input file "oled.h": No such file or directory
+  #include "oled.h"
+                   ^
+.\HARDWARE\SOLGUI\SOLGUI_Hardware.c: 0 warnings, 1 error
+
+[2022-01-29 00:39:05]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol ssd1306_display_test (referred from usmart_config.o).
+Error: L6218E: Undefined symbol InitGraph (referred from main.o).
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Error: L6218E: Undefined symbol test (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-01-29 00:39:21]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol InitGraph (referred from main.o).
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Error: L6218E: Undefined symbol test (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 3 error messages.
+
+
+[2022-01-29 00:39:35]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Error: L6218E: Undefined symbol test (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-29 00:40:25]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-29 00:40:34]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-29 00:41:02]	[done]
+	build successfully !
+
+[2022-01-29 00:41:54]	[done]
+	build successfully !
+
+[2022-01-29 00:42:06]	[done]
+	build successfully !
+
+[2022-01-29 00:42:20]	[done]
+	build successfully !
+
+[2022-01-29 00:44:50]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\iic\iic.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\iic\iic.c", line 12: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+".\SYSTEM\iic\iic.c", line 12: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+".\SYSTEM\iic\iic.c", line 23: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+".\SYSTEM\iic\iic.c", line 23: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+".\SYSTEM\iic\iic.c", line 35: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_in();
+      ^
+".\SYSTEM\iic\iic.c", line 35: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_in();
+      ^
+".\SYSTEM\iic\iic.c", line 56: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+".\SYSTEM\iic\iic.c", line 56: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+".\SYSTEM\iic\iic.c", line 67: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+".\SYSTEM\iic\iic.c", line 67: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+".\SYSTEM\iic\iic.c", line 78: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_in();
+      ^
+".\SYSTEM\iic\iic.c", line 78: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_in();
+      ^
+".\SYSTEM\iic\iic.c", line 99: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+".\SYSTEM\iic\iic.c", line 99: Error:  #136: struct "<unnamed>" has no field "CRL"
+      sda_out();
+      ^
+.\SYSTEM\iic\iic.c: 0 warnings, 14 errors
+
+[2022-01-29 00:45:39]	[done]
+	build successfully !
+
+[2022-01-29 00:49:28]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol iic_ack (referred from oled.o).
+Error: L6218E: Undefined symbol iic_start (referred from oled.o).
+Error: L6218E: Undefined symbol iic_stop (referred from oled.o).
+Error: L6218E: Undefined symbol iic_write_byte (referred from oled.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-01-29 00:52:45]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol iic_ack (referred from oled.o).
+Error: L6218E: Undefined symbol iic_start (referred from oled.o).
+Error: L6218E: Undefined symbol iic_stop (referred from oled.o).
+Error: L6218E: Undefined symbol iic_write_byte (referred from oled.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-01-29 00:59:32]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\oled.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\oled.c", line 17: Error:  #167: argument of type "u8" is incompatible with parameter of type "uint8_t *"
+      iic_write(0x78,0x00, command,1 );
+                           ^
+".\HARDWARE\OLED\oled.c", line 22: Warning:  #223-D: function "iic_start" declared implicitly
+  	iic_start();
+  	^
+".\HARDWARE\OLED\oled.c", line 23: Warning:  #223-D: function "iic_write_byte" declared implicitly
+  	iic_write_byte(0x78);
+  	^
+".\HARDWARE\OLED\oled.c", line 24: Warning:  #223-D: function "iic_ack" declared implicitly
+  	iic_ack();
+  	^
+".\HARDWARE\OLED\oled.c", line 29: Warning:  #223-D: function "iic_stop" declared implicitly
+  	iic_stop();
+  	^
+".\HARDWARE\OLED\oled.c", line 30: Error:  #167: argument of type "u8" is incompatible with parameter of type "uint8_t *"
+      iic_write(0x78,0x40, data,1 );
+                           ^
+.\HARDWARE\OLED\oled.c: 4 warnings, 2 errors
+
+[2022-01-29 01:00:18]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\OLED\oled.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\OLED\oled.c", line 16: Error:  #167: argument of type "u8" is incompatible with parameter of type "uint8_t *"
+      iic_write(0x78, 0x00, command, 1);
+                            ^
+".\HARDWARE\OLED\oled.c", line 29: Error:  #167: argument of type "u8" is incompatible with parameter of type "uint8_t *"
+      iic_write(0x78, 0x40, data, 1);
+                            ^
+.\HARDWARE\OLED\oled.c: 0 warnings, 2 errors
+
+[2022-01-29 01:00:46]	[done]
+	build successfully !
+
+[2022-01-29 01:03:04]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol SOLGUI_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-29 01:03:54]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 59: Error:  #20: identifier "wifi_init" is undefined
+  __M_PAGE(wifi_list,"wifi_list",PAGE_NULL,
+  ^
+".\src\main.c", line 59: Error:  #20: identifier "wifi_conn" is undefined
+  __M_PAGE(wifi_list,"wifi_list",PAGE_NULL,
+  ^
+".\src\main.c", line 59: Error:  #20: identifier "tcp_conn" is undefined
+  __M_PAGE(wifi_list,"wifi_list",PAGE_NULL,
+  ^
+".\src\main.c", line 59: Error:  #20: identifier "senddata" is undefined
+  __M_PAGE(wifi_list,"wifi_list",PAGE_NULL,
+  ^
+".\src\main.c", line 167: Warning:  #177-D: variable "key" was declared but never referenced
+      u8 key;
+         ^
+.\src\main.c: 1 warning, 4 errors
+
+[2022-01-29 01:04:53]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 59: Error:  #20: identifier "wifi_init" is undefined
+  __M_PAGE(wifi_list,"wifi_list",PAGE_NULL,
+  ^
+".\src\main.c", line 172: Warning:  #177-D: variable "key" was declared but never referenced
+      u8 key;
+         ^
+.\src\main.c: 1 warning, 1 error
+
+[2022-01-29 01:05:22]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol SOLGUI_Cursor (referred from main.o).
+Error: L6218E: Undefined symbol SOLGUI_Init (referred from main.o).
+Error: L6218E: Undefined symbol SOLGUI_Widget_GotoPage (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 3 error messages.
+
+
+[2022-01-29 01:05:47]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\SOLGUI\SOLGUI_Common.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\SOLGUI\SOLGUI_Common.c", line 13: Error:  #147-D: declaration is incompatible with "void SOLGUI_Init(MENU_PAGE *)" (declared at line 18 of ".\HARDWARE\SOLGUI\SOLGUI_Common.h")
+  void SOLGUI_Init(void) 		//SOLGUI不使用前台时的初始化
+       ^
+.\HARDWARE\SOLGUI\SOLGUI_Common.c: 0 warnings, 1 error
+
+[2022-01-29 01:06:07]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 91: Error:  #165: too few arguments in function call
+  	SOLGUI_Init();
+  	            ^
+".\src\main.c", line 172: Warning:  #177-D: variable "key" was declared but never referenced
+      u8 key;
+         ^
+.\src\main.c: 1 warning, 1 error
+
+[2022-01-29 01:06:28]	[done]
+	build successfully !
+
+[2022-01-29 01:07:07]	[done]
+	build successfully !
+
+[2022-01-29 01:08:07]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 66: Error:  #20: identifier "switch_reg" is undefined
+  __M_PAGE(wifi_init,"wifi_init",&wifi_list,
+  ^
+".\src\main.c", line 71: Error:  #20: identifier "switch_reg" is undefined
+  __M_PAGE(wifi_conn,"wifi_conn",&wifi_list,
+  ^
+".\src\main.c", line 76: Error:  #20: identifier "switch_reg" is undefined
+  __M_PAGE(tcp_conn,"tcp_conn",&wifi_list,
+  ^
+".\src\main.c", line 81: Error:  #20: identifier "switch_reg" is undefined
+  __M_PAGE(senddata,"senddata",&wifi_list,
+  ^
+".\src\main.c", line 179: Warning:  #177-D: variable "key" was declared but never referenced
+      u8 key;
+         ^
+.\src\main.c: 1 warning, 4 errors
+
+[2022-01-29 01:10:14]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 67: Error:  #20: identifier "switch_reg" is undefined
+  __M_PAGE(wifi_init, "wifi_init", &wifi_list,
+  ^
+".\src\main.c", line 72: Error:  #20: identifier "switch_reg" is undefined
+  __M_PAGE(wifi_conn, "wifi_conn", &wifi_list,
+  ^
+".\src\main.c", line 77: Error:  #20: identifier "switch_reg" is undefined
+  __M_PAGE(tcp_conn, "tcp_conn", &wifi_list,
+  ^
+".\src\main.c", line 82: Error:  #20: identifier "switch_reg" is undefined
+  __M_PAGE(senddata, "senddata", &wifi_list,
+  ^
+".\src\main.c", line 180: Warning:  #177-D: variable "key" was declared but never referenced
+      u8 key;
+         ^
+.\src\main.c: 1 warning, 4 errors
+
+[2022-01-29 01:10:45]	[done]
+	build successfully !
+
+[2022-01-29 01:11:35]	[done]
+	build successfully !
+
+[2022-01-29 01:11:49]	[done]
+	build successfully !
+
+[2022-01-29 01:12:55]	[done]
+	build successfully !
+
+[2022-01-29 01:13:30]	[done]
+	build successfully !
+

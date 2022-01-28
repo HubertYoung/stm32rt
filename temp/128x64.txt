@@ -1,0 +1,50 @@
+delay_ms(100);					// 延迟(必须要有)
+ 
+OLED_WR_Byte(0xAE,OLED_CMD);	// 关闭显示
+ 
+OLED_WR_Byte(0x00,OLED_CMD);	// 设置低列地址
+OLED_WR_Byte(0x10,OLED_CMD);	// 设置高列地址
+OLED_WR_Byte(0x40,OLED_CMD);	// 设置起始行地址	【5:0】
+OLED_WR_Byte(0xB0,OLED_CMD);	// 设置页地址
+ 
+OLED_WR_Byte(0x81,OLED_CMD); 	// 对比度设置，可设置亮度
+OLED_WR_Byte(0xFF,OLED_CMD);	// 1~255(亮度设置,越大越亮)
+ 
+OLED_WR_Byte(0xA1,OLED_CMD);	// 设置段(SEG)的起始映射地址 bit0:0,0->0;1,0->127;
+OLED_WR_Byte(0xA6,OLED_CMD);	// 正常显示；0xa7逆显示
+ 
+OLED_WR_Byte(0xA8,OLED_CMD);	// 设置驱动路数（16~64）
+->OLED_WR_Byte(0x3F,OLED_CMD);	// 64duty	默认0X3f(1/64) 0x1f(1/32)		0.96:0X3f ；0.91寸:0x1f
+ 
+OLED_WR_Byte(0xC8,OLED_CMD);	// 重映射模式，COM[N-1]~COM0扫描
+ 
+OLED_WR_Byte(0xD3,OLED_CMD);	// 设置显示偏移
+OLED_WR_Byte(0x00,OLED_CMD);	// 无偏移
+ 
+OLED_WR_Byte(0xD5,OLED_CMD);	// 设置震荡器分频
+OLED_WR_Byte(0x80,OLED_CMD);	// 分频因子，使用默认值
+ 
+OLED_WR_Byte(0xD9,OLED_CMD);	// 设置 Pre-Charge Period	预充电周期
+OLED_WR_Byte(0xF1,OLED_CMD);	// 使用官方推荐值，[3:0],PHASE 1;[7:4],PHASE 2;
+ 
+OLED_WR_Byte(0xDA,OLED_CMD);	// 设置 com pin configuartion
+->OLED_WR_Byte(0x12,OLED_CMD);	// 使用默认值	0.96寸分辨率是128*64 ,设置12h；0.91寸分辨率是128*32 ,设置02h
+ 
+OLED_WR_Byte(0xDB,OLED_CMD);	// 设置 Vcomh，电压倍率，可调节亮度（默认）
+OLED_WR_Byte(0x40,OLED_CMD);	// 使用官方推荐值 [6:4] 000,0.65*vcc;001,0.77*vcc;011,0.83*vcc;
+ 
+OLED_WR_Byte(0x8D,OLED_CMD);	// 设置OLED电荷泵
+OLED_WR_Byte(0x14,OLED_CMD);	// 开显示
+ 
+// OLED_WR_Byte(0x20,OLED_CMD);//设置内存地址模式
+// OLED_WR_Byte(0x02,OLED_CMD);//[[1:0],00，列地址模式;01，行地址模式;10,页地址模式;默认10;
+ 
+// OLED_WR_Byte(0xA4,OLED_CMD);//全局显示开启;bit0:1,开启;0,关闭;(白屏/黑屏)
+// OLED_WR_Byte(0xA6,OLED_CMD);//设置显示方式;bit0:1,反相显示;0,正常显示
+// OLED_WR_Byte(0x2E,OLED_CMD);//停用滚动条
+ 
+OLED_WR_Byte(0xAF,OLED_CMD);	// 开启OLED面板显示
+ 
+OLED_Clear();        			// 清屏
+ 
+OLED_Set_Pos(0,0); 				// 设置数据写入的起始行、列

@@ -4,8 +4,8 @@
 //这下面要包含所用到的函数所申明的头文件(用户自己添加) 
 #include "delay.h"	 	
 #include "sys.h"
-// #include "lcd.h"
-								 
+			
+// #include "driver_ssd1306_display_test.h"			 
 // extern void led_set(u8 sta);
 // extern void test_fun(void(*ledset)(u8),u8 sta);										  
 //函数名列表初始化(用户自己添加)
@@ -18,7 +18,8 @@ struct _m_usmart_nametab usmart_nametab[]=
 #endif		   
 	(void*)delay_ms,"void delay_ms(u16 nms)",
  	(void*)delay_us,"void delay_us(u32 nus)",	 
-	// (void*)LCD_Clear,"void LCD_Clear(u16 Color)",
+	// (void*)ssd1306_display_test,"uint8_t ssd1306_display_test(ssd1306_interface_t interface, ssd1306_address_t addr)",
+	// (void*)ssd1306,"uint8_t ssd1306(uint8_t argc, char **argv)",
 	// (void*)LCD_Fill,"void LCD_Fill(u16 xsta,u16 ysta,u16 xend,u16 yend,u16 color)",
 	// (void*)LCD_DrawLine,"void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2)",
 	// (void*)LCD_DrawRectangle,"void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)",
