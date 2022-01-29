@@ -17,6 +17,7 @@
 #include "SOLGUI_Hardware.h"
 
 #include "pwm.h"
+#include "gui.h"
 
 //任务优先级
 #define START_TASK_PRIO 1
@@ -54,56 +55,6 @@ TaskHandle_t GUITask_Handler;
 //任务函数
 void gui_task(void *pvParameters);
 uint8_t res;
-u32 switch_reg = 0;
-
-char pic_choose = 1;
-float CarAngle; //车模倾角
-float CarSpeed; //加速度计角度
-char* test_str = "123123"; //加速度计角度
-MENU_PAGE main_page, pwm_init, wifi_conn, tcp_conn, senddata;
-
-__M_PAGE(main_page, "MainPage", PAGE_NULL,
-         {
-             //  SOLGUI_Cursor(6, 5, 3);
-             //  SOLGUI_Widget_Button(0, "1.f_mount", SD_f_mount_test); //按键
-             // //  SOLGUI_Widget_Button(1, "2.f_write", SD_f_write_test); //按键
-             // //  SOLGUI_Widget_Button(2, "3.f_open", SD_f_open_test);   //按键
-             //  SOLGUI_Widget_Text(0, 32, ~F6X8, "S=%d,r=%d,C=%d", 1, 1, 1);
-             //  SOLGUI_Widget_Text(0, 24, F6X8, "%s", "2");
-             //  SOLGUI_Widget_Text(0, 16, F6X8, "%s", "2" + 21);
-             //  SOLGUI_Widget_Text(0, 8, F6X8, "%s", "2" + 42);
-             //  SOLGUI_Widget_Text(0, 0, F6X8, "%s", "2" + 63);
-             SOLGUI_Cursor(6, 0, 7);
-             SOLGUI_Widget_GotoPage(0, &pwm_init);
-             SOLGUI_Widget_GotoPage(1, &wifi_conn);
-             SOLGUI_Widget_GotoPage(2, &tcp_conn);
-             SOLGUI_Widget_Edit(3,"edit",4,test_str);								//文本编辑器
-             SOLGUI_Widget_OptionText(4, "angle:  %f", 12.2);
-             SOLGUI_Widget_OptionText(5, "angle:  %f", 12.2);
-             SOLGUI_Widget_OptionText(6, "speed:  %f", 12.2);
-         });
-__M_PAGE(pwm_init, "PWMPage", &main_page,
-         {
-             SOLGUI_Cursor(6, 0, 1);
-             SOLGUI_Widget_Spin(0, "SP_SET", FLT32, -8000, 8000, &pic_choose);
-         });
-__M_PAGE(wifi_conn, "wifi_conn", &main_page,
-         {
-             SOLGUI_Cursor(0, 0, 1);
-
-             //  SOLGUI_Widget_OptionText(4, "angle:  %f", CarAngle);
-         });
-__M_PAGE(tcp_conn, "tcp_conn", &main_page,
-         {
-             SOLGUI_Cursor(0, 0, 1);
-
-             //  SOLGUI_Widget_OptionText(5, "speed:  %f", CarSpeed);
-         });
-__M_PAGE(senddata, "senddata", &main_page,
-         {
-             SOLGUI_Cursor(0, 0, 1);
-             SOLGUI_Widget_Switch(0, "send mode ON/OFF", &switch_reg, 3);
-         });
 
 int main(void)
 {
@@ -119,7 +70,8 @@ int main(void)
     // 2000    -> 1K
     // 20      -> 100k,如果进度值为0.5k, 每次减少10
     // 默认24k 应该是 1770
-    TIM2_PWM_Init(500 - 1, 42 - 1); //84M/84=1M的计数频率1us，自动重装载为500，那么PWM频率为1M/500=2kHZ
+    TIM1_PWM_Init(3360 - 1, 1 - 1); //84M/84=1M的计数频率1us，自动重装载为500，那么PWM频率为1M/500=2kHZ
+    // TIM1_PWM_Init(1680 - 1, 1 - 1); //84M/84=1M的计数频率1us，自动重装载为500，那么PWM频率为1M/500=2kHZ
     // EC11_Init();
     // OLED_Clear();
     // OLED_ShowString(0, 0, "FOSTEX", 24);
@@ -204,28 +156,22 @@ void key_task(void *pvParameters)
 void gui_task(void *pvParameters)
 {
     u8 key = 0;
+    u8 refreshSize = 0;
 
-    SOLGUI_Hardware_Init();
+    GUI_Init_First();
 
-    SOLGUI_printf(0, 24, F8X10, "FOSTEX");
-    SOLGUI_printf(0, 48, F8X10, "MODLE 20");
-    SOLGUI_Refresh();
-
-    delay_ms(1000);
-    SOLGUI_Menu_SetHomePage(&main_page);
-    SOLGUI_Menu_PageStage();
-    SOLGUI_Refresh();
+    GUI_Init();
     while (1)
     {
-        u8 temp_key = KEY_Scan(0);
-        if (key != temp_key)
+        key = KEY_Scan(1);
+        if (key != 0 || refreshSize > 20)
         {
-            key = temp_key;
+            refreshSize = 0;
             SOLGUI_InputKey(key);
             SOLGUI_Menu_PageStage();
             SOLGUI_Refresh();
         }
-
+        refreshSize++;
         TEST_LED = ~TEST_LED;
         vTaskDelay(10);
     }

@@ -37,7 +37,7 @@
 #define WIDGET_OPTIONTEXT_EN 	1				//允许使用控件：OptionText选项文本
 #define WIDGET_BUTTON_EN 		1				//允许使用控件：Button按键
 #define WIDGET_SWITCH_EN		1				//允许使用控件：Switch复选开关
-#define WIDGET_EDIT_EN 			1				//允许使用控件：Edit文本编辑
+#define WIDGET_EDIT_EN 			0				//允许使用控件：Edit文本编辑
 										 	
 #define WIDGET_TEXT_EN 			1				//允许使用控件：Text文字
 #define WIDGET_BAR_EN 			1				//允许使用控件：Bar条
