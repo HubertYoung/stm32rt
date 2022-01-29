@@ -19,12 +19,19 @@ void KEY_Init(void)
     GPIO_InitTypeDef GPIO_Initure;
 
     __HAL_RCC_GPIOB_CLK_ENABLE(); //开启GPIOB时钟
+    // __HAL_RCC_GPIOA_CLK_ENABLE(); //开启GPIOB时钟
 
-    GPIO_Initure.Pin = GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15; //PA0
-    GPIO_Initure.Mode = GPIO_MODE_INPUT;                                      //输入
-    GPIO_Initure.Pull = GPIO_PULLDOWN;                                        //下拉
-    GPIO_Initure.Speed = GPIO_SPEED_HIGH;                                     //高速
+    GPIO_Initure.Pin = GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15; //PA0
+    GPIO_Initure.Mode = GPIO_MODE_INPUT;                                                   //输入
+    GPIO_Initure.Pull = GPIO_PULLDOWN;                                                     //下拉
+    GPIO_Initure.Speed = GPIO_SPEED_HIGH;                                                  //高速
     HAL_GPIO_Init(GPIOB, &GPIO_Initure);
+
+    // GPIO_Initure.Pin = GPIO_PIN_0;        //PA0
+    // GPIO_Initure.Mode = GPIO_MODE_INPUT;  //输入
+    // GPIO_Initure.Pull = GPIO_PULLDOWN;    //下拉
+    // GPIO_Initure.Speed = GPIO_SPEED_HIGH; //高速
+    // HAL_GPIO_Init(GPIOA, &GPIO_Initure);
 }
 
 //按键处理函数
@@ -38,7 +45,8 @@ u8 KEY_Scan(u8 mode)
     static u8 key_up = 1; //按键松开标志
     if (mode == 1)
         key_up = 1; //支持连按
-    if (key_up && (KEY_LEFT == 1 || KEY_UP == 1 || KEY_RIGHT == 1 || KEY_DOWN == 1))
+    if (key_up &&
+        (KEY_LEFT == 1 || KEY_UP == 1 || KEY_RIGHT == 1 || KEY_DOWN == 1 || KEY_OK == 1 || KEY_BACK == 1))
     {
         delay_ms(10);
         key_up = 0;
@@ -50,8 +58,12 @@ u8 KEY_Scan(u8 mode)
             return KEY_RIGHT_PRES;
         else if (KEY_DOWN == 1)
             return KEY_DOWN_PRES;
+        else if (KEY_OK == 1)
+            return KEY_OK_PRES;
+        else if (KEY_BACK == 1)
+            return KEY_BACK_PRES;
     }
-    else if (KEY_LEFT == 0 && KEY_UP == 0 && KEY_RIGHT == 0 && KEY_DOWN == 0)
+    else if (KEY_LEFT == 0 && KEY_UP == 0 && KEY_RIGHT == 0 && KEY_DOWN == 0 && KEY_OK == 0 && KEY_BACK == 0)
         key_up = 1;
     return 0; //无按键按下
 }

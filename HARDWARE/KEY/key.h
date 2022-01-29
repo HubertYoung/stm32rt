@@ -31,15 +31,21 @@
 #define KEY_DOWN_GPIO_Port GPIOB
 
 //下面的方式是通过直接操作HAL库函数方式读取IO
-#define KEY_LEFT        HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)  //KEY0按键PE4
-#define KEY_UP        HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_13)  //KEY1按键PE3
-#define KEY_RIGHT        HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_14) 	//KEY2按键PE2
-#define KEY_DOWN       HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_15)  //WKUP按键PA0
+#define KEY_LEFT        HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_14)  //KEY0按键PE4
+#define KEY_UP        HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12)  //KEY1按键PE3
+#define KEY_RIGHT        HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_15) 	//KEY2按键PE2
+#define KEY_DOWN       HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_13)  //WKUP按键PA0
 
-#define KEY_LEFT_PRES 	0x50
-#define KEY_UP_PRES	0x20
-#define KEY_RIGHT_PRES	0x60
-#define KEY_DOWN_PRES   0x40
+#define KEY_OK       HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_6)  //okPA0
+#define KEY_BACK       HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_5)  //UKEYPA0
+
+#define KEY_LEFT_PRES 	0x30
+#define KEY_UP_PRES	0x50
+#define KEY_RIGHT_PRES	0x10
+#define KEY_DOWN_PRES   0x20
+
+#define KEY_OK_PRES   0x40
+#define KEY_BACK_PRES   0x60
 
 void KEY_Init(void);
 u8 KEY_Scan(u8 mode);

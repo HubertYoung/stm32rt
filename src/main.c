@@ -55,7 +55,12 @@ TaskHandle_t GUITask_Handler;
 void gui_task(void *pvParameters);
 uint8_t res;
 u32 switch_reg = 0;
-MENU_PAGE main_page, wifi_init, wifi_conn, tcp_conn, senddata;
+
+char pic_choose = 1;
+float CarAngle; //车模倾角
+float CarSpeed; //加速度计角度
+char* test_str = "123123"; //加速度计角度
+MENU_PAGE main_page, pwm_init, wifi_conn, tcp_conn, senddata;
 
 __M_PAGE(main_page, "MainPage", PAGE_NULL,
          {
@@ -68,26 +73,31 @@ __M_PAGE(main_page, "MainPage", PAGE_NULL,
              //  SOLGUI_Widget_Text(0, 16, F6X8, "%s", "2" + 21);
              //  SOLGUI_Widget_Text(0, 8, F6X8, "%s", "2" + 42);
              //  SOLGUI_Widget_Text(0, 0, F6X8, "%s", "2" + 63);
-             SOLGUI_Cursor(6, 0, 4);
-             SOLGUI_Widget_GotoPage(0, &wifi_init);
+             SOLGUI_Cursor(6, 0, 7);
+             SOLGUI_Widget_GotoPage(0, &pwm_init);
              SOLGUI_Widget_GotoPage(1, &wifi_conn);
              SOLGUI_Widget_GotoPage(2, &tcp_conn);
-             SOLGUI_Widget_GotoPage(3, &senddata);
+             SOLGUI_Widget_Edit(3,"edit",4,test_str);								//文本编辑器
+             SOLGUI_Widget_OptionText(4, "angle:  %f", 12.2);
+             SOLGUI_Widget_OptionText(5, "angle:  %f", 12.2);
+             SOLGUI_Widget_OptionText(6, "speed:  %f", 12.2);
          });
-__M_PAGE(wifi_init, "wifi_init", &main_page,
+__M_PAGE(pwm_init, "PWMPage", &main_page,
          {
-             SOLGUI_Cursor(0, 0, 1);
-             SOLGUI_Widget_Switch(0, "WIFI init ON/OFF", &switch_reg, 0);
+             SOLGUI_Cursor(6, 0, 1);
+             SOLGUI_Widget_Spin(0, "SP_SET", FLT32, -8000, 8000, &pic_choose);
          });
 __M_PAGE(wifi_conn, "wifi_conn", &main_page,
          {
              SOLGUI_Cursor(0, 0, 1);
-             SOLGUI_Widget_Switch(0, "WIFI connection ON/OFF", &switch_reg, 1);
+
+             //  SOLGUI_Widget_OptionText(4, "angle:  %f", CarAngle);
          });
 __M_PAGE(tcp_conn, "tcp_conn", &main_page,
          {
              SOLGUI_Cursor(0, 0, 1);
-             SOLGUI_Widget_Switch(0, "TCP connection ON/OFF", &switch_reg, 2);
+
+             //  SOLGUI_Widget_OptionText(5, "speed:  %f", CarSpeed);
          });
 __M_PAGE(senddata, "senddata", &main_page,
          {
@@ -110,7 +120,7 @@ int main(void)
     // 20      -> 100k,如果进度值为0.5k, 每次减少10
     // 默认24k 应该是 1770
     TIM2_PWM_Init(500 - 1, 42 - 1); //84M/84=1M的计数频率1us，自动重装载为500，那么PWM频率为1M/500=2kHZ
-    // OLED_Init();                    //初始化OLED
+    // EC11_Init();
     // OLED_Clear();
     // OLED_ShowString(0, 0, "FOSTEX", 24);
     // OLED_ShowString(0, 24, "MODEL 20", 24);
