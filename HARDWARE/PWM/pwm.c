@@ -1,4 +1,6 @@
 #include "pwm.h"
+#include "pwm.h"
+#include "w25qxx.h"
 
 TIM_HandleTypeDef TIM1_Handler;     //定时器句柄
 TIM_OC_InitTypeDef TIM1_CH1Handler; //定时器2通道2句柄
@@ -48,16 +50,18 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *htim)
 void TIM_SetTIM1Compare2(u32 compare)
 {
     __HAL_TIM_SetCompare(&TIM1_Handler, TIM_CHANNEL_1, compare);
+    // U32ToU8Array(compare);
+    u8 e[4];
+    U32ToU8Array(e, compare);
+    W25QXX_Write(e, PWM_CCR, 4);
 }
 void TIM_SetTIM1AutoReload(u32 arr, u32 ccr)
 {
-    // HAL_TIM_PWM_Stop(&TIM1_Handler, TIM_CHANNEL_1);
-
     __HAL_TIM_SET_AUTORELOAD(&TIM1_Handler, arr);
     TIM_SetTIM1Compare2(ccr);
-    // HAL_TIM_PWM_Init(&TIM1_Handler);                                           //初始化PWM
-    // HAL_TIM_PWM_ConfigChannel(&TIM1_Handler, &TIM1_CH1Handler, TIM_CHANNEL_1); //配置TIM1通道1
-    // HAL_TIM_PWM_Start(&TIM1_Handler, TIM_CHANNEL_1);                           //开启PWM通道1
+    u8 e[4];
+    U32ToU8Array(e, arr);
+    W25QXX_Write(e, PWM_ARR, 4);
 }
 //定时器2中断服务函数
 void TIM1_IRQHandler(void)

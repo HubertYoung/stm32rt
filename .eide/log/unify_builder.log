@@ -7603,3 +7603,634 @@ Finished: 1 information, 0 warning and 1 error messages.
 [2022-01-30 02:24:53]	[done]
 	build successfully !
 
+[2022-01-30 02:47:54]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\EE\ee.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\EE\ee.c", line 191: Error:  #136: struct "<unnamed>" has no field "NbPages"
+  	flashErase.NbPages = 1;
+  	           ^
+".\HARDWARE\EE\ee.c", line 192: Error:  #136: struct "<unnamed>" has no field "PageAddress"
+    flashErase.PageAddress = _EE_ADDR_INUSE;
+               ^
+".\HARDWARE\EE\ee.c", line 192: Error:  #20: identifier "_EE_ADDR_INUSE" is undefined
+    flashErase.PageAddress = _EE_ADDR_INUSE;
+                             ^
+".\HARDWARE\EE\ee.c", line 193: Error:  #20: identifier "FLASH_TYPEERASE_PAGES" is undefined
+    flashErase.TypeErase = FLASH_TYPEERASE_PAGES;
+                           ^
+".\HARDWARE\EE\ee.c", line 229: Error:  #20: identifier "_EE_SIZE" is undefined
+    if ((startVirtualAddress + len) > _EE_SIZE)
+                                      ^
+".\HARDWARE\EE\ee.c", line 235: Error:  #20: identifier "_EE_ADDR_INUSE" is undefined
+        *data = (*(__IO uint8_t*) (i + _EE_ADDR_INUSE));
+                                       ^
+".\HARDWARE\EE\ee.c", line 240: Error:  #20: identifier "_EE_ADDR_INUSE" is undefined
+        ee_ram[i] = (*(__IO uint8_t*) (i + _EE_ADDR_INUSE));
+                                           ^
+".\HARDWARE\EE\ee.c", line 248: Error:  #20: identifier "_EE_SIZE" is undefined
+    if ((startVirtualAddress + len) > _EE_SIZE)
+                                      ^
+".\HARDWARE\EE\ee.c", line 256: Error:  #20: identifier "_EE_ADDR_INUSE" is undefined
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i])) != HAL_OK)
+                                                                                  ^
+".\HARDWARE\EE\ee.c", line 266: Error:  #20: identifier "_EE_ADDR_INUSE" is undefined
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i] | (data[i+1] << 8))) != HAL_OK)
+                                                                                      ^
+".\HARDWARE\EE\ee.c", line 284: Error:  #20: identifier "_EE_ADDR_INUSE" is undefined
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, data64) != HAL_OK)
+                                                                                        ^
+".\HARDWARE\EE\ee.c", line 322: Error:  #20: identifier "_EE_SIZE" is undefined
+    return (_EE_SIZE);  
+            ^
+.\HARDWARE\EE\ee.c: 0 warnings, 12 errors
+
+[2022-01-30 02:48:07]	[done]
+	build successfully !
+
+[2022-01-30 02:57:36]	[done]
+	build successfully !
+
+[2022-01-30 03:21:13]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\EE\ee.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\EE\ee.c", line 210: Error:  #18: expected a ")"
+    flashErase.Sector =  _EE_ADDR_INUSE;
+                                       ^
+".\HARDWARE\EE\ee.c", line 249: Error:  #18: expected a ")"
+        *data = (*(__IO uint8_t*) (i + _EE_ADDR_INUSE));
+                                                       ^
+".\HARDWARE\EE\ee.c", line 254: Error:  #18: expected a ")"
+        ee_ram[i] = (*(__IO uint8_t*) (i + _EE_ADDR_INUSE));
+                                                           ^
+".\HARDWARE\EE\ee.c", line 270: Warning:  #174-D: expression has no effect
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i])) != HAL_OK)
+                                                                                  ^
+".\HARDWARE\EE\ee.c", line 270: Error:  #165: too few arguments in function call
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i])) != HAL_OK)
+                                                                                                                                ^
+".\HARDWARE\EE\ee.c", line 271: Error:  #18: expected a ")"
+      {
+      ^
+".\HARDWARE\EE\ee.c", line 275: Warning:  #12-D: parsing restarts here after previous syntax error
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 275: Error:  #127: expected a statement
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 280: Warning:  #174-D: expression has no effect
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i] | (data[i+1] << 8))) != HAL_OK)
+                                                                                      ^
+".\HARDWARE\EE\ee.c", line 280: Error:  #165: too few arguments in function call
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i] | (data[i+1] << 8))) != HAL_OK)
+                                                                                                                                                       ^
+".\HARDWARE\EE\ee.c", line 281: Error:  #18: expected a ")"
+      {
+      ^
+".\HARDWARE\EE\ee.c", line 285: Warning:  #12-D: parsing restarts here after previous syntax error
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 285: Error:  #127: expected a statement
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 298: Warning:  #174-D: expression has no effect
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, data64) != HAL_OK)
+                                                                                        ^
+".\HARDWARE\EE\ee.c", line 298: Error:  #165: too few arguments in function call
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, data64) != HAL_OK)
+                                                                                                                         ^
+".\HARDWARE\EE\ee.c", line 299: Error:  #18: expected a ")"
+      {
+      ^
+".\HARDWARE\EE\ee.c", line 303: Warning:  #12-D: parsing restarts here after previous syntax error
+    }
+    ^
+".\HARDWARE\EE\ee.c", line 303: Error:  #127: expected a statement
+    }
+    ^
+.\HARDWARE\EE\ee.c: 6 warnings, 12 errors
+
+[2022-01-30 03:23:49]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\EE\ee.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\EE\ee.c", line 210: Error:  #18: expected a ")"
+    flashErase.Sector =  _EE_ADDR_INUSE;
+                                       ^
+".\HARDWARE\EE\ee.c", line 249: Error:  #18: expected a ")"
+        *data = (*(__IO uint8_t*) (i + _EE_ADDR_INUSE));
+                                                       ^
+".\HARDWARE\EE\ee.c", line 254: Error:  #18: expected a ")"
+        ee_ram[i] = (*(__IO uint8_t*) (i + _EE_ADDR_INUSE));
+                                                           ^
+".\HARDWARE\EE\ee.c", line 270: Warning:  #174-D: expression has no effect
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i])) != HAL_OK)
+                                                                                  ^
+".\HARDWARE\EE\ee.c", line 270: Error:  #165: too few arguments in function call
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i])) != HAL_OK)
+                                                                                                                                ^
+".\HARDWARE\EE\ee.c", line 271: Error:  #18: expected a ")"
+      {
+      ^
+".\HARDWARE\EE\ee.c", line 275: Warning:  #12-D: parsing restarts here after previous syntax error
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 275: Error:  #127: expected a statement
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 280: Warning:  #174-D: expression has no effect
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i] | (data[i+1] << 8))) != HAL_OK)
+                                                                                      ^
+".\HARDWARE\EE\ee.c", line 280: Error:  #165: too few arguments in function call
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i] | (data[i+1] << 8))) != HAL_OK)
+                                                                                                                                                       ^
+".\HARDWARE\EE\ee.c", line 281: Error:  #18: expected a ")"
+      {
+      ^
+".\HARDWARE\EE\ee.c", line 285: Warning:  #12-D: parsing restarts here after previous syntax error
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 285: Error:  #127: expected a statement
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 298: Warning:  #174-D: expression has no effect
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, data64) != HAL_OK)
+                                                                                        ^
+".\HARDWARE\EE\ee.c", line 298: Error:  #165: too few arguments in function call
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, data64) != HAL_OK)
+                                                                                                                         ^
+".\HARDWARE\EE\ee.c", line 299: Error:  #18: expected a ")"
+      {
+      ^
+".\HARDWARE\EE\ee.c", line 303: Warning:  #12-D: parsing restarts here after previous syntax error
+    }
+    ^
+".\HARDWARE\EE\ee.c", line 303: Error:  #127: expected a statement
+    }
+    ^
+.\HARDWARE\EE\ee.c: 6 warnings, 12 errors
+
+[2022-01-30 03:24:50]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\EE\ee.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\EE\ee.c", line 210: Error:  #18: expected a ")"
+    flashErase.Sector =  _EE_ADDR_INUSE;
+                                       ^
+".\HARDWARE\EE\ee.c", line 249: Error:  #18: expected a ")"
+        *data = (*(__IO uint8_t*) (i + _EE_ADDR_INUSE));
+                                                       ^
+".\HARDWARE\EE\ee.c", line 254: Error:  #18: expected a ")"
+        ee_ram[i] = (*(__IO uint8_t*) (i + _EE_ADDR_INUSE));
+                                                           ^
+".\HARDWARE\EE\ee.c", line 270: Warning:  #174-D: expression has no effect
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i])) != HAL_OK)
+                                                                                  ^
+".\HARDWARE\EE\ee.c", line 270: Error:  #165: too few arguments in function call
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i])) != HAL_OK)
+                                                                                                                                ^
+".\HARDWARE\EE\ee.c", line 271: Error:  #18: expected a ")"
+      {
+      ^
+".\HARDWARE\EE\ee.c", line 275: Warning:  #12-D: parsing restarts here after previous syntax error
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 275: Error:  #127: expected a statement
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 280: Warning:  #174-D: expression has no effect
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i] | (data[i+1] << 8))) != HAL_OK)
+                                                                                      ^
+".\HARDWARE\EE\ee.c", line 280: Error:  #165: too few arguments in function call
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, (uint64_t)(data[i] | (data[i+1] << 8))) != HAL_OK)
+                                                                                                                                                       ^
+".\HARDWARE\EE\ee.c", line 281: Error:  #18: expected a ")"
+      {
+      ^
+".\HARDWARE\EE\ee.c", line 285: Warning:  #12-D: parsing restarts here after previous syntax error
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 285: Error:  #127: expected a statement
+    }	
+    ^
+".\HARDWARE\EE\ee.c", line 298: Warning:  #174-D: expression has no effect
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, data64) != HAL_OK)
+                                                                                        ^
+".\HARDWARE\EE\ee.c", line 298: Error:  #165: too few arguments in function call
+      if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, ((i + startVirtualAddress)) + _EE_ADDR_INUSE, data64) != HAL_OK)
+                                                                                                                         ^
+".\HARDWARE\EE\ee.c", line 299: Error:  #18: expected a ")"
+      {
+      ^
+".\HARDWARE\EE\ee.c", line 304: Warning:  #12-D: parsing restarts here after previous syntax error
+    }
+    ^
+".\HARDWARE\EE\ee.c", line 304: Error:  #127: expected a statement
+    }
+    ^
+.\HARDWARE\EE\ee.c: 6 warnings, 12 errors
+
+[2022-01-30 03:27:57]	[done]
+	build successfully !
+
+[2022-01-30 03:28:34]	[done]
+	build successfully !
+
+[2022-01-30 03:32:27]	[done]
+	build successfully !
+
+[2022-01-30 03:33:25]	[done]
+	build successfully !
+
+[2022-01-30 03:38:26]	[done]
+	build successfully !
+
+[2022-01-30 03:39:03]	[done]
+	build successfully !
+
+[2022-01-30 03:43:38]	[done]
+	build successfully !
+
+[2022-01-30 03:49:36]	[done]
+	build successfully !
+
+[2022-01-30 03:49:47]	[done]
+	build successfully !
+
+[2022-01-30 04:43:10]	[done]
+	build successfully !
+
+[2022-01-30 04:46:13]	[done]
+	build successfully !
+
+[2022-01-30 04:46:23]	[done]
+	build successfully !
+
+[2022-01-30 04:47:22]	[done]
+	build successfully !
+
+[2022-01-30 04:57:33]	[done]
+	build successfully !
+
+[2022-01-30 05:02:48]	[done]
+	build successfully !
+
+[2022-01-30 05:05:13]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol SpiFlashSendByte (referred from w25qxx.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-30 05:05:38]	[done]
+	build successfully !
+
+[2022-01-30 05:06:19]	[done]
+	build successfully !
+
+[2022-01-30 05:06:46]	[done]
+	build successfully !
+
+[2022-01-30 05:07:06]	[done]
+	build successfully !
+
+[2022-01-30 05:08:10]	[done]
+	build successfully !
+
+[2022-01-30 13:07:42]	[done]
+	build successfully !
+
+[2022-01-30 13:08:45]	[done]
+	build successfully !
+
+[2022-01-30 13:12:20]	[done]
+	build successfully !
+
+[2022-01-30 13:13:17]	[done]
+	build successfully !
+
+[2022-01-30 13:13:47]	[done]
+	build successfully !
+
+[2022-01-30 13:18:30]	[done]
+	build successfully !
+
+[2022-01-30 13:21:20]	[done]
+	build successfully !
+
+[2022-01-30 13:27:52]	[done]
+	build successfully !
+
+[2022-01-30 13:28:22]	[done]
+	build successfully !
+
+[2022-01-30 13:49:53]	[done]
+	build successfully !
+
+[2022-01-30 13:50:32]	[done]
+	build successfully !
+
+[2022-01-30 13:50:54]	[done]
+	build successfully !
+
+[2022-01-30 13:51:09]	[done]
+	build successfully !
+
+[2022-01-30 13:51:57]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Fatal error: L6815U: Out of memory. Allocation Size:2158592 System Size:3209796.
+Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
+
+
+[2022-01-30 13:53:36]	[done]
+	build successfully !
+
+[2022-01-30 13:55:30]	[done]
+	build successfully !
+
+[2022-01-30 13:56:34]	[done]
+	build successfully !
+
+[2022-01-30 14:07:22]	[done]
+	build successfully !
+
+[2022-01-30 14:13:52]	[done]
+	build successfully !
+
+[2022-01-30 14:16:08]	[done]
+	build successfully !
+
+[2022-01-30 14:17:02]	[done]
+	build successfully !
+
+[2022-01-30 15:09:19]	[done]
+	build successfully !
+
+[2022-01-30 15:25:59]	[done]
+	build successfully !
+
+[2022-01-30 15:26:08]	[done]
+	build successfully !
+
+[2022-01-30 15:28:00]	[done]
+	build successfully !
+
+[2022-01-30 15:28:10]	[done]
+	build successfully !
+
+[2022-01-30 15:31:22]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 66: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 97: Error:  #20: identifier "$W25QXX_Erase_Chip" is undefined
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 124: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+.\HARDWARE\GUI\gui.c: 2 warnings, 1 error
+
+[2022-01-30 15:31:45]	[done]
+	build successfully !
+
+[2022-01-30 15:35:22]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 66: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 97: Warning:  #223-D: function "printf" declared implicitly
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 97: Error:  #65: expected a ";"
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 125: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+.\HARDWARE\GUI\gui.c: 3 warnings, 1 error
+
+[2022-01-30 15:35:29]	[done]
+	build successfully !
+
+[2022-01-30 15:41:38]	[done]
+	build successfully !
+
+[2022-01-30 15:42:56]	[done]
+	build successfully !
+
+[2022-01-30 15:43:13]	[done]
+	build successfully !
+
+[2022-01-30 15:43:27]	[done]
+	build successfully !
+
+[2022-01-30 15:43:50]	[done]
+	build successfully !
+
+[2022-01-30 15:45:29]	[done]
+	build successfully !
+
+[2022-01-30 16:03:32]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 60: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 91: Error:  #167: argument of type "u32" is incompatible with parameter of type "u8 *"
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 91: Warning:  #223-D: function "printf" declared implicitly
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 91: Error:  #65: expected a ";"
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 117: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+.\HARDWARE\GUI\gui.c: 3 warnings, 2 errors
+
+[2022-01-30 16:03:54]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 60: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 91: Warning:  #223-D: function "printf" declared implicitly
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 91: Error:  #65: expected a ";"
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 117: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+.\HARDWARE\GUI\gui.c: 3 warnings, 1 error
+
+[2022-01-30 16:04:16]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\PWM\pwm.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\PWM\pwm.c", line 53: Error:  #167: argument of type "u32" is incompatible with parameter of type "u8 *"
+      W25QXX_Write(compare, PWM_CCR, 4);
+                   ^
+".\HARDWARE\PWM\pwm.c", line 61: Error:  #167: argument of type "u32" is incompatible with parameter of type "u8 *"
+      W25QXX_Write(arr, PWM_ARR, 4);
+                   ^
+.\HARDWARE\PWM\pwm.c: 0 warnings, 2 errors
+
+[2022-01-30 16:04:36]	[done]
+	build successfully !
+
+[2022-01-30 16:08:16]	[done]
+	build successfully !
+
+[2022-01-30 16:25:06]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 60: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 91: Error:  #167: argument of type "u8 **" is incompatible with parameter of type "u8 *"
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 91: Error:  #167: argument of type "u8 **" is incompatible with parameter of type "u8 *"
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 119: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+.\HARDWARE\GUI\gui.c: 2 warnings, 2 errors
+
+[2022-01-30 16:27:01]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\sys\sys.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\sys\sys.c", line 119: Error:  #513: a value of type "unsigned int" cannot be assigned to an entity of type "u8 *"
+      buf[0] = ((u32Value >> 24) & 0xFF);
+             ^
+".\SYSTEM\sys\sys.c", line 120: Error:  #513: a value of type "unsigned int" cannot be assigned to an entity of type "u8 *"
+      buf[1] = ((u32Value >> 16) & 0xFF);
+             ^
+".\SYSTEM\sys\sys.c", line 121: Error:  #513: a value of type "unsigned int" cannot be assigned to an entity of type "u8 *"
+      buf[2] = ((u32Value >> 8) & 0xFF);
+             ^
+".\SYSTEM\sys\sys.c", line 122: Error:  #513: a value of type "unsigned int" cannot be assigned to an entity of type "u8 *"
+      buf[3] = (u32Value & 0xFF);
+             ^
+".\SYSTEM\sys\sys.c", line 123: Error:  #120: return value type does not match the function type
+      return buf;
+             ^
+.\SYSTEM\sys\sys.c: 0 warnings, 5 errors
+
+[2022-01-30 16:27:42]	[done]
+	build successfully !
+
+[2022-01-30 16:29:07]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 60: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 91: Warning:  #223-D: function "printf" declared implicitly
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 91: Error:  #65: expected a ";"
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 122: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+.\HARDWARE\GUI\gui.c: 3 warnings, 1 error
+
+[2022-01-30 16:29:15]	[done]
+	build successfully !
+
+[2022-01-30 16:30:00]	[done]
+	build successfully !
+
+[2022-01-30 16:32:56]	[done]
+	build successfully !
+
+[2022-01-30 16:50:15]	[done]
+	build successfully !
+
+[2022-01-30 16:54:19]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\PWM\pwm.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\PWM\pwm.c", line 62: Warning:  #223-D: function "printf" declared implicitly
+      printf("arr=%d",arr);
+      ^
+".\HARDWARE\PWM\pwm.c", line 65: Warning:  #520-D: initialization with "{...}" expected for aggregate object
+      u8 e[] = U32ToU8Array(arr);
+               ^
+".\HARDWARE\PWM\pwm.c", line 65: Error:  #144: a value of type "u8 *" cannot be used to initialize an entity of type "u8"
+      u8 e[] = U32ToU8Array(arr);
+               ^
+.\HARDWARE\PWM\pwm.c: 2 warnings, 1 error
+
+[2022-01-30 16:54:42]	[done]
+	build successfully !
+
+[2022-01-30 16:56:41]	[done]
+	build successfully !
+
+[2022-01-30 16:59:59]	[done]
+	build successfully !
+
+[2022-01-30 17:02:18]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\PWM\pwm.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\PWM\pwm.c", line 53: Error:  #167: argument of type "u32" is incompatible with parameter of type "u8 *"
+      U32ToU8Array(compare);
+                   ^
+".\HARDWARE\PWM\pwm.c", line 53: Error:  #165: too few arguments in function call
+      U32ToU8Array(compare);
+                          ^
+".\HARDWARE\PWM\pwm.c", line 62: Warning:  #223-D: function "printf" declared implicitly
+      printf("arr=%d",arr);
+      ^
+.\HARDWARE\PWM\pwm.c: 1 warning, 2 errors
+
+[2022-01-30 17:02:36]	[done]
+	build successfully !
+
+[2022-01-30 17:07:37]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\sys\sys.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\sys\sys.c", line 134: Error:  #101: "u32Value" has already been declared in the current scope
+      u32 u32Value;
+          ^
+".\SYSTEM\sys\sys.c", line 139: Error:  #118: a void function may not return a value
+      return u32Value;
+             ^
+.\SYSTEM\sys\sys.c: 0 warnings, 2 errors
+
+[2022-01-30 17:07:55]	[done]
+	build successfully !
+
+[2022-01-30 17:09:54]	[done]
+	build successfully !
+
+[2022-01-30 17:11:38]	[done]
+	build successfully !
+
+[2022-01-30 17:12:15]	[done]
+	build successfully !
+
+[2022-01-30 17:15:23]	[done]
+	build successfully !
+
+[2022-01-30 17:16:35]	[done]
+	build successfully !
+
+[2022-01-30 17:17:59]	[done]
+	build successfully !
+
+[2022-01-30 17:18:05]	[done]
+	build successfully !
+

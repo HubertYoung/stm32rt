@@ -1,5 +1,6 @@
 #include "gui.h"
 #include "pwm.h"
+#include "w25qxx.h"
 
 u32 busFre = 0;
 u32 arr = 0;
@@ -10,6 +11,9 @@ float pwm_dc = 0;
 float pwm_dc_temp = 0;
 
 u32 pwm_fre_temp = 0;
+
+u16 id = 0;
+
 void PWM_Status(void)
 {
     busFre = HAL_RCC_GetHCLKFreq();
@@ -18,6 +22,8 @@ void PWM_Status(void)
     ccr = TIM1->CCR1;    //装载值
     pwm_fre = (busFre / arr) / psc / 1000;
     pwm_dc = 100 - (ccr * 100 / arr);
+
+    id = W25QXX_ReadID();
 }
 
 u32 switch_reg = 0;
@@ -26,15 +32,10 @@ char pic_choose = 1;
 static volatile float setDutyCycle; //占空比 取值 0 - 100,
 float CarSpeed;                     //加速度计角度
 char *test_str = "123123";          //加速度计角度
-MENU_PAGE main_page, pwm_init, wifi_conn, tcp_conn, senddata;
+MENU_PAGE main_page, pwm_init, other, tcp_conn, senddata;
 
 __M_PAGE(main_page, "MainPage", PAGE_NULL,
          {
-             //  SOLGUI_Cursor(6, 5, 3);
-             //  SOLGUI_Widget_Button(0, "1.f_mount", SD_f_mount_test); //按键
-             // //  SOLGUI_Widget_Button(1, "2.f_write", SD_f_write_test); //按键
-             // //  SOLGUI_Widget_Button(2, "3.f_open", SD_f_open_test);   //按键
-             //   SOLGUI_Widget_Text(0, 48, ~F6X8, "S=%d,r=%d,C=%d", 1, 1, 1);
              //   84M/(pcs * aar) = 24kHz
              //  u32 busFre = HAL_RCC_GetHCLKFreq();
              //  u32 arr = TIM1->ARR + 1; //自动重装载值
@@ -52,8 +53,9 @@ __M_PAGE(main_page, "MainPage", PAGE_NULL,
              SOLGUI_Widget_Text(0, 16, F6X8, "PWM_Fre = %dkHz", pwm_fre);
              SOLGUI_Widget_Text(0, 8, F6X8, "HCKL    = %dMHz", busFre / 1000000);
 
-             SOLGUI_Cursor(0, 0, 1);
+             SOLGUI_Cursor(0, 0, 2);
              SOLGUI_Widget_GotoPage(0, &pwm_init);
+             SOLGUI_Widget_GotoPage(1, &other);
          });
 __M_PAGE(pwm_init, "PWM_SET", &main_page,
          {
@@ -80,16 +82,27 @@ __M_PAGE(pwm_init, "PWM_SET", &main_page,
                  pwm_dc = pwm_dc_temp;
                  ccr = (100 - pwm_dc) * arr / 100;
                  TIM_SetTIM1Compare2(ccr);
-                 SOLGUI_Widget_Text(0, 16, F6X8, "ccr=%d", ccr);
              }
+                 SOLGUI_Widget_Text(0, 16, F6X8, "ccr=%d", ccr);
 
              //  SOLGUI_Widget_Text(0, 16, F6X8, "ccr=%d", TIM1->CCR1);
              SOLGUI_Widget_Text(0, 8, F6X8, "arr=%d", TIM1->ARR + 1);
          });
-__M_PAGE(wifi_conn, "wifi_conn", &main_page,
+__M_PAGE(other, "other", &main_page,
          {
+             u8 buf[4];
+             W25QXX_Read(buf, PWM_ARR, 4);
+             u32 aar = U8ArrayToU32(buf);
+             W25QXX_Read(buf, PWM_CCR, 4);
+             u32 crr = U8ArrayToU32(buf);
+             SOLGUI_Widget_Text(0, 48, F6X8, "W25QXX_ID=%04x", id);
+             printf("aar=%d", aar);
+             printf("crr=%d", crr);
+             //  SOLGUI_Widget_Text(0, 40, F6X8, "read=%d", aar);
+             //  SOLGUI_Widget_Text(0, 40, F6X8, "read=%d", datatemp);
              SOLGUI_Cursor(0, 0, 1);
 
+             //  SOLGUI_Widget_Button(0, "Erase_Chip", &W25QXX_Erase_Chip); argument of type "u8 **" is incompatible with parameter of type "u8 *"
              //  SOLGUI_Widget_OptionText(4, "angle:  %f", CarAngle);
          });
 __M_PAGE(tcp_conn, "tcp_conn", &main_page,
@@ -98,12 +111,6 @@ __M_PAGE(tcp_conn, "tcp_conn", &main_page,
 
              //  SOLGUI_Widget_OptionText(5, "speed:  %f", CarSpeed);
          });
-__M_PAGE(senddata, "senddata", &main_page,
-         {
-             SOLGUI_Cursor(0, 0, 1);
-             SOLGUI_Widget_Switch(0, "send mode ON/OFF", &switch_reg, 3);
-         });
-
 void GUI_Init_First(void)
 {
     PWM_Status();

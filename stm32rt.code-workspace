@@ -50,7 +50,10 @@
             "oledfont.h": "c",
             "solgui_include.h": "c",
             "ec11.h": "c",
-            "drv_encoder.h": "c"
+            "drv_encoder.h": "c",
+            "stm32f4xx_hal_gpio.h": "c",
+            "spi.h": "c",
+            "w25qxx.h": "c"
         },
         "files.autoGuessEncoding": true,
         "[yaml]": {

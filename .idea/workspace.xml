@@ -7,7 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3f6c061-3ab4-4b96-87c8-8c10ac51b152" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eide/eide.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/eide.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eide/log/unify_builder.log" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/log/unify_builder.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/stm32freertos.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/temp/stm32freertos.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +38,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.cidr.embedded.config" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -60,6 +63,7 @@
       <workItem from="1643390517739" duration="372000" />
       <workItem from="1643448683707" duration="42000" />
       <workItem from="1643448735163" duration="68000" />
+      <workItem from="1643481046923" duration="1234000" />
     </task>
     <task id="LOCAL-00001" summary="按键输入">
       <created>1643210585348</created>
@@ -89,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643448696047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="OLED set pwd">
+      <created>1643481081202</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643481081202</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +120,7 @@
     <MESSAGE value="按键输入" />
     <MESSAGE value="OLED" />
     <MESSAGE value="OLED menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="OLED menu" />
+    <MESSAGE value="OLED set pwd" />
+    <option name="LAST_COMMIT_MESSAGE" value="OLED set pwd" />
   </component>
 </project>

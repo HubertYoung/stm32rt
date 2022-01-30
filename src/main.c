@@ -11,13 +11,15 @@
 // #include "driver_ssd1306_basic.h"
 // #include "driver_ssd1306_091.h"
 
-#include "oled.h"
+// #include "oled.h"
 #include "iic.h"
-#include "SOLGUI_Include.h"
-#include "SOLGUI_Hardware.h"
+// #include "SOLGUI_Include.h"
+// #include "SOLGUI_Hardware.h"
 
 #include "pwm.h"
 #include "gui.h"
+
+#include "w25qxx.h"
 
 //任务优先级
 #define START_TASK_PRIO 1
@@ -65,7 +67,7 @@ int main(void)
     KEY_Init();                      //初始化LED
     uart_init(115200);               //初始化串口
     usmart_dev.init(84);             //初始化USMART
-
+    W25QXX_Init();				    //W25QXX初始化
     //目的达到24khz 设置2分频 84M/(pcs * aar) = 24kHz
     // 2000    -> 1K
     // 20      -> 100k,如果进度值为0.5k, 每次减少10
