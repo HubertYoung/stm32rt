@@ -8234,3 +8234,891 @@ Finished: 0 information, 0 warning, 0 error and 1 fatal error messages.
 [2022-01-30 17:18:05]	[done]
 	build successfully !
 
+[2022-01-30 17:28:49]	[done]
+	build successfully !
+
+[2022-01-30 17:29:02]	[done]
+	build successfully !
+
+[2022-01-30 17:35:54]	[done]
+	build successfully !
+
+[2022-01-30 17:39:26]	[done]
+	build successfully !
+
+[2022-01-30 17:40:53]	[done]
+	build successfully !
+
+[2022-01-30 17:41:47]	[done]
+	build successfully !
+
+[2022-01-30 17:46:59]	[done]
+	build successfully !
+
+[2022-01-30 20:43:28]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 72: Warning:  #223-D: function "TIM2_CH2_Cap_Init" declared implicitly
+      TIM2_CH2_Cap_Init(0XFFFFFFFF, 84 - 1); //浠?MHZ鐨勯?鐜囪?鏁?      ^
+".\src\main.c", line 132: Error:  #20: identifier "TIM2CH2_CAPTURE_STA" is undefined
+          if (TIM2CH2_CAPTURE_STA & 0X80) //鎴愬姛鎹曡幏鍒颁簡涓娆￠珮鐢靛钩
+              ^
+".\src\main.c", line 136: Error:  #20: identifier "TIM2CH2_CAPTURE_VAL" is undefined
+              temp += TIM2CH2_CAPTURE_VAL;      //寰楀埌鎬荤殑楂樼數骞虫椂闂?                      ^
+.\src\main.c: 1 warning, 2 errors
+
+[2022-01-30 20:44:47]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol HAL_TIM_PeriodElapsedCallback multiply defined (by timer.o and pwm.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-01-30 20:45:35]	[done]
+	build successfully !
+
+[2022-01-30 20:48:27]	[done]
+	build successfully !
+
+[2022-01-30 20:49:02]	[done]
+	build successfully !
+
+[2022-01-30 20:50:52]	[done]
+	build successfully !
+
+[2022-01-30 20:55:45]	[done]
+	build successfully !
+
+[2022-01-30 20:59:43]	[done]
+	build successfully !
+
+[2022-01-30 21:00:23]	[done]
+	build successfully !
+
+[2022-01-30 21:00:44]	[done]
+	build successfully !
+
+[2022-01-30 21:01:35]	[done]
+	build successfully !
+
+[2022-01-30 21:01:58]	[done]
+	build successfully !
+
+[2022-01-30 21:22:37]	[done]
+	build successfully !
+
+[2022-01-30 21:24:54]	[done]
+	build successfully !
+
+[2022-01-30 21:28:45]	[done]
+	build successfully !
+
+[2022-01-30 21:29:08]	[done]
+	build successfully !
+
+[2022-01-30 21:29:35]	[done]
+	build successfully !
+
+[2022-01-30 21:29:50]	[done]
+	build successfully !
+
+[2022-01-30 21:33:50]	[done]
+	build successfully !
+
+[2022-01-30 21:34:14]	[done]
+	build successfully !
+
+[2022-01-30 21:34:35]	[done]
+	build successfully !
+
+[2022-01-30 21:34:50]	[done]
+	build successfully !
+
+[2022-01-30 21:36:11]	[done]
+	build successfully !
+
+[2022-01-30 21:37:21]	[done]
+	build successfully !
+
+[2022-01-30 21:37:37]	[done]
+	build successfully !
+
+[2022-01-30 21:40:57]	[done]
+	build successfully !
+
+[2022-01-30 21:41:20]	[done]
+	build successfully !
+
+[2022-01-30 21:41:40]	[done]
+	build successfully !
+
+[2022-01-30 21:43:29]	[done]
+	build successfully !
+
+[2022-01-30 21:51:12]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 64: Error:  #42: operand types are incompatible ("TIM_HandleTypeDef *" and "TIM_HandleTypeDef")
+      if (htim == TIM2_Handler)
+               ^
+.\HARDWARE\TIMER\timer.c: 0 warnings, 1 error
+
+[2022-01-30 21:51:36]	[done]
+	build successfully !
+
+[2022-01-30 22:49:34]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 58: Error:  #513: a value of type "unsigned int" cannot be assigned to an entity of type "DMA_Stream_TypeDef *"
+      hdma_tim_ch2.Instance = DMA_CHANNEL_2;
+                            ^
+".\HARDWARE\TIMER\timer.c", line 79: Error:  #20: identifier "TIM2CH2_CAPTURE_VAL" is undefined
+      HAL_TIM_IC_Start_DMA(&TIM2_Handler, DMA_CHANNEL_2, (uint32_t *)&TIM2CH2_CAPTURE_VAL, 1);
+                                                                      ^
+.\HARDWARE\TIMER\timer.c: 0 warnings, 2 errors
+
+[2022-01-30 22:51:43]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 79: Error:  #20: identifier "TIM2CH2_CAPTURE_VAL" is undefined
+      HAL_TIM_IC_Start_DMA(&TIM2_Handler, DMA_CHANNEL_2, (uint32_t *)&TIM2CH2_CAPTURE_VAL, 1);
+                                                                      ^
+.\HARDWARE\TIMER\timer.c: 0 warnings, 1 error
+
+[2022-01-30 22:52:06]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 79: Error:  #20: identifier "TIM2CH2_CAPTURE_VAL" is undefined
+      HAL_TIM_IC_Start_DMA(&TIM2_Handler, DMA_CHANNEL_2, (uint32_t *)&TIM2CH2_CAPTURE_VAL, 1);
+                                                                      ^
+.\HARDWARE\TIMER\timer.c: 0 warnings, 1 error
+
+[2022-01-30 22:52:31]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 79: Error:  #20: identifier "TIM2CH2_CAPTURE_VAL" is undefined
+      HAL_TIM_IC_Start_DMA(&TIM2_Handler, DMA_CHANNEL_2, (uint32_t *)TIM2CH2_CAPTURE_VAL, 1);
+                                                                     ^
+.\HARDWARE\TIMER\timer.c: 0 warnings, 1 error
+
+[2022-01-30 22:52:59]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 79: Error:  #20: identifier "TIM2CH2_CAPTURE_VAL" is undefined
+      HAL_TIM_IC_Start_DMA(&TIM2_Handler, DMA_CHANNEL_2, &TIM2CH2_CAPTURE_VAL, 1);
+                                                          ^
+.\HARDWARE\TIMER\timer.c: 0 warnings, 1 error
+
+[2022-01-30 22:53:55]	[done]
+	build successfully !
+
+[2022-01-30 22:54:19]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 140: Error:  #20: identifier "PWM_IN" is undefined
+              printf("HIGH:%lld us frequency=%lld val=%d\r\n", temp, frequency, PWM_IN[0]); //鎵撳嵃鎬荤殑楂樼偣骞虫椂闂?                                                                                ^
+.\src\main.c: 0 warnings, 1 error
+
+[2022-01-30 22:55:08]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 15: Error:  #147: declaration is incompatible with "uint32_t *PWM_IN" (declared at line 9 of ".\HARDWARE\TIMER\timer.h")
+  uint32_t PWM_IN[1]={0};
+           ^
+.\HARDWARE\TIMER\timer.c: 0 warnings, 1 error
+
+[2022-01-30 22:55:32]	[done]
+	build successfully !
+
+[2022-01-30 22:57:11]	[done]
+	build successfully !
+
+[2022-01-30 22:57:46]	[done]
+	build successfully !
+
+[2022-01-30 22:58:06]	[done]
+	build successfully !
+
+[2022-01-30 22:58:42]	[done]
+	build successfully !
+
+[2022-01-30 22:59:21]	[done]
+	build successfully !
+
+[2022-01-30 22:59:41]	[done]
+	build successfully !
+
+[2022-01-31 00:01:44]	[done]
+	build successfully !
+
+[2022-01-31 00:03:08]	[done]
+	build successfully !
+
+[2022-01-31 00:03:41]	[done]
+	build successfully !
+
+[2022-01-31 00:04:55]	[done]
+	build successfully !
+
+[2022-01-31 00:17:45]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 35: Error:  #20: identifier "htim1" is undefined
+          Cap_Data1 = HAL_TIM_ReadCapturedValue(&htim1, TIM_CHANNEL_1);
+                                                 ^
+".\HARDWARE\TIMER\timer.c", line 45: Error:  #20: identifier "htim1" is undefined
+          Cap_Data2 = HAL_TIM_ReadCapturedValue(&htim1, TIM_CHANNEL_2);
+                                                 ^
+.\HARDWARE\TIMER\timer.c: 0 warnings, 2 errors
+
+[2022-01-31 00:18:08]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol TIM_SetTIM1AutoReload (referred from gui.o).
+Error: L6218E: Undefined symbol TIM_SetTIM1Compare2 (referred from gui.o).
+Error: L6218E: Undefined symbol TIM2CH2_CAPTURE_STA (referred from main.o).
+Error: L6218E: Undefined symbol TIM2CH2_CAPTURE_VAL (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-01-31 00:19:03]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol TIM2CH2_CAPTURE_STA (referred from main.o).
+Error: L6218E: Undefined symbol TIM2CH2_CAPTURE_VAL (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-31 00:19:20]	[done]
+	build successfully !
+
+[2022-01-31 00:22:56]	[done]
+	build successfully !
+
+[2022-01-31 00:25:18]	[done]
+	build successfully !
+
+[2022-01-31 00:26:02]	[done]
+	build successfully !
+
+[2022-01-31 00:26:19]	[done]
+	build successfully !
+
+[2022-01-31 00:29:26]	[done]
+	build successfully !
+
+[2022-01-31 00:29:51]	[done]
+	build successfully !
+
+[2022-01-31 00:33:37]	[done]
+	build successfully !
+
+[2022-01-31 00:34:03]	[done]
+	build successfully !
+
+[2022-01-31 00:35:13]	[done]
+	build successfully !
+
+[2022-01-31 00:35:31]	[done]
+	build successfully !
+
+[2022-01-31 00:37:22]	[done]
+	build successfully !
+
+[2022-01-31 00:46:29]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.h", line 21: Error:  #28: expression must have a constant value
+  static float g_FbFreqBuff[SPD_FB_CHAN_NUM] = {0.0};         /* ?????*/
+                            ^
+".\HARDWARE\TIMER\timer.h", line 22: Error:  #28: expression must have a constant value
+  static float g_DevFbRotateSpdBuff[SPD_FB_CHAN_NUM] = {0.0}; /* ?????*/
+                                    ^
+".\HARDWARE\TIMER\timer.h", line 23: Error:  #20: identifier "TIM_IC_MAX" is undefined
+  uint16_t g_IcofCntBuff[TIM_IC_MAX] = {0};                   /* ????????*/
+                         ^
+".\HARDWARE\TIMER\timer.c", line 44: Warning:  #223-D: function "printf" declared implicitly
+              printf("Fre_Cap:%f us zhouqi_Cap=%f Pwm_Duty=%f\r\n", Fre_Cap, zhouqi_Cap, Pwm_Duty); //打印总的高点平时间
+              ^
+".\HARDWARE\TIMER\timer.c", line 51: Warning:  #223-D: function "printf" declared implicitly
+      printf("Fre_Cap:%f us zhouqi_Cap=%f Pwm_Duty=%f\r\n", Fre_Cap, zhouqi_Cap, Pwm_Duty); //打印总的高点平时间
+      ^
+.\HARDWARE\TIMER\timer.c: 2 warnings, 3 errors
+
+[2022-01-31 00:46:50]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.h", line 21: Error:  #28: expression must have a constant value
+  static float g_FbFreqBuff[SPD_FB_CHAN_NUM] = {0.0};         /* ?????*/
+                            ^
+".\HARDWARE\TIMER\timer.h", line 22: Error:  #28: expression must have a constant value
+  static float g_DevFbRotateSpdBuff[SPD_FB_CHAN_NUM] = {0.0}; /* ?????*/
+                                    ^
+".\HARDWARE\TIMER\timer.h", line 23: Error:  #20: identifier "TIM_IC_MAX" is undefined
+  uint16_t g_IcofCntBuff[TIM_IC_MAX] = {0};                   /* ????????*/
+                         ^
+".\HARDWARE\TIMER\timer.c", line 44: Warning:  #223-D: function "printf" declared implicitly
+              printf("Fre_Cap:%f us zhouqi_Cap=%f Pwm_Duty=%f\r\n", Fre_Cap, zhouqi_Cap, Pwm_Duty); //打印总的高点平时间
+              ^
+".\HARDWARE\TIMER\timer.c", line 51: Warning:  #223-D: function "printf" declared implicitly
+      printf("Fre_Cap:%f us zhouqi_Cap=%f Pwm_Duty=%f\r\n", Fre_Cap, zhouqi_Cap, Pwm_Duty); //打印总的高点平时间
+      ^
+.\HARDWARE\TIMER\timer.c: 2 warnings, 3 errors
+
+[2022-01-31 00:48:33]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.h", line 23: Error:  #20: identifier "TIM_IC_MAX" is undefined
+  uint16_t g_IcofCntBuff[TIM_IC_MAX] = {0};                   /* ????????*/
+                         ^
+".\HARDWARE\TIMER\timer.c", line 44: Warning:  #223-D: function "printf" declared implicitly
+              printf("Fre_Cap:%f us zhouqi_Cap=%f Pwm_Duty=%f\r\n", Fre_Cap, zhouqi_Cap, Pwm_Duty); //打印总的高点平时间
+              ^
+".\HARDWARE\TIMER\timer.c", line 51: Warning:  #223-D: function "printf" declared implicitly
+      printf("Fre_Cap:%f us zhouqi_Cap=%f Pwm_Duty=%f\r\n", Fre_Cap, zhouqi_Cap, Pwm_Duty); //打印总的高点平时间
+      ^
+.\HARDWARE\TIMER\timer.c: 2 warnings, 1 error
+
+[2022-01-31 00:48:54]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol g_IcofCntBuff multiply defined (by main.o and timer.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 00:53:52]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 38: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 45: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 85: Warning:  #223-D: function "TIM1CaptureChannel1Callback" declared implicitly
+              TIM1CaptureChannel1Callback();
+              ^
+".\HARDWARE\TIMER\timer.c", line 110: Error:  #159: declaration is incompatible with previous "TIM1CaptureChannel1Callback" (declared at line 85)
+  void TIM1CaptureChannel1Callback(void)
+       ^
+".\HARDWARE\TIMER\timer.c", line 120: Warning:  #223-D: function "ResetTimerIcofCnt" declared implicitly
+          ResetTimerIcofCnt(TIM1_IC1);
+          ^
+".\HARDWARE\TIMER\timer.c", line 140: Warning:  #223-D: function "ProcessIcValue" declared implicitly
+          ProcessIcValue(TIM1_IC1, cap_sum);
+          ^
+".\HARDWARE\TIMER\timer.c", line 149: Warning:  #223-D: function "TIM1_IcOverflowCntCallback" declared implicitly
+          TIM1_IcOverflowCntCallback();
+          ^
+".\HARDWARE\TIMER\timer.c", line 160: Error:  #159: declaration is incompatible with previous "TIM1_IcOverflowCntCallback" (declared at line 149)
+  void TIM1_IcOverflowCntCallback(void)
+       ^
+".\HARDWARE\TIMER\timer.c", line 184: Error:  #159: declaration is incompatible with previous "ProcessIcValue" (declared at line 140)
+  static void ProcessIcValue(TIM_IC_Typedef ic_id, uint32_t _icCnt)
+              ^
+".\HARDWARE\TIMER\timer.c", line 186: Warning:  #223-D: function "CalcTheFreq" declared implicitly
+      g_FbFreqBuff[ic_id] = CalcTheFreq(_icCnt);
+                            ^
+".\HARDWARE\TIMER\timer.c", line 187: Warning:  #223-D: function "CalcTheRpm" declared implicitly
+      g_DevFbRotateSpdBuff[ic_id] = CalcTheRpm(g_FbFreqBuff[ic_id]);
+                                    ^
+".\HARDWARE\TIMER\timer.c", line 203: Error:  #159: declaration is incompatible with previous "CalcTheFreq" (declared at line 186)
+  static float CalcTheFreq(uint32_t _icValue)
+               ^
+".\HARDWARE\TIMER\timer.c", line 208: Error:  #159: declaration is incompatible with previous "CalcTheRpm" (declared at line 187)
+  static float CalcTheRpm(float _freq)
+               ^
+".\HARDWARE\TIMER\timer.c", line 184: Warning:  #177-D: function "ProcessIcValue" was declared but never referenced
+  static void ProcessIcValue(TIM_IC_Typedef ic_id, uint32_t _icCnt)
+              ^
+".\HARDWARE\TIMER\timer.c", line 203: Warning:  #177-D: function "CalcTheFreq" was declared but never referenced
+  static float CalcTheFreq(uint32_t _icValue)
+               ^
+".\HARDWARE\TIMER\timer.c", line 208: Warning:  #177-D: function "CalcTheRpm" was declared but never referenced
+  static float CalcTheRpm(float _freq)
+               ^
+.\HARDWARE\TIMER\timer.c: 11 warnings, 5 errors
+
+[2022-01-31 00:54:16]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 38: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 45: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 97: Warning:  #223-D: function "ResetTimerIcofCnt" declared implicitly
+          ResetTimerIcofCnt(TIM1_IC1);
+          ^
+".\HARDWARE\TIMER\timer.c", line 117: Warning:  #223-D: function "ProcessIcValue" declared implicitly
+          ProcessIcValue(TIM1_IC1, cap_sum);
+          ^
+".\HARDWARE\TIMER\timer.c", line 148: Warning:  #223-D: function "TIM1_IcOverflowCntCallback" declared implicitly
+          TIM1_IcOverflowCntCallback();
+          ^
+".\HARDWARE\TIMER\timer.c", line 159: Error:  #159: declaration is incompatible with previous "TIM1_IcOverflowCntCallback" (declared at line 148)
+  void TIM1_IcOverflowCntCallback(void)
+       ^
+".\HARDWARE\TIMER\timer.c", line 183: Error:  #159: declaration is incompatible with previous "ProcessIcValue" (declared at line 117)
+  static void ProcessIcValue(TIM_IC_Typedef ic_id, uint32_t _icCnt)
+              ^
+".\HARDWARE\TIMER\timer.c", line 185: Warning:  #223-D: function "CalcTheFreq" declared implicitly
+      g_FbFreqBuff[ic_id] = CalcTheFreq(_icCnt);
+                            ^
+".\HARDWARE\TIMER\timer.c", line 186: Warning:  #223-D: function "CalcTheRpm" declared implicitly
+      g_DevFbRotateSpdBuff[ic_id] = CalcTheRpm(g_FbFreqBuff[ic_id]);
+                                    ^
+".\HARDWARE\TIMER\timer.c", line 202: Error:  #159: declaration is incompatible with previous "CalcTheFreq" (declared at line 185)
+  static float CalcTheFreq(uint32_t _icValue)
+               ^
+".\HARDWARE\TIMER\timer.c", line 207: Error:  #159: declaration is incompatible with previous "CalcTheRpm" (declared at line 186)
+  static float CalcTheRpm(float _freq)
+               ^
+".\HARDWARE\TIMER\timer.c", line 183: Warning:  #177-D: function "ProcessIcValue" was declared but never referenced
+  static void ProcessIcValue(TIM_IC_Typedef ic_id, uint32_t _icCnt)
+              ^
+".\HARDWARE\TIMER\timer.c", line 202: Warning:  #177-D: function "CalcTheFreq" was declared but never referenced
+  static float CalcTheFreq(uint32_t _icValue)
+               ^
+".\HARDWARE\TIMER\timer.c", line 207: Warning:  #177-D: function "CalcTheRpm" was declared but never referenced
+  static float CalcTheRpm(float _freq)
+               ^
+.\HARDWARE\TIMER\timer.c: 10 warnings, 4 errors
+
+[2022-01-31 00:54:31]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 38: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 45: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 97: Warning:  #223-D: function "ResetTimerIcofCnt" declared implicitly
+          ResetTimerIcofCnt(TIM1_IC1);
+          ^
+".\HARDWARE\TIMER\timer.c", line 117: Warning:  #223-D: function "ProcessIcValue" declared implicitly
+          ProcessIcValue(TIM1_IC1, cap_sum);
+          ^
+".\HARDWARE\TIMER\timer.c", line 183: Error:  #159: declaration is incompatible with previous "ProcessIcValue" (declared at line 117)
+  static void ProcessIcValue(TIM_IC_Typedef ic_id, uint32_t _icCnt)
+              ^
+".\HARDWARE\TIMER\timer.c", line 185: Warning:  #223-D: function "CalcTheFreq" declared implicitly
+      g_FbFreqBuff[ic_id] = CalcTheFreq(_icCnt);
+                            ^
+".\HARDWARE\TIMER\timer.c", line 186: Warning:  #223-D: function "CalcTheRpm" declared implicitly
+      g_DevFbRotateSpdBuff[ic_id] = CalcTheRpm(g_FbFreqBuff[ic_id]);
+                                    ^
+".\HARDWARE\TIMER\timer.c", line 202: Error:  #159: declaration is incompatible with previous "CalcTheFreq" (declared at line 185)
+  static float CalcTheFreq(uint32_t _icValue)
+               ^
+".\HARDWARE\TIMER\timer.c", line 207: Error:  #159: declaration is incompatible with previous "CalcTheRpm" (declared at line 186)
+  static float CalcTheRpm(float _freq)
+               ^
+".\HARDWARE\TIMER\timer.c", line 183: Warning:  #177-D: function "ProcessIcValue" was declared but never referenced
+  static void ProcessIcValue(TIM_IC_Typedef ic_id, uint32_t _icCnt)
+              ^
+".\HARDWARE\TIMER\timer.c", line 202: Warning:  #177-D: function "CalcTheFreq" was declared but never referenced
+  static float CalcTheFreq(uint32_t _icValue)
+               ^
+".\HARDWARE\TIMER\timer.c", line 207: Warning:  #177-D: function "CalcTheRpm" was declared but never referenced
+  static float CalcTheRpm(float _freq)
+               ^
+.\HARDWARE\TIMER\timer.c: 9 warnings, 3 errors
+
+[2022-01-31 00:55:10]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 41: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 48: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 100: Warning:  #223-D: function "ResetTimerIcofCnt" declared implicitly
+          ResetTimerIcofCnt(TIM1_IC1);
+          ^
+".\HARDWARE\TIMER\timer.c", line 188: Warning:  #223-D: function "CalcTheFreq" declared implicitly
+      g_FbFreqBuff[ic_id] = CalcTheFreq(_icCnt);
+                            ^
+".\HARDWARE\TIMER\timer.c", line 189: Warning:  #223-D: function "CalcTheRpm" declared implicitly
+      g_DevFbRotateSpdBuff[ic_id] = CalcTheRpm(g_FbFreqBuff[ic_id]);
+                                    ^
+".\HARDWARE\TIMER\timer.c", line 205: Error:  #159: declaration is incompatible with previous "CalcTheFreq" (declared at line 188)
+  static float CalcTheFreq(uint32_t _icValue)
+               ^
+".\HARDWARE\TIMER\timer.c", line 210: Error:  #159: declaration is incompatible with previous "CalcTheRpm" (declared at line 189)
+  static float CalcTheRpm(float _freq)
+               ^
+".\HARDWARE\TIMER\timer.c", line 205: Warning:  #177-D: function "CalcTheFreq" was declared but never referenced
+  static float CalcTheFreq(uint32_t _icValue)
+               ^
+".\HARDWARE\TIMER\timer.c", line 210: Warning:  #177-D: function "CalcTheRpm" was declared but never referenced
+  static float CalcTheRpm(float _freq)
+               ^
+.\HARDWARE\TIMER\timer.c: 7 warnings, 2 errors
+
+[2022-01-31 00:55:31]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol g_IcofCntBuff multiply defined (by main.o and timer.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 00:57:15]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 43: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 50: Warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+          ^
+".\HARDWARE\TIMER\timer.c", line 103: Error:  #29: expected an expression
+          g_IcofCntBuff[TIM_IC_MAX] = {0}
+                                      ^
+".\HARDWARE\TIMER\timer.c", line 103: Warning:  #175-D: subscript out of range
+          g_IcofCntBuff[TIM_IC_MAX] = {0}
+          ^
+.\HARDWARE\TIMER\timer.c: 3 warnings, 1 error
+
+[2022-01-31 00:58:02]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol g_IcofCntBuff multiply defined (by main.o and timer.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 00:59:05]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol g_IcofCntBuff multiply defined (by main.o and timer.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 00:59:36]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol Error_Handler (referred from timer.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 00:59:48]	[done]
+	build successfully !
+
+[2022-01-31 01:01:30]	[done]
+	build successfully !
+
+[2022-01-31 01:04:27]	[done]
+	build successfully !
+
+[2022-01-31 01:04:50]	[done]
+	build successfully !
+
+[2022-01-31 01:05:04]	[done]
+	build successfully !
+
+[2022-01-31 01:05:25]	[done]
+	build successfully !
+
+[2022-01-31 01:16:50]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.h", line 15: Error:  #256: invalid redeclaration of type name "TIM_Base_InitTypeDef" (declared at line 73 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_Base_InitTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 37: Error:  #20: identifier "HAL_TIM_StateTypedef" is undefined
+          __IO HAL_TIM_StateTypedef       State;          //???????
+               ^
+".\HARDWARE\TIMER\timer.h", line 38: Error:  #256: invalid redeclaration of type name "TIM_HandleTypeDef" (declared at line 350 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_HandleTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 48: Error:  #256: invalid redeclaration of type name "TIM_ClockConfigTypeDef" (declared at line 207 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_ClockConfigTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 49: Error:  #20: identifier "ClockPolarity" is undefined
+  ClockPolarity   //???????ETR????????????????
+  ^
+".\HARDWARE\TIMER\timer.h", line 52: Error:  #65: expected a ";"
+  ClockFilter     //?????????ETR???? 0~0xF
+  ^
+".\HARDWARE\TIMER\timer.h", line 62: Warning:  #12-D: parsing restarts here after previous syntax error
+  } TIM_IC_InitTypeDef;
+                      ^
+".\HARDWARE\TIMER\timer.h", line 75: Error:  #256: invalid redeclaration of type name "TIM_OC_InitTypeDef" (declared at line 105 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_OC_InitTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 87: Error:  #256: invalid redeclaration of type name "TIM_SlaveConfigTypeDef" (declared at line 253 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_SlaveConfigTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 95: Error:  #256: invalid redeclaration of type name "TIM_MasterConfigTypeDef" (declared at line 235 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_MasterConfigTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 111: Error:  #256: invalid redeclaration of type name "TIM_OnePulse_InitTypeDef" (declared at line 141 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_OnePulse_InitTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 126: Error:  #256: invalid redeclaration of type name "TIM_Encoder_InitTypeDef" (declared at line 192 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_Encoder_InitTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 136: Error:  #256: invalid redeclaration of type name "TIM_HallSensor_InitTypeDef" (declared at line 61 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h")
+  } TIM_HallSensor_InitTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 147: Error:  #256: invalid redeclaration of type name "TIM_ClearInputConfigTypeDef" (declared at line 224 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_ClearInputConfigTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.h", line 160: Error:  #256: invalid redeclaration of type name "TIM_BreakDeadTimeConfigTypeDef" (declared at line 278 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  } TIM_BreakDeadTimeConfigTypeDef;
+    ^
+".\HARDWARE\TIMER\timer.c", line 21: Error:  #136: struct "<unnamed>" has no field "CounterMode"
+      TIM2_Handler.Init.CounterMode = TIM_COUNTERMODE_UP;       //向上计数器
+                        ^
+".\HARDWARE\TIMER\timer.c", line 24: Error:  #167: argument of type "TIM_HandleTypeDef *" is incompatible with parameter of type "TIM_HandleTypeDef *"
+      HAL_TIM_IC_Init(&TIM2_Handler);                           //初始化输入捕获时基参数
+                      ^
+".\HARDWARE\TIMER\timer.c", line 30: Error:  #167: argument of type "TIM_HandleTypeDef *" is incompatible with parameter of type "TIM_HandleTypeDef *"
+      HAL_TIM_IC_ConfigChannel(&TIM2_Handler, &TIM2_CH2Config, TIM_CHANNEL_2); //配置TIM2通道1
+                               ^
+".\HARDWARE\TIMER\timer.c", line 32: Error:  #167: argument of type "TIM_HandleTypeDef *" is incompatible with parameter of type "TIM_HandleTypeDef *"
+      HAL_TIM_IC_Start_IT(&TIM2_Handler, TIM_CHANNEL_2); //开启TIM2的捕获通道1，并且开启捕获中断
+                          ^
+".\HARDWARE\TIMER\timer.c", line 39: Error:  #147-D: declaration is incompatible with "void HAL_TIM_IC_MspInit(TIM_HandleTypeDef *)" (declared at line 1793 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  void HAL_TIM_IC_MspInit(TIM_HandleTypeDef *htim)
+       ^
+".\HARDWARE\TIMER\timer.c", line 66: Error:  #167: argument of type "TIM_HandleTypeDef *" is incompatible with parameter of type "TIM_HandleTypeDef *"
+      HAL_TIM_IRQHandler(&TIM2_Handler); //定时器共用处理函数
+                         ^
+".\HARDWARE\TIMER\timer.c", line 70: Error:  #147-D: declaration is incompatible with "void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *)" (declared at line 1890 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) //更新中断（溢出）发生时执行
+       ^
+".\HARDWARE\TIMER\timer.c", line 89: Error:  #147-D: declaration is incompatible with "void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *)" (declared at line 1893 of ".\.pack\Keil\STM32F4xx_DFP.2.14.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h")
+  void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim) //捕获中断发生时执行
+       ^
+".\HARDWARE\TIMER\timer.c", line 96: Error:  #167: argument of type "TIM_HandleTypeDef *" is incompatible with parameter of type "TIM_HandleTypeDef *"
+              TIM2CH2_CAPTURE_VAL = HAL_TIM_ReadCapturedValue(&TIM2_Handler, TIM_CHANNEL_2); //获取当前的捕获值.
+                                                              ^
+.\HARDWARE\TIMER\timer.c: 1 warning, 23 errors
+
+[2022-01-31 01:17:27]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 72: Warning:  #223-D: function "TIM1_CH1_Cap_Init" declared implicitly
+      TIM1_CH1_Cap_Init(0XFFFF, 42 - 1); //浠?MHZ鐨勯?鐜囪?鏁?      ^
+".\src\main.c", line 134: Error:  #20: identifier "TIM2CH2_CAPTURE_STA" is undefined
+          if (TIM2CH2_CAPTURE_STA & 0X80) //鎴愬姛鎹曡幏鍒颁簡涓娆￠珮鐢靛钩
+              ^
+".\src\main.c", line 138: Error:  #20: identifier "TIM2CH2_CAPTURE_VAL" is undefined
+              temp += TIM2CH2_CAPTURE_VAL;      //寰楀埌鎬荤殑楂樼數骞虫椂闂?                      ^
+".\src\main.c", line 131: Warning:  #550-D: variable "frequency" was set but never used
+      long long frequency = 0;
+                ^
+.\src\main.c: 2 warnings, 2 errors
+
+[2022-01-31 01:17:56]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol TIM1_CH1_Cap_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 01:18:06]	[done]
+	build successfully !
+
+[2022-01-31 01:21:05]	[done]
+	build successfully !
+
+[2022-01-31 01:35:09]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol TIM2_SetCapturePolarity (referred from timer.o).
+Error: L6218E: Undefined symbol TIM2_Poll (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-31 01:37:01]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol TIM2_Poll (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 01:37:20]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol TIM2_SetCapturePolarity (referred from timer.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 01:37:44]	[done]
+	build successfully !
+
+[2022-01-31 01:40:34]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol TIM2_Handler (referred from timer.o).
+Error: L6218E: Undefined symbol TIM2_Poll (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-31 01:40:56]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol TIM2_Handler (referred from timer.o).
+Error: L6218E: Undefined symbol TIM2_Poll (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-01-31 01:41:17]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol TIM2_Handler multiply defined (by main.o and timer.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 01:41:42]	[done]
+	build successfully !
+
+[2022-01-31 01:46:24]	[done]
+	build successfully !
+
+[2022-01-31 01:46:53]	[done]
+	build successfully !
+
+[2022-01-31 01:47:24]	[done]
+	build successfully !
+
+[2022-01-31 01:48:07]	[done]
+	build successfully !
+
+[2022-01-31 02:39:44]	[done]
+	build successfully !
+
+[2022-01-31 02:41:35]	[done]
+	build successfully !
+
+[2022-01-31 02:43:06]	[done]
+	build successfully !
+
+[2022-01-31 02:59:34]	[done]
+	build successfully !
+
+[2022-01-31 03:00:05]	[done]
+	build successfully !
+
+[2022-01-31 03:00:20]	[done]
+	build successfully !
+
+[2022-01-31 03:00:33]	[done]
+	build successfully !
+
+[2022-01-31 03:01:19]	[done]
+	build successfully !
+
+[2022-01-31 03:02:06]	[done]
+	build successfully !
+
+[2022-01-31 03:05:49]	compilation failed at : "c:\Users\13443\source\stm32rt\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\main.c", line 143: Error:  #167: argument of type "u32" is incompatible with parameter of type "const char *restrict"
+              printf(FbFreq); //鎵撳嵃鎬荤殑楂樼偣骞虫椂闂?                     ^
+".\src\main.c", line 132: Warning:  #177-D: variable "temp" was declared but never referenced
+      long long temp = 0;
+                ^
+".\src\main.c", line 133: Warning:  #177-D: variable "frequency" was declared but never referenced
+      long long frequency = 0;
+                ^
+.\src\main.c: 2 warnings, 1 error
+
+[2022-01-31 03:08:05]	[done]
+	build successfully !
+
+[2022-01-31 03:10:03]	[done]
+	build successfully !
+
+[2022-01-31 03:19:40]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol sendUartBytes (referred from canvas.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-01-31 03:21:47]	[done]
+	build successfully !
+
+[2022-01-31 03:22:56]	[done]
+	build successfully !
+
+[2022-01-31 03:30:39]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usart\usart.c", line 139: Warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+      HAL_UART_Transmit(&UART1_Handler, pData, Size, 10000)
+                                        ^
+".\SYSTEM\usart\usart.c", line 140: Error:  #65: expected a ";"
+  }
+  ^
+.\SYSTEM\usart\usart.c: 1 warning, 1 error
+
+[2022-01-31 03:30:49]	[done]
+	build successfully !
+
+[2022-01-31 03:33:01]	compilation failed at : "c:\Users\13443\source\stm32rt\SYSTEM\usart\usart.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\SYSTEM\usart\usart.c", line 161: Error:  #167: argument of type "char **" is incompatible with parameter of type "char *"
+      HAL_UART_Transmit(&UART1_Handler, chartouint8_t(&pData), Size, 10000);
+                                                      ^
+".\SYSTEM\usart\usart.c", line 161: Error:  #167: argument of type "uint8_t" is incompatible with parameter of type "uint8_t *"
+      HAL_UART_Transmit(&UART1_Handler, chartouint8_t(&pData), Size, 10000);
+                                        ^
+.\SYSTEM\usart\usart.c: 0 warnings, 2 errors
+
+[2022-01-31 03:33:54]	[done]
+	build successfully !
+
+[2022-01-31 03:34:46]	[done]
+	build successfully !
+
+[2022-01-31 03:38:04]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 62: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 93: Warning:  #223-D: function "printf" declared implicitly
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 125: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+".\HARDWARE\GUI\gui.c", line 147: Error:  #65: expected a ";"
+  }
+  ^
+.\HARDWARE\GUI\gui.c: 3 warnings, 1 error
+
+[2022-01-31 03:38:16]	[done]
+	build successfully !
+

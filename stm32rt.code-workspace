@@ -53,7 +53,8 @@
             "drv_encoder.h": "c",
             "stm32f4xx_hal_gpio.h": "c",
             "spi.h": "c",
-            "w25qxx.h": "c"
+            "w25qxx.h": "c",
+            "timer.h": "c"
         },
         "files.autoGuessEncoding": true,
         "[yaml]": {

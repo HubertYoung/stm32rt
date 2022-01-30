@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3f6c061-3ab4-4b96-87c8-8c10ac51b152" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eide/eide.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/eide.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eide/log/unify_builder.log" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/log/unify_builder.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/stm32freertos.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/temp/stm32freertos.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eide/log/cl.eide.log" beforeDir="false" afterPath="$PROJECT_DIR$/.eide/log/cl.eide.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +34,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.cidr.embedded.config" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,6 +54,7 @@
       <workItem from="1643448683707" duration="42000" />
       <workItem from="1643448735163" duration="68000" />
       <workItem from="1643481046923" duration="1234000" />
+      <workItem from="1643534505470" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="按键输入">
       <created>1643210585348</created>
@@ -100,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643481081202</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="spi flash">
+      <created>1643534538815</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643534538815</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +119,7 @@
     <MESSAGE value="OLED" />
     <MESSAGE value="OLED menu" />
     <MESSAGE value="OLED set pwd" />
-    <option name="LAST_COMMIT_MESSAGE" value="OLED set pwd" />
+    <MESSAGE value="spi flash" />
+    <option name="LAST_COMMIT_MESSAGE" value="spi flash" />
   </component>
 </project>

@@ -14,6 +14,8 @@ u32 pwm_fre_temp = 0;
 
 u16 id = 0;
 
+u32 FG = 0;
+
 void PWM_Status(void)
 {
     busFre = HAL_RCC_GetHCLKFreq();
@@ -21,7 +23,7 @@ void PWM_Status(void)
     psc = TIM1->PSC + 1; //定时器分频，确定时钟频率
     ccr = TIM1->CCR1;    //装载值
     pwm_fre = (busFre / arr) / psc / 1000;
-    pwm_dc = 100 - (ccr * 100 / arr);
+    pwm_dc = 100 - ((float)ccr * 100 / arr);
 
     id = W25QXX_ReadID();
 }
@@ -47,7 +49,7 @@ __M_PAGE(main_page, "MainPage", PAGE_NULL,
              pwm_fre_temp = pwm_fre;
              pwm_dc_temp = pwm_dc;
              SOLGUI_Widget_Text(0, 48, F6X8, "S=%d,r=%d,C=%d", arr, psc, busFre);
-             SOLGUI_Widget_Text(0, 40, F6X8, "S=%d,r=%d,C=%d", ((busFre / psc)), 1, 1);
+             SOLGUI_Widget_Text(0, 40, F6X8, "FG=%d", FG);
              SOLGUI_Widget_Text(0, 32, F6X8, "%d", TIM1->ARR);          //自动重装载值
              SOLGUI_Widget_Text(0, 24, F6X8, "PWM_DC  = %f%%", pwm_dc); //装载值
              SOLGUI_Widget_Text(0, 16, F6X8, "PWM_Fre = %dkHz", pwm_fre);
@@ -75,15 +77,15 @@ __M_PAGE(pwm_init, "PWM_SET", &main_page,
                  arr = busFre / pwm_fre / psc / 1000;
                  //  pwm_dc = 1000 - (ccr * 1000 / arr)
                  ccr = (100 - pwm_dc) * arr / 100;
-                 TIM_SetTIM1AutoReload(arr - 1, ccr);
+                 TIM_SetTIM1AutoReload(arr - 1, ccr + 1);
              }
              if (pwm_dc_temp != pwm_dc)
              {
                  pwm_dc = pwm_dc_temp;
                  ccr = (100 - pwm_dc) * arr / 100;
-                 TIM_SetTIM1Compare2(ccr);
+                 TIM_SetTIM1Compare2(ccr + 1);
              }
-                 SOLGUI_Widget_Text(0, 16, F6X8, "ccr=%d", ccr);
+             SOLGUI_Widget_Text(0, 16, F6X8, "ccr=%d", ccr);
 
              //  SOLGUI_Widget_Text(0, 16, F6X8, "ccr=%d", TIM1->CCR1);
              SOLGUI_Widget_Text(0, 8, F6X8, "arr=%d", TIM1->ARR + 1);
@@ -138,4 +140,8 @@ void GUI_Refresh(void)
 {
     SOLGUI_Menu_PageStage();
     SOLGUI_Refresh();
+}
+void GUI_RefreshFreq(u32 FbFreq)
+{
+    FG = FbFreq;
 }

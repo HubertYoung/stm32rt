@@ -11,4 +11,5 @@ void GUI_Init(void);
 void GUI_InputKey(u8 key);
 
 void GUI_Refresh(void);
+void GUI_RefreshFreq(u32 FbFreq);
 #endif

@@ -8,18 +8,14 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "usmart.h"
-// #include "driver_ssd1306_basic.h"
-// #include "driver_ssd1306_091.h"
-
-// #include "oled.h"
 #include "iic.h"
-// #include "SOLGUI_Include.h"
-// #include "SOLGUI_Hardware.h"
 
 #include "pwm.h"
 #include "gui.h"
 
 #include "w25qxx.h"
+#include "timer.h"
+#include "canvas.h"
 
 //任务优先级
 #define START_TASK_PRIO 1
@@ -40,16 +36,16 @@ TaskHandle_t SYSTask_Handler;
 void sys_task(void *pvParameters);
 
 //任务优先级
-#define KEY_TASK_PRIO 3
+#define TIMER_TASK_PRIO 2
 //任务堆栈大小
-#define KEY_STK_SIZE 128
+#define TIMER_STK_SIZE 256
 //任务句柄
-TaskHandle_t KEYTask_Handler;
+TaskHandle_t TIMERTask_Handler;
 //任务函数
-void key_task(void *pvParameters);
+void timer_task(void *pvParameters);
 
 //任务优先级
-#define GUI_TASK_PRIO 2
+#define GUI_TASK_PRIO 3
 //任务堆栈大小
 #define GUI_STK_SIZE 256
 //任务句柄
@@ -67,30 +63,14 @@ int main(void)
     KEY_Init();                      //初始化LED
     uart_init(115200);               //初始化串口
     usmart_dev.init(84);             //初始化USMART
-    W25QXX_Init();				    //W25QXX初始化
+    W25QXX_Init();                   // W25QXX初始化
     //目的达到24khz 设置2分频 84M/(pcs * aar) = 24kHz
     // 2000    -> 1K
     // 20      -> 100k,如果进度值为0.5k, 每次减少10
     // 默认24k 应该是 1770
-    TIM1_PWM_Init(3360 - 1, 1 - 1); //84M/84=1M的计数频率1us，自动重装载为500，那么PWM频率为1M/500=2kHZ
-    // TIM1_PWM_Init(1680 - 1, 1 - 1); //84M/84=1M的计数频率1us，自动重装载为500，那么PWM频率为1M/500=2kHZ
-    // EC11_Init();
-    // OLED_Clear();
-    // OLED_ShowString(0, 0, "FOSTEX", 24);
-    // OLED_ShowString(0, 24, "MODEL 20", 24);
+    TIM1_PWM_Init(3360 - 1, 1 - 1); // 84M/84=1M的计数频率1us，自动重装载为500，那么PWM频率为1M/500=2kHZ
 
-    // shell_init();
-    // shell_register("ssd1306", ssd1306);
-    // res = ssd1306_basic_init(SSD1306_INTERFACE_IIC, SSD1306_ADDR_SA0_0);
-    // if (res)
-    // {
-    //     ssd1306_basic_deinit();
-
-    //     return 1;
-    // }
-
-    // ssd1306_basic_string(0, 0, "FOSTEX", sizeof("FOSTEX"), 1, SSD1306_FONT_24);
-    // ssd1306_basic_string(0, 24, "MODEL 20", sizeof("MODEL 20"), 1, SSD1306_FONT_24);
+    TIM2_CH2_Cap_Init(0XFFFF, 42 - 1); //以1MHZ的频率计数
 
     //创建开始任务
     xTaskCreate((TaskFunction_t)start_task,          //任务函数
@@ -114,12 +94,12 @@ void start_task(void *pvParameters)
                 (UBaseType_t)SYS_TASK_PRIO,
                 (TaskHandle_t *)&SYSTask_Handler);
     //创建KEY任务
-    // xTaskCreate((TaskFunction_t)key_task,
-    //             (const char *)"key_task",
-    //             (uint16_t)KEY_STK_SIZE,
-    //             (void *)NULL,
-    //             (UBaseType_t)KEY_TASK_PRIO,
-    //             (TaskHandle_t *)&KEYTask_Handler);
+    xTaskCreate((TaskFunction_t)timer_task,
+                (const char *)"timer_task",
+                (uint16_t)TIMER_STK_SIZE,
+                (void *)NULL,
+                (UBaseType_t)TIMER_TASK_PRIO,
+                (TaskHandle_t *)&TIMERTask_Handler);
     //浮点测试任务
     xTaskCreate((TaskFunction_t)gui_task,
                 (const char *)"gui_task",
@@ -143,15 +123,31 @@ void sys_task(void *pvParameters)
         vTaskDelay(600);
     }
 }
-
+extern u8 TIM2CH2_CAPTURE_STA;  //输入捕获状态
+extern u8 TIM_ICOF_COUNT;  //输入捕获状态
+extern u32 TIM2CH2_CAPTURE_VAL; //输入捕获值
+extern u32 FbFreq; //输入捕获值
 // KEY任务函数
-void key_task(void *pvParameters)
+void timer_task(void *pvParameters)
 {
-    u8 key;
+    // long long temp = 0;
+    // long long frequency = 0;
     while (1)
     {
-
-        vTaskDelay(1000);
+         GUI_RefreshFreq(FbFreq);
+        // if (TIM2CH2_CAPTURE_STA & 0X80) //成功捕获到了一次高电平
+        // {
+        //     temp = TIM2CH2_CAPTURE_STA & 0X3F;
+        //     temp *= 0XFFFF;               //溢出时间总和
+        //     temp += TIM2CH2_CAPTURE_VAL;      //得到总的高电平时间
+        //     frequency = 1000000 / temp;
+            // printf("HIGH:%lld us frequency=%lld val=%d\r\n", temp, frequency, TIM2CH2_CAPTURE_VAL); //打印总的高点平时间
+            printf("%d\r\n",FbFreq); //打印总的高点平时间
+            // updateCanvas(WAVECHART, 1, (char *)&FbFreq, sizeof(FbFreq));
+        //     TIM2CH2_CAPTURE_STA = 0;          //开启下一次捕获
+        // }
+        // TIM2_Poll();
+        delay_ms(10);
     }
 }
 

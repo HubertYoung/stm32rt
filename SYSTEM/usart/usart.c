@@ -134,6 +134,32 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         }
     }
 }
+uint8_t chartouint8_t(char* str)
+{
+    uint8_t rec = 0;
+    uint8_t tmp = 0;
+    for (int i = 0; i < 2; i++)
+    {
+        if (*(str + i) >= '0' && *(str + i) <= '9')
+        {
+            tmp = (*(str + i) - '0');
+        }
+        else if (*(str + i) >= 'a' && *(str + i) <= 'z')
+        {
+            tmp = (*(str + i) - 'a') + 0x0A;
+        }
+        else if (*(str + i) >= 'A' && *(str + i) <= 'Z')
+        {
+            tmp = (*(str + i) - 'A') + 0x0A;
+        }
+        rec = (rec << 4) + tmp;
+    }
+    return rec;
+}
+void UART_Transmit(char *pData, uint16_t Size)
+{
+    HAL_UART_Transmit(&UART1_Handler, (uint8_t *)chartouint8_t(pData), Size, 10000);
+}
 
 //串口1中断服务程序
 void USART1_IRQHandler(void)

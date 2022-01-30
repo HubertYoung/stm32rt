@@ -1,5 +1,5 @@
-#ifndef _TIMER_H
-#define _TIMER_H
+#ifndef _PWM_H
+#define _PWM_H
 #include "sys.h"
 
 // extern TIM_HandleTypeDef TIM2_Handler;      //定时器句柄
