@@ -81,6 +81,7 @@ void W25QXX_PowerDown(void);        	//进入掉电模式
 void W25QXX_WAKEUP(void);				//唤醒
 
 
-#define PWM_ARR      0x00010
-#define PWM_CCR      0x00020
+#define PWM_ARR             0x00010
+#define PWM_CCR             0x00020
+#define MOTOR_DIRECTION     0x00030
 #endif

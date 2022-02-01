@@ -54,7 +54,9 @@
             "stm32f4xx_hal_gpio.h": "c",
             "spi.h": "c",
             "w25qxx.h": "c",
-            "timer.h": "c"
+            "timer.h": "c",
+            "kalman.h": "c",
+            "framwork.h": "c"
         },
         "files.autoGuessEncoding": true,
         "[yaml]": {

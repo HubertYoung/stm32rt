@@ -9122,3 +9122,287 @@ Finished: 1 information, 0 warning and 1 error messages.
 [2022-01-31 03:38:16]	[done]
 	build successfully !
 
+[2022-02-01 19:25:09]	[done]
+	build successfully !
+
+[2022-02-01 19:27:16]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 80: Warning:  #223-D: function "printf" declared implicitly
+      printf("HAL_TIM_PeriodElapsedCallback%d", TIM_ICOF_COUNT)
+      ^
+".\HARDWARE\TIMER\timer.c", line 94: Error:  #65: expected a ";"
+  }
+  ^
+.\HARDWARE\TIMER\timer.c: 1 warning, 1 error
+
+[2022-02-01 19:27:25]	[done]
+	build successfully !
+
+[2022-02-01 19:29:05]	[done]
+	build successfully !
+
+[2022-02-01 19:29:54]	[done]
+	build successfully !
+
+[2022-02-01 19:30:42]	[done]
+	build successfully !
+
+[2022-02-01 19:30:51]	[done]
+	build successfully !
+
+[2022-02-01 19:42:13]	[done]
+	build successfully !
+
+[2022-02-01 19:49:01]	[done]
+	build successfully !
+
+[2022-02-01 19:57:52]	[done]
+	build successfully !
+
+[2022-02-01 19:59:25]	[done]
+	build successfully !
+
+[2022-02-01 20:01:49]	[done]
+	build successfully !
+
+[2022-02-01 20:07:43]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\TIMER\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\TIMER\timer.c", line 162: Error: At end of source:  #67: expected a "}"
+.\HARDWARE\TIMER\timer.c: 0 warnings, 1 error
+
+[2022-02-01 20:08:02]	[done]
+	build successfully !
+
+[2022-02-01 20:09:23]	[done]
+	build successfully !
+
+[2022-02-01 20:18:04]	[done]
+	build successfully !
+
+[2022-02-01 20:18:30]	[done]
+	build successfully !
+
+[2022-02-01 20:18:51]	[done]
+	build successfully !
+
+[2022-02-01 20:19:06]	[done]
+	build successfully !
+
+[2022-02-01 20:19:47]	[done]
+	build successfully !
+
+[2022-02-01 20:20:35]	[done]
+	build successfully !
+
+[2022-02-01 20:21:17]	[done]
+	build successfully !
+
+[2022-02-01 20:21:55]	[done]
+	build successfully !
+
+[2022-02-01 20:29:05]	[done]
+	build successfully !
+
+[2022-02-01 20:32:19]	[done]
+	build successfully !
+
+[2022-02-01 20:33:09]	[done]
+	build successfully !
+
+[2022-02-01 20:33:37]	[done]
+	build successfully !
+
+[2022-02-01 20:36:06]	[done]
+	build successfully !
+
+[2022-02-01 20:36:29]	[done]
+	build successfully !
+
+[2022-02-01 20:37:14]	[done]
+	build successfully !
+
+[2022-02-01 20:37:45]	[done]
+	build successfully !
+
+[2022-02-01 20:38:33]	[done]
+	build successfully !
+
+[2022-02-01 20:44:23]	[done]
+	build successfully !
+
+[2022-02-01 20:45:43]	[done]
+	build successfully !
+
+[2022-02-01 20:48:39]	[done]
+	build successfully !
+
+[2022-02-01 20:49:12]	[done]
+	build successfully !
+
+[2022-02-01 20:49:57]	[done]
+	build successfully !
+
+[2022-02-01 22:41:26]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\FramWork\FramWork.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\FramWork\FramWork.c", line 3: Error:  #5: cannot open source input file "BSP.h": No such file or directory
+  #include "BSP.h"
+                  ^
+.\HARDWARE\FramWork\FramWork.c: 0 warnings, 1 error
+
+[2022-02-01 22:41:35]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\FramWork\FramWork.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\FramWork\FramWork.c", line 14: Error:  #136: struct "<unnamed>" has no field "MotorSpeedTwo"
+  	MotorControl.MotorSpeedTwo = 500;
+  	             ^
+".\HARDWARE\FramWork\FramWork.c", line 15: Error:  #136: struct "<unnamed>" has no field "MotorSpeedThr"
+  	MotorControl.MotorSpeedThr = 500;
+  	             ^
+".\HARDWARE\FramWork\FramWork.c", line 16: Error:  #136: struct "<unnamed>" has no field "MotorSpeedFou"
+  	MotorControl.MotorSpeedFou = 500;
+  	             ^
+.\HARDWARE\FramWork\FramWork.c: 0 warnings, 3 errors
+
+[2022-02-01 22:41:43]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 58: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 89: Warning:  #223-D: function "printf" declared implicitly
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 106: Error:  #167: argument of type "char *" is incompatible with parameter of type "u32 *"
+  __M_PAGE(motor_init, "motor_init", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 106: Error:  #65: expected a ";"
+  __M_PAGE(motor_init, "motor_init", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 127: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+.\HARDWARE\GUI\gui.c: 3 warnings, 2 errors
+
+[2022-02-01 22:42:02]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 58: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 89: Warning:  #223-D: function "printf" declared implicitly
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 106: Error:  #167: argument of type "char *" is incompatible with parameter of type "u32 *"
+  __M_PAGE(motor_init, "motor_init", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 127: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+.\HARDWARE\GUI\gui.c: 3 warnings, 1 error
+
+[2022-02-01 22:42:22]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\GUI\gui.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\GUI\gui.c", line 58: Warning:  #223-D: function "TIM_SetTIM1Compare2" declared implicitly
+  __M_PAGE(pwm_init, "PWM_SET", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 89: Warning:  #223-D: function "printf" declared implicitly
+  __M_PAGE(other, "other", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 106: Error:  #167: argument of type "char *" is incompatible with parameter of type "u32 *"
+  __M_PAGE(motor_init, "motor_init", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 106: Error:  #167: argument of type "u32 *" is incompatible with parameter of type "char"
+  __M_PAGE(motor_init, "motor_init", &main_page,
+  ^
+".\HARDWARE\GUI\gui.c", line 127: Warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(1000);
+      ^
+.\HARDWARE\GUI\gui.c: 3 warnings, 2 errors
+
+[2022-02-01 22:43:49]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\PWM\pwm.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\PWM\pwm.c", line 97: Error:  #147-D: declaration is incompatible with "void TIM_SetMotorDirection(char)" (declared at line 11 of ".\HARDWARE\PWM\pwm.h")
+  void TIM_SetMotorDirection(u32 _direction)
+       ^
+".\HARDWARE\PWM\pwm.c", line 105: Error:  #147: declaration is incompatible with "char TIM_GetMotorDirection()" (declared at line 12 of ".\HARDWARE\PWM\pwm.h")
+  u32 TIM_GetMotorDirection()
+      ^
+.\HARDWARE\PWM\pwm.c: 0 warnings, 2 errors
+
+[2022-02-01 22:44:06]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\RobotTask\RobotTask.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\RobotTask\RobotTask.h", line 6: Error:  #20: identifier "EncoderType" is undefined
+  extern EncoderType GetEncoder;
+         ^
+".\HARDWARE\RobotTask\RobotTask.c", line 53: Warning:  #223-D: function "MotorSpeedSetThr" declared implicitly
+     MotorSpeedSetThr(SpeedControlOne);
+     ^
+.\HARDWARE\RobotTask\RobotTask.c: 1 warning, 1 error
+
+[2022-02-01 22:44:22]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\RobotTask\RobotTask.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\RobotTask\RobotTask.c", line 44: Error:  #20: identifier "GetEncoder" is undefined
+     SpeedNowOne = GetEncoder.V5;
+                   ^
+".\HARDWARE\RobotTask\RobotTask.c", line 53: Warning:  #223-D: function "MotorSpeedSetThr" declared implicitly
+     MotorSpeedSetThr(SpeedControlOne);
+     ^
+.\HARDWARE\RobotTask\RobotTask.c: 1 warning, 1 error
+
+[2022-02-01 22:44:42]	[done]
+	build successfully !
+
+[2022-02-01 22:45:50]	[done]
+	build successfully !
+
+[2022-02-01 22:46:09]	[done]
+	build successfully !
+
+[2022-02-01 22:46:36]	[done]
+	build successfully !
+
+[2022-02-01 22:47:01]	[done]
+	build successfully !
+
+[2022-02-01 22:47:31]	[done]
+	build successfully !
+
+[2022-02-01 22:48:40]	[done]
+	build successfully !
+
+[2022-02-01 22:49:22]	compilation failed at : "c:\Users\13443\source\stm32rt\HARDWARE\PWM\pwm.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\HARDWARE\PWM\pwm.c", line 102: Warning:  #223-D: function "printf" declared implicitly
+      printf("MOTOR_DIRECTION %d", _direction)
+      ^
+".\HARDWARE\PWM\pwm.c", line 103: Error:  #32: expression must have arithmetic type
+      PAout(2) = _direction & 0x01;
+      ^
+.\HARDWARE\PWM\pwm.c: 1 warning, 1 error
+
+[2022-02-01 22:49:29]	[done]
+	build successfully !
+
+[2022-02-01 22:49:52]	[done]
+	build successfully !
+
+[2022-02-01 22:50:23]	[done]
+	build successfully !
+
+[2022-02-01 22:51:29]	[done]
+	build successfully !
+
+[2022-02-01 22:51:58]	[done]
+	build successfully !
+
+[2022-02-01 22:56:59]	[done]
+	build successfully !
+

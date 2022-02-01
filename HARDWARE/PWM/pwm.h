@@ -8,4 +8,7 @@
 void TIM1_PWM_Init(u16 arr, u16 psc);
 void TIM_SetTIM1Compare1(u32 compare);
 void TIM_SetTIM1AutoReload(u32 arr, u32 ccr);
+void TIM_SetMotorDirection(u32 _direction);
+u32 TIM_GetMotorDirection();
+
 #endif

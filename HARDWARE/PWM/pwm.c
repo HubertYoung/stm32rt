@@ -1,5 +1,4 @@
 #include "pwm.h"
-#include "pwm.h"
 #include "w25qxx.h"
 
 TIM_HandleTypeDef TIM1_Handler;     //定时器句柄
@@ -44,12 +43,21 @@ void TIM1_PWM_Init(u16 arr, u16 psc)
     HAL_TIM_PWM_Init(&TIM1_Handler); //初始化PWM
 
     TIM1_CH1Handler.OCMode = TIM_OCMODE_PWM1;                                  //模式选择PWM1
-    TIM1_CH1Handler.Pulse = ccr;                                       //设置比较值,此值用来确定占空比，默认比较值为自动重装载值的一半,即占空比为50%
+    TIM1_CH1Handler.Pulse = ccr;                                               //设置比较值,此值用来确定占空比，默认比较值为自动重装载值的一半,即占空比为50%
     TIM1_CH1Handler.OCPolarity = TIM_OCPOLARITY_LOW;                           //输出比较极性为低
     TIM1_CH1Handler.OCIdleState = TIM_OCIDLESTATE_SET;                         //输出比较极性为低
     HAL_TIM_PWM_ConfigChannel(&TIM1_Handler, &TIM1_CH1Handler, TIM_CHANNEL_1); //配置TIM1通道1
 
     HAL_TIM_PWM_Start(&TIM1_Handler, TIM_CHANNEL_1); //开启PWM通道1
+
+    //方向
+    GPIO_InitTypeDef GPIO_Initure;
+    GPIO_Initure.Pin = GPIO_PIN_2;        // PA1
+    GPIO_Initure.Mode = GPIO_MODE_OUTPUT_PP;  //复用推挽输出
+    GPIO_Initure.Pull = GPIO_PULLDOWN;    //下拉
+    GPIO_Initure.Speed = GPIO_SPEED_HIGH; //高速
+    HAL_GPIO_Init(GPIOA, &GPIO_Initure);
+    PAout(2) = TIM_GetMotorDirection();
 }
 
 //定时器底层驱动，时钟使能，引脚配置
@@ -63,7 +71,7 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *htim)
 
     GPIO_Initure.Pin = GPIO_PIN_8;          // PA1
     GPIO_Initure.Mode = GPIO_MODE_AF_PP;    //复用推挽输出
-    GPIO_Initure.Pull = GPIO_PULLDOWN;      //上拉
+    GPIO_Initure.Pull = GPIO_PULLDOWN;      //下拉
     GPIO_Initure.Speed = GPIO_SPEED_HIGH;   //高速
     GPIO_Initure.Alternate = GPIO_AF1_TIM1; // PA1复用为TIM1_CH2
     HAL_GPIO_Init(GPIOA, &GPIO_Initure);
@@ -86,4 +94,21 @@ void TIM_SetTIM1AutoReload(u32 arr, u32 ccr)
     u8 e[4];
     U32ToU8Array(e, arr);
     W25QXX_Write(e, PWM_ARR, 4);
+}
+
+void TIM_SetMotorDirection(u32 _direction)
+{
+    u8 e[4];
+    U32ToU8Array(e, _direction);
+    W25QXX_Write(e, MOTOR_DIRECTION, 4);
+    printf("MOTOR_DIRECTION %d", _direction & 0x01);
+    PAout(2) = _direction & 0x01;
+}
+
+u32 TIM_GetMotorDirection()
+{
+    u8 buf[4];
+    W25QXX_Read(buf, MOTOR_DIRECTION, 4);
+    u32 _direction = U8ArrayToU32(buf);
+    return _direction;
 }

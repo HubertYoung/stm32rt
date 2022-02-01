@@ -142,7 +142,7 @@ void timer_task(void *pvParameters)
         //     temp += TIM2CH2_CAPTURE_VAL;      //得到总的高电平时间
         //     frequency = 1000000 / temp;
             // printf("HIGH:%lld us frequency=%lld val=%d\r\n", temp, frequency, TIM2CH2_CAPTURE_VAL); //打印总的高点平时间
-            printf("%d\r\n",FbFreq); //打印总的高点平时间
+            // printf("%d\r\n",FbFreq); //打印总的高点平时间
             // updateCanvas(WAVECHART, 1, (char *)&FbFreq, sizeof(FbFreq));
         //     TIM2CH2_CAPTURE_STA = 0;          //开启下一次捕获
         // }

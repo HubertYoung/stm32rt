@@ -15,6 +15,7 @@ u32 pwm_fre_temp = 0;
 u16 id = 0;
 
 u32 FG = 0;
+u32 motor_direction = 0;
 
 void PWM_Status(void)
 {
@@ -26,15 +27,11 @@ void PWM_Status(void)
     pwm_dc = 100 - ((float)ccr * 100 / arr);
 
     id = W25QXX_ReadID();
+
+    motor_direction = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2);
 }
 
-u32 switch_reg = 0;
-
-char pic_choose = 1;
-static volatile float setDutyCycle; //占空比 取值 0 - 100,
-float CarSpeed;                     //加速度计角度
-char *test_str = "123123";          //加速度计角度
-MENU_PAGE main_page, pwm_init, other, tcp_conn, senddata;
+MENU_PAGE main_page, pwm_init, other, motor_init, senddata;
 
 __M_PAGE(main_page, "MainPage", PAGE_NULL,
          {
@@ -57,7 +54,8 @@ __M_PAGE(main_page, "MainPage", PAGE_NULL,
 
              SOLGUI_Cursor(0, 0, 2);
              SOLGUI_Widget_GotoPage(0, &pwm_init);
-             SOLGUI_Widget_GotoPage(1, &other);
+             SOLGUI_Widget_GotoPage(1, &motor_init);
+             SOLGUI_Widget_GotoPage(2, &other);
          });
 __M_PAGE(pwm_init, "PWM_SET", &main_page,
          {
@@ -105,13 +103,18 @@ __M_PAGE(other, "other", &main_page,
              SOLGUI_Cursor(0, 0, 1);
 
              //  SOLGUI_Widget_Button(0, "Erase_Chip", &W25QXX_Erase_Chip); argument of type "u8 **" is incompatible with parameter of type "u8 *"
-             //  SOLGUI_Widget_OptionText(4, "angle:  %f", CarAngle);
+             //  SOLGUI_Widget_OptionText(4, "angle:  %f", CarAngle); argument of type "char *" is incompatible with parameter of type "u32 *"
          });
-__M_PAGE(tcp_conn, "tcp_conn", &main_page,
+__M_PAGE(motor_init, "motor_init", &main_page,
          {
-             SOLGUI_Cursor(0, 0, 1);
-
-             //  SOLGUI_Widget_OptionText(5, "speed:  %f", CarSpeed);
+             SOLGUI_Cursor(6, 0, 1);
+             u32 s_motor_direction = motor_direction;
+             SOLGUI_Widget_Switch(0, "MOTORCW/CCW", &s_motor_direction, 0);
+             if (s_motor_direction != motor_direction)
+             {
+                 motor_direction = s_motor_direction;
+                 TIM_SetMotorDirection(motor_direction);
+             }
          });
 void GUI_Init_First(void)
 {
